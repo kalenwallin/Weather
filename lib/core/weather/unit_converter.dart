@@ -51,7 +51,7 @@ class UnitConverter {
   static String? formatWindSpeed(num? kph, AppSettings settings) {
     if (kph == null) return null;
 
-    if (settings.measurements == 'imperial') {
+    if (settings.wind == 'mph' || settings.measurements == 'imperial') {
       return '${kphToMph(kph).round()}';
     }
     if (settings.wind == 'm/s') {
@@ -62,7 +62,9 @@ class UnitConverter {
 
   /// i18n key for the active wind speed unit label.
   static String windSpeedUnitKey(AppSettings settings) {
-    if (settings.measurements == 'imperial') return 'mph';
+    if (settings.wind == 'mph' || settings.measurements == 'imperial') {
+      return 'mph';
+    }
     if (settings.wind == 'm/s') return 'm/s';
     return 'kph';
   }

@@ -50,7 +50,7 @@ const settingDataEnumPickers = [
   SettingEnumPickerDefinition(
     titleKey: 'wind',
     icon: IconsaxPlusLinear.wind,
-    items: ['kph', 'm/s'],
+    items: ['kph', 'm/s', 'mph'],
     read: _readWind,
     write: _writeWind,
   ),

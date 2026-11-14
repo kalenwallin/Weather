@@ -9,6 +9,8 @@ deadline, optional air quality has a 5-second deadline, and GPS acquisition has 
 20-second limit. City-label lookup falls back to coordinates, and an unavailable
 connectivity probe no longer blocks a real weather request.
 
+The Wind setting also includes **mph**, independently of other measurement units.
+
 The Android app is named **Rain Personal**, with application ID
 `com.yoshi.rain.personal`, so it installs alongside the Play Store version.
 

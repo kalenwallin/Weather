@@ -81,6 +81,27 @@ void main() {
       expect(UnitConverter.formatWindSpeed(36, _settings(wind: 'm/s')), '10.0');
     });
 
+    test(
+      'mph wind works with metric measurements and Celsius temperatures',
+      () {
+        final settings = _settings(wind: 'mph');
+
+        expect(UnitConverter.formatWindSpeed(100, settings), '62');
+        expect(UnitConverter.windSpeedUnitKey(settings), 'mph');
+        expect(UnitConverter.formatVisibility(5000, settings), '5');
+        expect(UnitConverter.visibilityUnitKey(settings), 'km');
+        expect(UnitConverter.convertTemperature(20, settings), 20);
+        expect(UnitConverter.temperatureSuffix(settings), '°C');
+      },
+    );
+
+    test('mph wind preserves calm and missing wind readings', () {
+      final settings = _settings(wind: 'mph');
+
+      expect(UnitConverter.formatWindSpeed(0, settings), '0');
+      expect(UnitConverter.formatWindSpeed(null, settings), isNull);
+    });
+
     test('formatPressure respects units', () {
       expect(UnitConverter.formatPressure(1000, _settings()), '1000');
       expect(
