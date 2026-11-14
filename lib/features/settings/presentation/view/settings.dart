@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:gap/gap.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_about_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_appearance_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_data_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_functions_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_misc_sections.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_about_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_appearance_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_data_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_functions_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_misc_sections.dart';
 
 /// Root settings screen composing feature-specific sections.
 class SettingsPage extends ConsumerWidget {

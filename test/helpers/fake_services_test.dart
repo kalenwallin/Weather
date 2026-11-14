@@ -2,8 +2,8 @@ import 'fake_services.dart';
 import 'isar_test_helper.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 void main() {
   group('FakeLocationService', () {

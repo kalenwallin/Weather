@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Najwyższy poziom zanieczyszczenia",
   "aqiHelpAdviceLabel": "Zalecenie",
   "aqiHelpSource": "Źródło: Open-Meteo Air Quality API — stężenia przy ziemi (~10 m), siatka ~11 km.",
-  "widgetBatteryHint": "Aby widżety aktualizowały się niezawodnie, wyłącz optymalizację baterii dla Rain w ustawieniach aplikacji",
+  "widgetBatteryHint": "Aby widżety aktualizowały się niezawodnie, wyłącz optymalizację baterii dla Weather w ustawieniach aplikacji",
   "persistentNotification": "Stałe powiadomienie",
   "lastUpdated": "Zaktualizowano",
   "appFont": "Czcionka",

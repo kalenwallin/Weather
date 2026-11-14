@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/saved_place.dart';
+import 'package:weather/domain/entities/saved_place.dart';
 
 /// Result of resolving saved cities from the database.
 class CitiesLoadResult {

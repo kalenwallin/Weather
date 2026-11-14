@@ -3,9 +3,9 @@ import '../../helpers/test_bootstrap.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/di/settings_revision.dart';
-import 'package:rain/core/theme/theme_mode_notifier.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/di/settings_revision.dart';
+import 'package:weather/core/theme/theme_mode_notifier.dart';
 
 void main() {
   group('ThemeModeNotifier', () {

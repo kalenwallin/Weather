@@ -1,7 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/widgets/confirmation_dialog.dart';
+import 'package:weather/core/widgets/confirmation_dialog.dart';
 
 import '../../helpers/test_helpers.dart';
 

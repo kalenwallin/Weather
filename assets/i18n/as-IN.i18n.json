@@ -198,7 +198,7 @@
   "aqiHelpDominant": "সৰ্বোচ্চ দূষকৰ স্তৰ",
   "aqiHelpAdviceLabel": "পৰামৰ্শ",
   "aqiHelpSource": "উৎস: Open-Meteo Air Quality API — ভূ-স্তৰৰ ঘনত্ব (~10 মি), ~11 কিমি গ্ৰিড।",
-  "widgetBatteryHint": "নিৰ্ভৰযোগ্য ৱিজেট আপডেইটৰ বাবে Rain ৰ বাবে এপৰ ছেটিংছত বেটাৰী অনুকূলন অফ কৰক",
+  "widgetBatteryHint": "নিৰ্ভৰযোগ্য ৱিজেট আপডেইটৰ বাবে Weather ৰ বাবে এপৰ ছেটিংছত বেটাৰী অনুকূলন অফ কৰক",
   "persistentNotification": "স্থায়ী জাননী",
   "lastUpdated": "আপডেট কৰা হৈছে",
   "appFont": "ফন্ট",

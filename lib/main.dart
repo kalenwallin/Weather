@@ -2,12 +2,12 @@ import 'dart:ui';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/app.dart';
-import 'package:rain/core/bootstrap/app_initializer.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/utils/debug_log.dart';
+import 'package:weather/app.dart';
+import 'package:weather/core/bootstrap/app_initializer.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/utils/debug_log.dart';
 
-/// Entry point: bootstraps dependencies and runs [RainApp].
+/// Entry point: bootstraps dependencies and runs [WeatherApp].
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -24,7 +24,7 @@ void main() async {
   runApp(
     ProviderScope(
       overrides: [bootstrapProvider.overrideWithValue(bootstrap)],
-      child: RainApp(bootstrap: bootstrap),
+      child: WeatherApp(bootstrap: bootstrap),
     ),
   );
 }

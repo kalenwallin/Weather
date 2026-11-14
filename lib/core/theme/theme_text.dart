@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
 
 /// Shared text-style helpers for cards and weather widgets.
 class ThemeText {

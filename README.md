@@ -1,4 +1,4 @@
-# Rain Personal
+# Weather
 
 Personal fork of [darkmoonight/Rain](https://github.com/darkmoonight/Rain).
 Changes are maintained here without submitting them upstream. The original MIT
@@ -11,8 +11,8 @@ connectivity probe no longer blocks a real weather request.
 
 The Wind setting also includes **mph**, independently of other measurement units.
 
-The Android app is named **Rain Personal**, with application ID
-`com.yoshi.rain.personal`, so it installs alongside the Play Store version.
+The Android app is named **Weather**, with application ID
+`com.yoshi.weather.personal`, so it installs alongside the Play Store version.
 
 Build with Flutter 3.50.0 (Dart 3.14), JDK 17+, and the Android SDK versions listed
 in `android/app/build.gradle`:
@@ -31,7 +31,7 @@ The APK is written to `build/app/outputs/flutter-apk/app-gms-debug.apk`.
 
 <div align='center'>
     <img src='/readme/icon.png' width='150'/>
-    <h1>🌦️ Rain</h1>
+    <h1>🌦️ Weather</h1>
     <p><strong>A beautiful, feature-rich weather application built with Flutter</strong></p>
 </div>
 
@@ -87,7 +87,7 @@ APK and other builds: [Releases](https://github.com/darkmoonight/Rain/releases/l
 **Requirements:** Flutter 3.44+, Dart 3.12+ (see `pubspec.yaml`)
 
 ```bash
-git clone https://github.com/darkmoonight/Rain.git && cd Rain
+git clone https://github.com/kalenwallin/Weather.git && cd Weather
 flutter pub get
 dart run slang
 dart run build_runner build --delete-conflicting-outputs

@@ -12,12 +12,12 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/core/widgets/text_form.dart';
-import 'package:rain/features/geolocation/presentation/geolocation_screen.dart';
-import 'package:rain/features/weather/application/main_weather_notifier.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/core/widgets/text_form.dart';
+import 'package:weather/features/geolocation/presentation/geolocation_screen.dart';
+import 'package:weather/features/weather/application/main_weather_notifier.dart';
 
 Future<void> _enterGeolocationField(
   WidgetTester tester,
@@ -55,7 +55,7 @@ void main() {
 
   group('SelectGeolocation', () {
     testWidgets('start flow renders location form', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SelectGeolocation(isStart: true),
         bootstrap: ctx.bootstrap,
@@ -72,7 +72,7 @@ void main() {
     });
 
     testWidgets('edit flow renders without start flag', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SelectGeolocation(isStart: false),
         bootstrap: ctx.bootstrap,
@@ -89,7 +89,7 @@ void main() {
     });
 
     testWidgets('shows map and coordinate form fields', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SelectGeolocation(isStart: true),
         bootstrap: ctx.bootstrap,
@@ -107,7 +107,7 @@ void main() {
     });
 
     testWidgets('city search shows autocomplete suggestions', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SelectGeolocation(isStart: true),
         bootstrap: ctx.bootstrap,
@@ -135,7 +135,7 @@ void main() {
     });
 
     testWidgets('exposes GPS location button', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SelectGeolocation(isStart: true),
         bootstrap: ctx.bootstrap,
@@ -160,7 +160,7 @@ void main() {
     testWidgets(
       'GPS timeout clears the spinner and keeps manual entry usable',
       (tester) async {
-        await pumpRainWidget(
+        await pumpWeatherWidget(
           tester,
           const SelectGeolocation(isStart: true),
           bootstrap: ctx.bootstrap,
@@ -191,7 +191,7 @@ void main() {
     testWidgets('filled location form has no validation errors', (
       tester,
     ) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SelectGeolocation(isStart: true),
         bootstrap: ctx.bootstrap,
@@ -236,7 +236,7 @@ void main() {
         ],
       );
 
-      await pumpRainRouter(
+      await pumpWeatherRouter(
         tester,
         bootstrap: ctx.bootstrap,
         router: router,
@@ -261,7 +261,7 @@ void main() {
     });
 
     testWidgets('edit flow submit returns to previous page', (tester) async {
-      await pumpRainRouter(
+      await pumpWeatherRouter(
         tester,
         bootstrap: ctx.bootstrap,
         router: GoRouter(

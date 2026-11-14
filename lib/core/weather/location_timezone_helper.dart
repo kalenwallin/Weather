@@ -1,5 +1,5 @@
 import 'package:lat_lng_to_timezone/lat_lng_to_timezone.dart' as tzmap;
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Resolves the IANA timezone for a saved weather location.
 class LocationTimezoneHelper {

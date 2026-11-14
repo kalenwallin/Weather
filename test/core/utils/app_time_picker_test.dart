@@ -4,7 +4,7 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/app_time_picker.dart';
+import 'package:weather/core/utils/app_time_picker.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -14,7 +14,7 @@ void main() {
   });
 
   testWidgets('showAppTimePicker opens time picker dialog', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Consumer(
         builder: (context, ref, _) => ElevatedButton(
@@ -38,7 +38,7 @@ void main() {
   testWidgets('uses 24-hour format when settings prefer it', (tester) async {
     ctx.bootstrap.settings.timeformat = '24';
 
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Consumer(
         builder: (context, ref, _) => ElevatedButton(

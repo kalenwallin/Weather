@@ -4,11 +4,11 @@ import '../../helpers/test_helpers.dart';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 void main() {
   setUpAll(initTestEnvironment);

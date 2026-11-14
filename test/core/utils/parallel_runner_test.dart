@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/parallel_runner.dart';
+import 'package:weather/core/utils/parallel_runner.dart';
 
 void main() {
   test('mapLimited runs all items and preserves order', () async {

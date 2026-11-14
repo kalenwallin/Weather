@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/location_timezone_helper.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/weather/location_timezone_helper.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 void main() {
   group('LocationTimezoneHelper', () {

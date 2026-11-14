@@ -1,4 +1,4 @@
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 export 'strings.g.dart';
 

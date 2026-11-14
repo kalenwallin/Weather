@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Legmagasabb szennyezőanyag-szint",
   "aqiHelpAdviceLabel": "Ajánlás",
   "aqiHelpSource": "Forrás: Open-Meteo Air Quality API — földszinti koncentrációk (~10 m), ~11 km-es rács.",
-  "widgetBatteryHint": "Megbízható widget-frissítéshez kapcsolja ki a Rain akkumulátor-optimalizálását az alkalmazás beállításaiban",
+  "widgetBatteryHint": "Megbízható widget-frissítéshez kapcsolja ki a Weather akkumulátor-optimalizálását az alkalmazás beállításaiban",
   "persistentNotification": "Állandó értesítés",
   "lastUpdated": "Frissítve",
   "appFont": "Betűtípus",

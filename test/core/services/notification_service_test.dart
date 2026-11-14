@@ -5,14 +5,14 @@ import '../../helpers/test_helpers.dart';
 
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/forecast_notification_time.dart';
-import 'package:rain/core/services/notification_reschedule_guard.dart';
-import 'package:rain/core/services/notification_service.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/forecast_notification_time.dart';
+import 'package:weather/core/services/notification_reschedule_guard.dart';
+import 'package:weather/core/services/notification_service.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Tracks [cancelScheduled] while exercising real reschedule/ensure logic.
 class _CancelTrackingNotificationService extends NotificationService {
@@ -46,7 +46,7 @@ void main() {
 
     setUp(() async {
       service = _CancelTrackingNotificationService();
-      tempDir = await Directory.systemTemp.createTemp('rain_notif_test');
+      tempDir = await Directory.systemTemp.createTemp('weather_notif_test');
       guardFile = File('${tempDir.path}/forecast_reschedule_guard.txt');
       // Isolate replenish cooldown so ensure tests are not skipped after reschedule.
       setForecastRescheduleGuardTestDependencies(
@@ -235,7 +235,7 @@ void main() {
     );
 
     test('sound channel is V2 and sound details use it', () {
-      expect(NotificationService.forecastSoundChannelId, 'RainForecastSoundV2');
+      expect(NotificationService.forecastSoundChannelId, 'WeatherForecastSoundV2');
       expect(
         NotificationService.legacyForecastSoundChannelId,
         'RainForecastSound',

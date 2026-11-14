@@ -9,12 +9,12 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/di/settings_revision.dart';
-import 'package:rain/features/cities/presentation/view/place_list.dart';
-import 'package:rain/features/map/presentation/map_screen.dart';
-import 'package:rain/features/settings/presentation/view/settings.dart';
-import 'package:rain/features/shell/presentation/home_screen.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/di/settings_revision.dart';
+import 'package:weather/features/cities/presentation/view/place_list.dart';
+import 'package:weather/features/map/presentation/map_screen.dart';
+import 'package:weather/features/settings/presentation/view/settings.dart';
+import 'package:weather/features/shell/presentation/home_screen.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -25,7 +25,7 @@ void main() {
   });
 
   Future<void> pumpHome(WidgetTester tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const HomeScreen(),
       bootstrap: ctx.bootstrap,
@@ -82,7 +82,7 @@ void main() {
     testWidgets('shows seeded cities on cities tab', (tester) async {
       final card = completeSavedPlace();
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const HomeScreen(),
         bootstrap: ctx.bootstrap,
@@ -112,7 +112,7 @@ void main() {
     testWidgets('switches to map tab when map is enabled', (tester) async {
       ctx.bootstrap.settings.hideMap = false;
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const HomeScreen(),
         bootstrap: ctx.bootstrap,
@@ -143,7 +143,7 @@ void main() {
     testWidgets('refreshes cities when app resumes', (tester) async {
       final trackingNotifier = _RefreshTrackingCitiesNotifier();
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const HomeScreen(),
         bootstrap: ctx.bootstrap,

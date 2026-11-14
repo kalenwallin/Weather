@@ -198,7 +198,7 @@
   "aqiHelpDominant": "सर्वोच्च प्रदूषक पातळी",
   "aqiHelpAdviceLabel": "शिफारस",
   "aqiHelpSource": "स्रोत: Open-Meteo Air Quality API — जमिनीसपाटीची संकेंद्रता (~10 मी), ~11 किमी ग्रिड.",
-  "widgetBatteryHint": "विश्वासार्ह विजेट अपडेटसाठी ॲप सेटिंग्जमध्ये Rain साठी बॅटरी निर्बंध बंद करा",
+  "widgetBatteryHint": "विश्वासार्ह विजेट अपडेटसाठी ॲप सेटिंग्जमध्ये Weather साठी बॅटरी निर्बंध बंद करा",
   "persistentNotification": "स्थायी सूचना",
   "lastUpdated": "अद्यतनित",
   "appFont": "फॉन्ट",

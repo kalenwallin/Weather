@@ -1,6 +1,6 @@
-# Contributing to Rain
+# Contributing to Weather
 
-Thank you for helping improve Rain! We welcome bug fixes, tests, docs, and features.
+Thank you for helping improve Weather! We welcome bug fixes, tests, docs, and features.
 
 ## Code of Conduct
 
@@ -11,7 +11,7 @@ Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). Report i
 **Requirements:** Flutter 3.44+, Dart 3.12+ (`pubspec.yaml`)
 
 ```bash
-git clone https://github.com/darkmoonight/Rain.git && cd Rain
+git clone https://github.com/kalenwallin/Weather.git && cd Weather
 flutter pub get
 dart run slang
 dart run build_runner build --delete-conflicting-outputs

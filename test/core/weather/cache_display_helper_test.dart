@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/cache_display_helper.dart';
+import 'package:weather/core/weather/cache_display_helper.dart';
 
 void main() {
   group('shouldShowInitialShimmer', () {

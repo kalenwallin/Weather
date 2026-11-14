@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/utils/location_label.dart';
-import 'package:rain/features/weather/application/main_weather_notifier.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/utils/location_label.dart';
+import 'package:weather/features/weather/application/main_weather_notifier.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// App bar title for the main shell, including inline weather-tab search.
 class HomeShellAppBarTitle extends StatelessWidget {

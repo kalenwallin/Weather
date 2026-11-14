@@ -1,5 +1,5 @@
-import 'package:rain/domain/entities/app_settings.dart';
-import 'package:rain/domain/entities/geo_place.dart';
+import 'package:weather/domain/entities/app_settings.dart';
+import 'package:weather/domain/entities/geo_place.dart';
 
 /// Port for app settings persistence.
 abstract class SettingsRepository {

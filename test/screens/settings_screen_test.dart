@@ -5,9 +5,9 @@ import '../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/features/settings/presentation/view/settings.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/features/settings/presentation/view/settings.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -23,7 +23,7 @@ void main() {
 
   group('SettingsPage', () {
     testWidgets('renders all settings sections on desktop', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SettingsPage(),
         bootstrap: ctx.bootstrap,
@@ -38,7 +38,7 @@ void main() {
     testWidgets('reflects persisted AMOLED theme setting', (tester) async {
       ctx.bootstrap.settings.amoledTheme = true;
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SettingsPage(),
         bootstrap: ctx.bootstrap,
@@ -57,7 +57,7 @@ void main() {
     });
 
     testWidgets('shows app version from package info', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SettingsPage(),
         bootstrap: ctx.bootstrap,
@@ -69,7 +69,7 @@ void main() {
     });
 
     testWidgets('location switch uses location service', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SettingsPage(),
         bootstrap: ctx.bootstrap,

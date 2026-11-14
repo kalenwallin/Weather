@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/data/repositories/settings_repository.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/data/repositories/settings_repository.dart';
 
 /// Persists HTTP clock skew when it differs from stored settings.
 Future<void> persistClockSkew(Ref ref, int skew) async {

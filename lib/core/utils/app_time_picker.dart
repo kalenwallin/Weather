@@ -1,7 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
 
 /// Shows a time picker respecting the user's 12/24-hour preference.
 Future<TimeOfDay?> showAppTimePicker({

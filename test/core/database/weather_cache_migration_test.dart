@@ -3,9 +3,9 @@ import '../../helpers/isar_test_helper.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/database/weather_cache_migration.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/database/weather_cache_migration.dart';
+import 'package:weather/data/models/db.dart';
 
 void main() {
   late TestIsarContext ctx;

@@ -6,8 +6,8 @@ import '../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/features/map/presentation/map_screen.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/features/map/presentation/map_screen.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -17,7 +17,7 @@ void main() {
   });
 
   testWidgets('MapPage renders flutter map scaffold', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const SizedBox(height: 500, width: 500, child: MapPage()),
       bootstrap: ctx.bootstrap,
@@ -35,7 +35,7 @@ void main() {
   });
 
   testWidgets('builds map with seeded city notifier', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const SizedBox(height: 500, width: 500, child: MapPage()),
       bootstrap: ctx.bootstrap,
@@ -57,7 +57,7 @@ void main() {
   testWidgets('map markers lay out without rendering exceptions', (
     tester,
   ) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const SizedBox(height: 500, width: 500, child: MapPage()),
       bootstrap: ctx.bootstrap,

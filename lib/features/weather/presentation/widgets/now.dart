@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/core/settings/app_settings_notifier.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/core/weather/status_weather.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/core/settings/app_settings_notifier.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/core/weather/status_weather.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Current conditions header with compact or large-element layout.
 class Now extends ConsumerWidget {

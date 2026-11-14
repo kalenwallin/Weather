@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/theme/app_font.dart';
-import 'package:rain/core/theme/color_palette.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/theme/app_font.dart';
+import 'package:weather/core/theme/color_palette.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Catalog-driven appearance picker saved via [SettingsSaveActions].
 class SettingAppearancePickerDefinition {

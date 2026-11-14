@@ -1,7 +1,7 @@
-import 'package:rain/core/weather/message.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/weather/message.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// One row in the hourly/daily weather-variables grid.
 class DescMetric {

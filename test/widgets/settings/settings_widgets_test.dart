@@ -4,8 +4,8 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_tile.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_tile.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -16,7 +16,7 @@ void main() {
 
   group('SettingsTile', () {
     testWidgets('renders title and trailing widget', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         Scaffold(
           body: SettingsTile(
@@ -35,7 +35,7 @@ void main() {
 
   group('SettingsSection', () {
     testWidgets('renders section title and children', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const SettingsSection(
           title: 'general',

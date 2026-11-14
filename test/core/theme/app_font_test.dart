@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rain/core/config/settings_catalog.dart';
-import 'package:rain/core/theme/app_font.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/config/settings_catalog.dart';
+import 'package:weather/core/theme/app_font.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

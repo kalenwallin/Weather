@@ -4,18 +4,18 @@ import 'dart:io';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/features/cities/presentation/view/place_list.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action.dart';
-import 'package:rain/features/geolocation/presentation/geolocation_screen.dart';
-import 'package:rain/features/map/presentation/map_screen.dart';
-import 'package:rain/features/settings/presentation/view/settings.dart';
-import 'package:rain/features/shell/presentation/widgets/home_shell_app_bar_title.dart';
-import 'package:rain/features/shell/presentation/widgets/home_weather_tab_search_field.dart';
-import 'package:rain/features/weather/presentation/main_weather_screen.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/features/cities/presentation/view/place_list.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action.dart';
+import 'package:weather/features/geolocation/presentation/geolocation_screen.dart';
+import 'package:weather/features/map/presentation/map_screen.dart';
+import 'package:weather/features/settings/presentation/view/settings.dart';
+import 'package:weather/features/shell/presentation/widgets/home_shell_app_bar_title.dart';
+import 'package:weather/features/shell/presentation/widgets/home_weather_tab_search_field.dart';
+import 'package:weather/features/weather/presentation/main_weather_screen.dart';
 
 /// Root shell with weather, cities, map, and settings tabs.
 class HomeScreen extends ConsumerStatefulWidget {

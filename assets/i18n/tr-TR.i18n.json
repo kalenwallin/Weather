@@ -198,7 +198,7 @@
   "aqiHelpDominant": "En yüksek kirletici düzeyi",
   "aqiHelpAdviceLabel": "Öneri",
   "aqiHelpSource": "Kaynak: Open-Meteo Air Quality API — yer düzeyi konsantrasyonları (~10 m), ~11 km ızgara.",
-  "widgetBatteryHint": "Güvenilir widget güncellemeleri için uygulama ayarlarında Rain için pil optimizasyonunu kapatın",
+  "widgetBatteryHint": "Güvenilir widget güncellemeleri için uygulama ayarlarında Weather için pil optimizasyonunu kapatın",
   "persistentNotification": "Kalıcı bildirim",
   "lastUpdated": "Güncellendi",
   "appFont": "Yazı tipi",

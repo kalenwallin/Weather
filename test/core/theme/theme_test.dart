@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/theme/theme.dart';
+import 'package:weather/core/theme/theme.dart';
 
 void main() {
   group('theme tokens', () {

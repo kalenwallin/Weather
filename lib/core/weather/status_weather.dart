@@ -1,6 +1,6 @@
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Maps WMO weather codes to localized text and context-specific icons.
 class StatusWeather {

@@ -1,4 +1,4 @@
-package com.yoshi.rain.widget
+package com.yoshi.weather.widget
 
 import android.graphics.Color
 import androidx.annotation.ColorInt

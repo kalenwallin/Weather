@@ -3,9 +3,9 @@ import '../../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/notification_weekdays.dart';
-import 'package:rain/features/settings/presentation/widgets/notification_weekdays_dialog.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/services/notification_weekdays.dart';
+import 'package:weather/features/settings/presentation/widgets/notification_weekdays_dialog.dart';
+import 'package:weather/i18n/tr.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -23,7 +23,7 @@ void main() {
   ) async {
     NotificationWeekdaysDialogResult? result;
 
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Builder(
         builder: (context) {

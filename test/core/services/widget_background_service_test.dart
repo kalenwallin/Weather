@@ -5,9 +5,9 @@ import '../../helpers/isar_test_helper.dart';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/services/widget_background_service.dart';
-import 'package:rain/data/datasources/weather_local_datasource.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/services/widget_background_service.dart';
+import 'package:weather/data/datasources/weather_local_datasource.dart';
 
 void installFakeFlutterTimezone() {
   const channel = MethodChannel('flutter_timezone');

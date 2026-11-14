@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Livello inquinante più alto",
   "aqiHelpAdviceLabel": "Raccomandazione",
   "aqiHelpSource": "Fonte: Open-Meteo Air Quality API — concentrazioni a livello del suolo (~10 m), griglia ~11 km.",
-  "widgetBatteryHint": "Per aggiornamenti affidabili del widget, disattiva l'ottimizzazione batteria per Rain nelle impostazioni dell'app",
+  "widgetBatteryHint": "Per aggiornamenti affidabili del widget, disattiva l'ottimizzazione batteria per Weather nelle impostazioni dell'app",
   "persistentNotification": "Notifica persistente",
   "lastUpdated": "Aggiornato",
   "appFont": "Carattere",

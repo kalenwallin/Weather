@@ -5,7 +5,7 @@ import '../../helpers/test_bootstrap.dart';
 import '../../helpers/widget_test_harness.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card_list.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card_list.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -15,7 +15,7 @@ void main() {
   });
 
   testWidgets('DailyCardList renders daily rows', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       DailyCardList(weatherData: weeklySavedPlace()),
       bootstrap: ctx.bootstrap,

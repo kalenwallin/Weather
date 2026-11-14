@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/constants/app_constants.dart';
+import 'package:weather/core/constants/app_constants.dart';
 
 /// Card wrapper for a horizontal [ScrollablePositionedList] of hourly columns.
 class HourlyStripCard extends StatelessWidget {

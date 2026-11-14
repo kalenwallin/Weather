@@ -1,5 +1,5 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/data/models/db.dart';
 
 /// Copies legacy single-theme widget colors into light/dark fields when needed.
 ///

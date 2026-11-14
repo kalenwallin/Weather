@@ -198,7 +198,7 @@
   "aqiHelpDominant": "সর্বোচ্চ দূষকের মাত্রা",
   "aqiHelpAdviceLabel": "সুপারিশ",
   "aqiHelpSource": "উৎস: Open-Meteo Air Quality API — ভূ-পৃষ্ঠের ঘনত্ব (~10 মি), ~11 কিমি গ্রিড।",
-  "widgetBatteryHint": "নির্ভরযোগ্য উইজেট আপডেটের জন্য অ্যাপ সেটিংসে Rain-এর ব্যাটারি অপ্টিমাইজেশন বন্ধ করুন",
+  "widgetBatteryHint": "নির্ভরযোগ্য উইজেট আপডেটের জন্য অ্যাপ সেটিংসে Weather-এর ব্যাটারি অপ্টিমাইজেশন বন্ধ করুন",
   "persistentNotification": "স্থায়ী বিজ্ঞপ্তি",
   "lastUpdated": "আপডেট হয়েছে",
   "appFont": "ফন্ট",

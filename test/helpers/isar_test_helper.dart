@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/database/isar_schemas.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/database/isar_schemas.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 import 'fixtures.dart';
 import 'test_helpers.dart';
@@ -36,8 +36,8 @@ Future<TestIsarContext> openTestIsar() async {
   }
 
   await initTestEnvironment();
-  final directory = Directory.systemTemp.createTempSync('rain_test_isar_');
-  final isar = await openRainIsar(directory: directory.path);
+  final directory = Directory.systemTemp.createTempSync('weather_test_isar_');
+  final isar = await openWeatherIsar(directory: directory.path);
   _sharedContext = TestIsarContext(isar: isar, directory: directory);
   return _sharedContext!;
 }

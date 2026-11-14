@@ -1,11 +1,11 @@
-import 'package:rain/core/services/forecast_notification_time.dart';
-import 'package:rain/core/services/notification_weekdays.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/core/weather/status_weather.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/core/weather/weather_cache_validator.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/services/forecast_notification_time.dart';
+import 'package:weather/core/services/notification_weekdays.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/core/weather/status_weather.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/core/weather/weather_cache_validator.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 class WeatherNotificationSlot {
   const WeatherNotificationSlot({

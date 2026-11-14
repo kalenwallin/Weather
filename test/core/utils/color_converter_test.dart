@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/color_converter.dart';
+import 'package:weather/core/utils/color_converter.dart';
 
 void main() {
   group('HexColor', () {

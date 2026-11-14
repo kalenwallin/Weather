@@ -1,10 +1,10 @@
-import 'package:rain/data/datasources/weather_local_datasource.dart';
-import 'package:rain/data/datasources/weather_remote_datasource.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/domain/entities/city_search_result.dart';
-import 'package:rain/domain/entities/geo_place.dart';
-import 'package:rain/domain/entities/weather_forecast.dart';
-import 'package:rain/domain/repositories/weather_repository.dart';
+import 'package:weather/data/datasources/weather_local_datasource.dart';
+import 'package:weather/data/datasources/weather_remote_datasource.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
+import 'package:weather/domain/entities/geo_place.dart';
+import 'package:weather/domain/entities/weather_forecast.dart';
+import 'package:weather/domain/repositories/weather_repository.dart';
 
 /// Isar + remote implementation of [WeatherRepository].
 class IsarWeatherRepository implements WeatherRepository {

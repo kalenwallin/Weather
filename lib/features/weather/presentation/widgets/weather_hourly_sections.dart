@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/features/weather/presentation/widgets/air_quality/air_quality_card.dart';
-import 'package:rain/features/weather/presentation/widgets/desc/desc_container.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/features/weather/presentation/widgets/air_quality/air_quality_card.dart';
+import 'package:weather/features/weather/presentation/widgets/desc/desc_container.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// AQI card and hourly weather variables for one forecast hour.
 class WeatherHourlySections extends StatelessWidget {

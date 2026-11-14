@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 import '../../helpers/test_helpers.dart';
 

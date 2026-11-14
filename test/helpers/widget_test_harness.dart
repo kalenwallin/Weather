@@ -2,11 +2,11 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/bootstrap/app_bootstrap.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/core/services/connectivity_service.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/bootstrap/app_bootstrap.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/core/services/connectivity_service.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 import 'test_helpers.dart';
 
@@ -16,7 +16,7 @@ void setTestConnectivity(bool online) {
 }
 
 /// Pumps [widget] inside ProviderScope with optional overrides.
-Future<void> pumpRainWidget(
+Future<void> pumpWeatherWidget(
   WidgetTester tester,
   Widget widget, {
   AppBootstrap? bootstrap,
@@ -47,7 +47,7 @@ Future<void> pumpRainWidget(
 }
 
 /// Pumps [widget] with a minimal GoRouter for navigation tests.
-Future<void> pumpRainRouter(
+Future<void> pumpWeatherRouter(
   WidgetTester tester, {
   required AppBootstrap bootstrap,
   required GoRouter router,

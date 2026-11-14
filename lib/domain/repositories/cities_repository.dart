@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/saved_place.dart';
+import 'package:weather/domain/entities/saved_place.dart';
 
 /// Port for saved-city card persistence and remote refresh.
 abstract class CitiesRepository {

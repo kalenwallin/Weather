@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/config/settings_catalog.dart';
+import 'package:weather/core/config/settings_catalog.dart';
 
 typedef _GoogleTextThemeBuilder = TextTheme Function([TextTheme?]);
 
@@ -37,7 +37,7 @@ class AppFont {
   /// Platform system font id.
   static const String system = 'system';
 
-  /// Default font id (current Rain look).
+  /// Default font id (current Weather look).
   static const String defaultId = ubuntu;
 
   static const String _labelPrefix = 'font';

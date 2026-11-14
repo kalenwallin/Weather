@@ -2,16 +2,16 @@ import 'dart:convert';
 
 import 'package:home_widget/home_widget.dart';
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/config/widget_registry.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/widget_background_service.dart';
-import 'package:rain/core/weather/unit_converter.dart';
-import 'package:rain/core/weather/status_weather.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/config/widget_registry.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/widget_background_service.dart';
+import 'package:weather/core/weather/unit_converter.dart';
+import 'package:weather/core/weather/status_weather.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Pushes current weather and styling into native home screen widgets.
 class HomeWidgetService {
@@ -48,7 +48,7 @@ class HomeWidgetService {
       if (dataResults.contains(false)) return false;
 
       final updateResults = await Future.wait<bool?>(
-        rainWidgetRegistry.map(
+        weatherWidgetRegistry.map(
           (widget) => HomeWidget.updateWidget(
             androidName: widget.androidName,
             qualifiedAndroidName: widget.qualifiedAndroidName,

@@ -1,19 +1,19 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/settings/clock_skew_persistence.dart';
-import 'package:rain/core/services/connectivity_service.dart';
-import 'package:rain/core/services/network_cache_handler.dart';
-import 'package:rain/core/utils/async_queue.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/utils/parallel_runner.dart';
-import 'package:rain/core/weather/location_timezone_helper.dart';
-import 'package:rain/features/cities/domain/cities_load_resolver.dart';
-import 'package:rain/features/cities/domain/weather_card_validator.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/domain/repositories/cities_repository.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/settings/clock_skew_persistence.dart';
+import 'package:weather/core/services/connectivity_service.dart';
+import 'package:weather/core/services/network_cache_handler.dart';
+import 'package:weather/core/utils/async_queue.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/utils/parallel_runner.dart';
+import 'package:weather/core/weather/location_timezone_helper.dart';
+import 'package:weather/features/cities/domain/cities_load_resolver.dart';
+import 'package:weather/features/cities/domain/weather_card_validator.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/domain/repositories/cities_repository.dart';
 
 /// Immutable state for the saved-cities list and its load/refresh flags.
 class CitiesState {

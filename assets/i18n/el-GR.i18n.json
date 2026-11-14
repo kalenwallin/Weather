@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Υψηλότερο επίπεδο ρύπου",
   "aqiHelpAdviceLabel": "Σύσταση",
   "aqiHelpSource": "Πηγή: Open-Meteo Air Quality API — συγκεντρώσεις στο έδαφος (~10 μ), πλέγμα ~11 χλμ.",
-  "widgetBatteryHint": "Για αξιόπιστες ενημερώσεις widget, απενεργοποιήστε τη βελτιστοποίηση μπαταρίας για το Rain στις ρυθμίσεις της εφαρμογής",
+  "widgetBatteryHint": "Για αξιόπιστες ενημερώσεις widget, απενεργοποιήστε τη βελτιστοποίηση μπαταρίας για το Weather στις ρυθμίσεις της εφαρμογής",
   "persistentNotification": "Μόνιμη ειδοποίηση",
   "lastUpdated": "Ενημερώθηκε",
   "appFont": "Γραμματοσειρά",

@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/widgets/app_back_button.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/widgets/app_back_button.dart';
 
 /// App bar for settings sub-screens opened with [GoRouterNavigation.pushRouteUp].
 class SettingsSecondaryAppBar extends StatelessWidget

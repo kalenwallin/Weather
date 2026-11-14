@@ -5,8 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 void installFakePackageInfo({
   String version = '1.0.0',
   String buildNumber = '1',
-  String appName = 'Rain',
-  String packageName = 'com.yoshi.rain',
+  String appName = 'Weather',
+  String packageName = 'com.yoshi.weather',
 }) {
   const channel = MethodChannel('dev.fluttercommunity.plus/package_info');
   TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger

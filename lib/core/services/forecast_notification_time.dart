@@ -1,7 +1,7 @@
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
 import 'package:timezone/timezone.dart' as tz;
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Wall-clock context shared when filtering and scheduling forecast alarms.
 typedef ForecastAlarmContext = ({

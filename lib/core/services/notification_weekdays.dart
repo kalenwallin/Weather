@@ -1,4 +1,4 @@
-import 'package:rain/core/i18n/locale_format_helper.dart';
+import 'package:weather/core/i18n/locale_format_helper.dart';
 
 /// ISO weekdays used for notification scheduling (Monday = 1 … Sunday = 7).
 const notificationIsoWeekdays = [1, 2, 3, 4, 5, 6, 7];

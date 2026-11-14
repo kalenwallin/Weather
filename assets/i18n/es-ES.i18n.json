@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Mayor nivel de contaminante",
   "aqiHelpAdviceLabel": "Recomendación",
   "aqiHelpSource": "Fuente: Open-Meteo Air Quality API — concentraciones a nivel del suelo (~10 m), cuadrícula ~11 km.",
-  "widgetBatteryHint": "Para actualizaciones fiables del widget, desactiva la optimización de batería de Rain en los ajustes de la aplicación",
+  "widgetBatteryHint": "Para actualizaciones fiables del widget, desactiva la optimización de batería de Weather en los ajustes de la aplicación",
   "persistentNotification": "Notificación persistente",
   "lastUpdated": "Actualizado",
   "appFont": "Fuente",

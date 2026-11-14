@@ -1,26 +1,26 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar_community/isar.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:rain/core/bootstrap/app_bootstrap.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/home_widget_service.dart';
-import 'package:rain/core/services/location_service.dart';
-import 'package:rain/core/services/notification_service.dart';
-import 'package:rain/core/services/widget_settings_service.dart';
-import 'package:rain/data/datasources/weather_local_datasource.dart';
-import 'package:rain/data/datasources/weather_remote_datasource.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/repositories/cities_repository.dart';
-import 'package:rain/core/di/settings_revision.dart';
-import 'package:rain/data/repositories/settings_repository.dart';
-import 'package:rain/core/weather/status_weather.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
-import 'package:rain/data/repositories/weather_repository.dart';
-import 'package:rain/domain/entities/app_settings.dart';
-import 'package:rain/domain/entities/geo_place.dart';
-import 'package:rain/domain/repositories/cities_repository.dart';
-import 'package:rain/domain/repositories/settings_repository.dart';
-import 'package:rain/domain/repositories/weather_repository.dart';
+import 'package:weather/core/bootstrap/app_bootstrap.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/home_widget_service.dart';
+import 'package:weather/core/services/location_service.dart';
+import 'package:weather/core/services/notification_service.dart';
+import 'package:weather/core/services/widget_settings_service.dart';
+import 'package:weather/data/datasources/weather_local_datasource.dart';
+import 'package:weather/data/datasources/weather_remote_datasource.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/repositories/cities_repository.dart';
+import 'package:weather/core/di/settings_revision.dart';
+import 'package:weather/data/repositories/settings_repository.dart';
+import 'package:weather/core/weather/status_weather.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
+import 'package:weather/data/repositories/weather_repository.dart';
+import 'package:weather/domain/entities/app_settings.dart';
+import 'package:weather/domain/entities/geo_place.dart';
+import 'package:weather/domain/repositories/cities_repository.dart';
+import 'package:weather/domain/repositories/settings_repository.dart';
+import 'package:weather/domain/repositories/weather_repository.dart';
 
 /// Riverpod providers for bootstrap state, services, and repositories.
 

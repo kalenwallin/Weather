@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/constants/app_constants.dart';
+import 'package:weather/core/constants/app_constants.dart';
 
 void main() {
   group('AppConstants', () {

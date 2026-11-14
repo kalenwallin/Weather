@@ -1,6 +1,6 @@
-import 'package:rain/core/weather/location_timezone_helper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/data/models/weather_api.dart';
+import 'package:weather/core/weather/location_timezone_helper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/data/models/weather_api.dart';
 
 /// Maps Open-Meteo API responses to local Isar cache models.
 class WeatherMapper {

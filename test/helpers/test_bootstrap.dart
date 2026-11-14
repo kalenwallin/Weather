@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/bootstrap/app_bootstrap.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/bootstrap/app_bootstrap.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 import 'isar_test_helper.dart';
 import 'fixtures.dart';

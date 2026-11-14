@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Validates persisted main-weather cache rows.
 class WeatherCacheValidator {

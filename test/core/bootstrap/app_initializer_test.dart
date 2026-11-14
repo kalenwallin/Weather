@@ -2,11 +2,11 @@ import '../../helpers/test_helpers.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/bootstrap/app_initializer.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/i18n/locale_utils.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/bootstrap/app_initializer.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/i18n/locale_utils.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 void main() {
   setUpAll(initTestEnvironment);

@@ -1,6 +1,6 @@
 <div align='center'>
     <img src='/readme/icon.png' width='150'/>
-    <h1>🌦️ Rain</h1>
+    <h1>🌦️ Weather</h1>
     <p><strong>Красивое многофункциональное приложение погоды на Flutter</strong></p>
 </div>
 
@@ -56,7 +56,7 @@ APK и другие сборки: [Releases](https://github.com/darkmoonight/Rai
 **Требования:** Flutter 3.44+, Dart 3.12+ (см. `pubspec.yaml`)
 
 ```bash
-git clone https://github.com/darkmoonight/Rain.git && cd Rain
+git clone https://github.com/kalenwallin/Weather.git && cd Weather
 flutter pub get
 dart run slang
 dart run build_runner build --delete-conflicting-outputs

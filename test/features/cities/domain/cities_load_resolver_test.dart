@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/features/cities/domain/cities_load_resolver.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/features/cities/domain/cities_load_resolver.dart';
 
 SavedPlace _card(int id) => SavedPlace(city: 'City $id', id: id);
 

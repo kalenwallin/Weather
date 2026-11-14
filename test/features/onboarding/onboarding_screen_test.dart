@@ -1,16 +1,16 @@
 import '../../helpers/test_bootstrap.dart';
 import '../../helpers/widget_test_harness.dart';
 
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 import '../../helpers/fixtures.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/features/geolocation/presentation/geolocation_screen.dart';
-import 'package:rain/features/onboarding/presentation/onboarding_screen.dart';
+import 'package:weather/features/geolocation/presentation/geolocation_screen.dart';
+import 'package:weather/features/onboarding/presentation/onboarding_screen.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -24,7 +24,7 @@ void main() {
 
   group('OnBoarding', () {
     testWidgets('renders carousel with three slides', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const OnBoarding(),
         bootstrap: ctx.bootstrap,
@@ -38,7 +38,7 @@ void main() {
     testWidgets('advances to next slide on primary button tap', (tester) async {
       final slides = OnboardingConstants.getData();
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const OnBoarding(),
         bootstrap: ctx.bootstrap,
@@ -74,7 +74,7 @@ void main() {
         ],
       );
 
-      await pumpRainRouter(tester, bootstrap: ctx.bootstrap, router: router);
+      await pumpWeatherRouter(tester, bootstrap: ctx.bootstrap, router: router);
       await tester.pump();
 
       await tester.tap(find.text('Skip'));

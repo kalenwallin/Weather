@@ -6,8 +6,8 @@ import '../../helpers/isar_test_helper.dart';
 import '../../helpers/test_bootstrap.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/home_widget_service.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/home_widget_service.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/constants/app_constants.dart';
+import 'package:weather/core/constants/app_constants.dart';
 
 /// Expandable card section with a shared chevron, color, and size animation.
 class CollapsibleSection extends StatefulWidget {

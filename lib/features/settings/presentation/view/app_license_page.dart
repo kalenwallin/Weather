@@ -2,19 +2,19 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
-import 'package:rain/core/widgets/defer_until_route_transition.dart';
-import 'package:rain/features/settings/application/package_licenses.dart';
-import 'package:rain/features/settings/presentation/widgets/app_license_page_shimmer.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_card_shape.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_list_dialog_shell.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_secondary_app_bar.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_tile.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
+import 'package:weather/core/widgets/defer_until_route_transition.dart';
+import 'package:weather/features/settings/application/package_licenses.dart';
+import 'package:weather/features/settings/presentation/widgets/app_license_page_shimmer.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_card_shape.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_list_dialog_shell.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_secondary_app_bar.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_tile.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Open-source licenses in the same visual language as [SettingsPage].
 class AppLicensePage extends ConsumerWidget {
@@ -210,7 +210,7 @@ class _LicenseAppHeader extends ConsumerWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          'rain'.tr,
+                          AppConstants.appName,
                           style: Theme.of(context).textTheme.titleLarge
                               ?.copyWith(
                                 fontWeight: FontWeight.w600,

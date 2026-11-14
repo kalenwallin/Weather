@@ -1,4 +1,4 @@
-import 'package:rain/core/services/connectivity_service.dart';
+import 'package:weather/core/services/connectivity_service.dart';
 
 /// Chooses between a network fetch and falling back to cached data.
 class NetworkCacheHandler {

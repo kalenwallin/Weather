@@ -1,5 +1,5 @@
-<p>Haben Sie die Nase voll von unvorhersehbarem Wetter? Rain hat Sie abgedeckt! Machen Sie sich bereit für jede Wettervorhersage. 🌦️</p>
-<p>Mit Rain können Sie das Wetter in Ihrer Stadt und darüber hinaus erkunden. Wir bieten eine Reihe von Funktionen, um Sie informiert und vorbereitet zu halten:</p>
+<p>Haben Sie die Nase voll von unvorhersehbarem Wetter? Weather hat Sie abgedeckt! Machen Sie sich bereit für jede Wettervorhersage. 🌦️</p>
+<p>Mit Weather können Sie das Wetter in Ihrer Stadt und darüber hinaus erkunden. Wir bieten eine Reihe von Funktionen, um Sie informiert und vorbereitet zu halten:</p>
 <ul>
     <li>🌟 <strong>Aktuelles Wetter anzeigen:</strong> Bleiben Sie mit Echtzeit-Wetterbedingungen in Ihrer Region auf dem Laufenden.</li>
     <li>🌅 <strong>Stündliche Wettervorhersage:</strong> Planen Sie Ihren Tag effektiv mit stündlichen Vorhersagen.</li>
@@ -15,4 +15,4 @@
     <li>🧩 <strong>Widget:</strong> Fügen Sie Ihrem Startbildschirm ein Wetter-Widget für schnelle Updates hinzu.</li>
     <li>🎨 <strong>Schönes Design</strong></li>
 </ul>
-<p>Unsere Anwendung bietet nicht nur Funktionalität, sondern auch ein ästhetisch ansprechendes Design. Wir haben Rain mit Ihrer Benutzererfahrung als oberste Priorität sorgfältig gestaltet und garantieren sowohl Komfort als auch Eleganz in einem Paket.</p>
+<p>Unsere Anwendung bietet nicht nur Funktionalität, sondern auch ein ästhetisch ansprechendes Design. Wir haben Weather mit Ihrer Benutzererfahrung als oberste Priorität sorgfältig gestaltet und garantieren sowohl Komfort als auch Eleganz in einem Paket.</p>

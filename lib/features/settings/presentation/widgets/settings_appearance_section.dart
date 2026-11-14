@@ -1,17 +1,17 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/config/setting_appearance_pickers.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/di/settings_revision.dart';
-import 'package:rain/core/theme/color_palette.dart';
-import 'package:rain/features/settings/presentation/widgets/selection_dialog.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section_state.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_switch_tile.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_tile.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/config/setting_appearance_pickers.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/di/settings_revision.dart';
+import 'package:weather/core/theme/color_palette.dart';
+import 'package:weather/features/settings/presentation/widgets/selection_dialog.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section_state.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_switch_tile.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_tile.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Theme, palette, font, and icon appearance settings.
 class SettingsAppearanceSection extends ConsumerStatefulWidget {

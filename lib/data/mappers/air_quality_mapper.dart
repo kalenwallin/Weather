@@ -1,5 +1,5 @@
-import 'package:rain/data/models/air_quality_api.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/data/models/air_quality_api.dart';
+import 'package:weather/data/models/db.dart';
 
 /// Maps Open-Meteo Air Quality API responses onto weather cache models.
 class AirQualityMapper {

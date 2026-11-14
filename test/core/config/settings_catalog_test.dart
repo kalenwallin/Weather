@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/config/settings_catalog.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/config/settings_catalog.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 void main() {
   setUpAll(() => LocaleSettings.setLocaleSync(AppLocale.enUs));

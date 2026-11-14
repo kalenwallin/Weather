@@ -4,10 +4,10 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/features/settings/presentation/widgets/app_widget_color_picker.dart';
-import 'package:rain/features/settings/presentation/widgets/widget_color_picker_dialog.dart';
-import 'package:rain/features/settings/presentation/widgets/widget_color_picker_ui.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/features/settings/presentation/widgets/app_widget_color_picker.dart';
+import 'package:weather/features/settings/presentation/widgets/widget_color_picker_dialog.dart';
+import 'package:weather/features/settings/presentation/widgets/widget_color_picker_ui.dart';
+import 'package:weather/i18n/tr.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -23,7 +23,7 @@ void main() {
   testWidgets('widget color picker dialog shows title and save actions', (
     tester,
   ) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Builder(
         builder: (context) {
@@ -53,7 +53,7 @@ void main() {
   testWidgets('widget color picker shows transparent option when enabled', (
     tester,
   ) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Builder(
         builder: (context) {

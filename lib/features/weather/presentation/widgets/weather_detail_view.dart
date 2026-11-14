@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_container.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_hourly_sections.dart';
-import 'package:rain/features/weather/presentation/widgets/hourly.dart';
-import 'package:rain/features/weather/presentation/widgets/hourly_strip.dart';
-import 'package:rain/features/weather/presentation/widgets/now.dart';
-import 'package:rain/features/weather/presentation/widgets/sunset_sunrise.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_container.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_hourly_sections.dart';
+import 'package:weather/features/weather/presentation/widgets/hourly.dart';
+import 'package:weather/features/weather/presentation/widgets/hourly_strip.dart';
+import 'package:weather/features/weather/presentation/widgets/now.dart';
+import 'package:weather/features/weather/presentation/widgets/sunset_sunrise.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Scrollable weather detail layout shared by the main and city detail screens.
 class WeatherDetailView extends StatelessWidget {

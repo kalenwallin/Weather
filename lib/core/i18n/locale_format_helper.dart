@@ -1,6 +1,6 @@
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
-import 'package:rain/core/utils/string_utils.dart';
+import 'package:weather/core/utils/string_utils.dart';
 
 /// Locale-aware date labels for cards, headers, and forecast rows.
 ///

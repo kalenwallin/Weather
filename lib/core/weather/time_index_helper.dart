@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:intl/intl.dart';
-import 'package:rain/core/i18n/locale_format_helper.dart';
+import 'package:weather/core/i18n/locale_format_helper.dart';
 import 'package:timezone/timezone.dart' as tz;
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Open-Meteo timezone metadata used for wall-clock calculations.
 ///

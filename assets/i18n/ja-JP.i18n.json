@@ -198,7 +198,7 @@
   "aqiHelpDominant": "最も高い汚染物質レベル",
   "aqiHelpAdviceLabel": "推奨",
   "aqiHelpSource": "出典：Open-Meteo Air Quality API — 地上濃度（約 10 m）、約 11 km グリッド。",
-  "widgetBatteryHint": "ウィジェットを確実に更新するには、アプリ設定で Rain のバッテリー最適化を無効にしてください",
+  "widgetBatteryHint": "ウィジェットを確実に更新するには、アプリ設定で Weather のバッテリー最適化を無効にしてください",
   "persistentNotification": "常時通知",
   "lastUpdated": "更新",
   "appFont": "フォント",

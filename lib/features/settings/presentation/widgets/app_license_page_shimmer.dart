@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:gap/gap.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/widgets/shimmer.dart';
-import 'package:rain/core/widgets/shimmer_bone.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_card_shape.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/widgets/shimmer.dart';
+import 'package:weather/core/widgets/shimmer_bone.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_card_shape.dart';
 
 /// Skeleton for [AppLicensePage] while package licenses load.
 class AppLicensePageShimmer extends StatelessWidget {

@@ -1,10 +1,10 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/weather/daily_display_helper.dart';
-import 'package:rain/core/widgets/app_back_button.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/weather/daily_display_helper.dart';
+import 'package:weather/core/widgets/app_back_button.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Scrollable list of all daily forecast summary cards.
 class DailyCardList extends StatefulWidget {

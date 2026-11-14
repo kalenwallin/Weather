@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/widgets/text_form.dart';
+import 'package:weather/core/widgets/text_form.dart';
 
 void main() {
   testWidgets('MyTextForm shows label and accepts input', (tester) async {

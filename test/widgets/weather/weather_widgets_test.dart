@@ -4,17 +4,17 @@ import '../../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/features/weather/presentation/widgets/desc/desc.dart';
-import 'package:rain/features/weather/presentation/widgets/desc/desc_container.dart';
-import 'package:rain/features/weather/presentation/widgets/hourly.dart';
-import 'package:rain/features/weather/presentation/widgets/now.dart';
-import 'package:rain/features/weather/presentation/widgets/sunset_sunrise.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card_list.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_container.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/features/weather/presentation/widgets/desc/desc.dart';
+import 'package:weather/features/weather/presentation/widgets/desc/desc_container.dart';
+import 'package:weather/features/weather/presentation/widgets/hourly.dart';
+import 'package:weather/features/weather/presentation/widgets/now.dart';
+import 'package:weather/features/weather/presentation/widgets/sunset_sunrise.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card_list.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_container.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_detail_view.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_detail_view.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -30,7 +30,7 @@ void main() {
   tearDown(() async {});
 
   testWidgets('Now renders compact layout by default', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Now(
         time: card.time!.first,
@@ -49,7 +49,7 @@ void main() {
   });
 
   testWidgets('Now shows last updated when timestamp is set', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Now(
         time: card.time!.first,
@@ -72,7 +72,7 @@ void main() {
   testWidgets('Now renders large layout when enabled', (tester) async {
     ctx.bootstrap.settings.largeElement = true;
 
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Now(
         time: card.time!.first,
@@ -91,7 +91,7 @@ void main() {
   });
 
   testWidgets('Hourly renders time column', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Hourly(
         time: card.time!.first,
@@ -107,7 +107,7 @@ void main() {
   });
 
   testWidgets('SunsetSunrise renders card', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       SunsetSunrise(
         timeSunrise: card.sunrise!.first,
@@ -120,7 +120,7 @@ void main() {
   });
 
   testWidgets('DescWeather toggles description on tap', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const DescWeather(
         imageName: 'assets/icons/icon.png',
@@ -136,7 +136,7 @@ void main() {
   });
 
   testWidgets('DescContainer renders expandable section', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const DescContainer(
         humidity: 50,
@@ -151,7 +151,7 @@ void main() {
   });
 
   testWidgets('DailyCardList renders forecast rows', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       DailyCardList(weatherData: card),
       bootstrap: ctx.bootstrap,
@@ -162,7 +162,7 @@ void main() {
 
   testWidgets('DailyContainer renders preview and more button', (tester) async {
     final weekly = weeklySavedPlace();
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       DailyContainer(
         weatherData: weekly,
@@ -181,7 +181,7 @@ void main() {
   testWidgets('WeatherDetailView renders main sections', (tester) async {
     final weekly = weeklySavedPlace();
     final scrollController = ItemScrollController();
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       WeatherDetailView(
         weatherCard: weekly,

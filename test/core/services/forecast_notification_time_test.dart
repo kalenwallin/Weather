@@ -1,9 +1,9 @@
 import '../../helpers/fixtures.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/forecast_notification_time.dart';
-import 'package:rain/core/services/notification_service.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/services/forecast_notification_time.dart';
+import 'package:weather/core/services/notification_service.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 void main() {
   group('resolveAlarmEpochMillis', () {

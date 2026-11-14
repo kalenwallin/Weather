@@ -1,11 +1,11 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/location_label.dart';
-import 'package:rain/features/cities/presentation/widgets/place_card.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/location_label.dart';
+import 'package:weather/features/cities/presentation/widgets/place_card.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Renders a saved card as [PlaceCard] or a retry placeholder when incomplete.
 class WeatherCardTile extends ConsumerWidget {

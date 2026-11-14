@@ -1,7 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/weather/aqi_helper.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/weather/aqi_helper.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Definition for a string-enum settings picker shown via [showSelectionDialog].
 class SettingEnumPickerDefinition {

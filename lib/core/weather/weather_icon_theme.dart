@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:rain/core/config/settings_catalog.dart';
+import 'package:weather/core/config/settings_catalog.dart';
 
 /// Built-in weather icon pack choices (condition, metric, and sun-time PNG sets).
 ///
@@ -10,7 +10,7 @@ class WeatherIconTheme {
 
   static const String classic = 'classic';
 
-  /// Default theme id (current Rain look).
+  /// Default theme id (current Weather look).
   static const String defaultId = classic;
 
   /// Preview icon filename shown in the theme picker.

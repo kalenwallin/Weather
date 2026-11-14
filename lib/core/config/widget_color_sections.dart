@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/config/widget_theme_colors.dart';
-import 'package:rain/core/services/widget_settings_service.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
+import 'package:weather/core/config/widget_theme_colors.dart';
+import 'package:weather/core/services/widget_settings_service.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
 
 /// Static layout for a light or dark widget color block on the settings screen.
 class WidgetColorSectionDefinition {

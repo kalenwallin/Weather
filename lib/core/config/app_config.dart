@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 /// App group identifier shared with home-screen widgets.
 const String appGroupId = 'DARK NIGHT';

@@ -1,7 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/theme/theme.dart';
-import 'package:rain/core/widgets/shimmer.dart';
+import 'package:weather/core/theme/theme.dart';
+import 'package:weather/core/widgets/shimmer.dart';
 import 'package:shimmer/shimmer.dart';
 
 void main() {

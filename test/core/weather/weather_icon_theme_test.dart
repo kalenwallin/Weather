@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
 
 void main() {
   group('WeatherIconTheme', () {

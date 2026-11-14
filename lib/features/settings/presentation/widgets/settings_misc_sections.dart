@@ -5,21 +5,21 @@ import 'package:gap/gap.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/config/app_config.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/core/utils/url_launcher_util.dart';
-import 'package:rain/core/widgets/confirmation_dialog.dart';
-import 'package:rain/features/settings/presentation/view/widget_settings_page.dart';
-import 'package:rain/features/settings/presentation/widgets/selection_dialog.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/core/widgets/map_tiles.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section_state.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_switch_tile.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_tile.dart';
-import 'package:rain/i18n/locale_utils.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/config/app_config.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/core/utils/url_launcher_util.dart';
+import 'package:weather/core/widgets/confirmation_dialog.dart';
+import 'package:weather/features/settings/presentation/view/widget_settings_page.dart';
+import 'package:weather/features/settings/presentation/widgets/selection_dialog.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/core/widgets/map_tiles.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section_state.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_switch_tile.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_tile.dart';
+import 'package:weather/i18n/locale_utils.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Map, widget shortcut, language, and community link settings.
 class SettingsMiscSections extends ConsumerStatefulWidget {

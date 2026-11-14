@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Najvyššia hladina znečisťovadla",
   "aqiHelpAdviceLabel": "Odporúčanie",
   "aqiHelpSource": "Zdroj: Open-Meteo Air Quality API — koncentrácie pri zemi (~10 m), mriežka ~11 km.",
-  "widgetBatteryHint": "Pre spoľahlivé aktualizácie widgetu vypnite optimalizáciu batérie pre Rain v nastaveniach aplikácie",
+  "widgetBatteryHint": "Pre spoľahlivé aktualizácie widgetu vypnite optimalizáciu batérie pre Weather v nastaveniach aplikácie",
   "persistentNotification": "Trvalé upozornenie",
   "lastUpdated": "Aktualizované",
   "appFont": "Písmo",

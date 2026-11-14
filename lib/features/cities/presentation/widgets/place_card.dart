@@ -1,15 +1,15 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:rain/core/di/city_clock_provider.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/utils/location_label.dart';
-import 'package:rain/features/cities/domain/weather_card_validator.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/di/city_clock_provider.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/utils/location_label.dart';
+import 'package:weather/features/cities/domain/weather_card_validator.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Compact summary card for a complete saved city weather entry.
 class PlaceCard extends ConsumerWidget {

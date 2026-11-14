@@ -5,10 +5,10 @@ import '../../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/widgets/text_form.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/widgets/text_form.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action.dart';
 
 Future<void> _enterPlaceActionField(
   WidgetTester tester,
@@ -35,7 +35,7 @@ void main() {
     testWidgets('edit mode prefills coordinates and labels', (tester) async {
       final card = completeSavedPlace();
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         Scaffold(body: PlaceAction(edit: true, card: card)),
         bootstrap: ctx.bootstrap,
@@ -54,7 +54,7 @@ void main() {
     });
 
     testWidgets('shows validation error for invalid latitude', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(
           body: PlaceAction(edit: false, latitude: '99', longitude: '37.62'),
@@ -82,7 +82,7 @@ void main() {
     });
 
     testWidgets('city search fills coordinate fields', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceAction(edit: false)),
         bootstrap: ctx.bootstrap,
@@ -112,7 +112,7 @@ void main() {
     testWidgets('keeps done disabled until all fields are filled', (
       tester,
     ) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(
           body: PlaceAction(edit: false, latitude: '55.75', longitude: '37.62'),
@@ -135,7 +135,7 @@ void main() {
     });
 
     testWidgets('done enables when all fields are filled', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(
           body: PlaceAction(edit: false, latitude: '55.75', longitude: '37.62'),

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/config/setting_appearance_pickers.dart';
+import 'package:weather/core/config/setting_appearance_pickers.dart';
 
 void main() {
   test(

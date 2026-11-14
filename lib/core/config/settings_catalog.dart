@@ -1,5 +1,5 @@
-import 'package:rain/core/utils/string_utils.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/utils/string_utils.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Helpers for persisted string-id settings pickers (font, icon theme, etc.).
 class SettingsCatalog {

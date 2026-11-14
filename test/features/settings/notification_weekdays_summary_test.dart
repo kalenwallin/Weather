@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/features/settings/presentation/widgets/notification_weekdays_summary.dart';
+import 'package:weather/features/settings/presentation/widgets/notification_weekdays_summary.dart';
 
 import '../../helpers/test_helpers.dart';
 

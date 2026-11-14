@@ -4,22 +4,22 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
-import 'package:rain/core/bootstrap/background_bootstrap.dart';
-import 'package:rain/core/bootstrap/timezone_bootstrap.dart';
+import 'package:weather/core/bootstrap/background_bootstrap.dart';
+import 'package:weather/core/bootstrap/timezone_bootstrap.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/bootstrap/app_bootstrap.dart';
-import 'package:rain/core/database/isar_schemas.dart';
-import 'package:rain/core/database/notification_channel_migration.dart';
-import 'package:rain/core/database/weather_cache_migration.dart';
-import 'package:rain/core/database/widget_color_migration.dart';
-import 'package:rain/core/config/app_config.dart';
-import 'package:rain/i18n/locale_utils.dart';
-import 'package:rain/core/services/connectivity_service.dart';
-import 'package:rain/core/services/home_widget_service.dart';
-import 'package:rain/core/services/widget_background_service.dart';
-import 'package:rain/core/utils/device_info.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/core/bootstrap/app_bootstrap.dart';
+import 'package:weather/core/database/isar_schemas.dart';
+import 'package:weather/core/database/notification_channel_migration.dart';
+import 'package:weather/core/database/weather_cache_migration.dart';
+import 'package:weather/core/database/widget_color_migration.dart';
+import 'package:weather/core/config/app_config.dart';
+import 'package:weather/i18n/locale_utils.dart';
+import 'package:weather/core/services/connectivity_service.dart';
+import 'package:weather/core/services/home_widget_service.dart';
+import 'package:weather/core/services/widget_background_service.dart';
+import 'package:weather/core/utils/device_info.dart';
+import 'package:weather/data/models/db.dart';
 import 'package:workmanager/workmanager.dart';
 
 /// One-time startup: DB, locale, notifications, widgets, and platform hooks.
@@ -46,7 +46,7 @@ class AppInitializer {
 
   /// Opens Isar, seeds default settings, and applies the stored locale.
   static Future<AppBootstrap> _initializeIsar() async {
-    final isar = await openRainIsar();
+    final isar = await openWeatherIsar();
 
     var settings = await isar.settings.where().findFirst() ?? Settings();
     var locationCache =

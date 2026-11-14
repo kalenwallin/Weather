@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:gap/gap.dart';
-import 'package:rain/core/weather/aqi_helper.dart';
-import 'package:rain/features/weather/presentation/widgets/air_quality/aqi_pollutant_bar.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/weather/aqi_helper.dart';
+import 'package:weather/features/weather/presentation/widgets/air_quality/aqi_pollutant_bar.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Vertical list of pollutant concentration bars for one forecast hour.
 class AqiPollutantList extends StatelessWidget {

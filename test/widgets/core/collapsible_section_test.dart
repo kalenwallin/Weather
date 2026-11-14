@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/widgets/collapsible_section.dart';
+import 'package:weather/core/widgets/collapsible_section.dart';
 
 void main() {
   testWidgets('CollapsibleSection hides child while collapsed', (tester) async {

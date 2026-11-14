@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// One-shot user-facing feedback for the main weather tab (shown as a snackbar).
 class MainWeatherUserMessage {

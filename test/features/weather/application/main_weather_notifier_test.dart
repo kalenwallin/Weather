@@ -6,9 +6,9 @@ import '../../../helpers/widget_test_harness.dart';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/features/weather/application/main_weather_notifier.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/features/weather/application/main_weather_notifier.dart';
 
 void main() {
   group('MainWeatherNotifier', () {

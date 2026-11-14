@@ -245,7 +245,7 @@
   "aqiHelpDominant": "Наибольший уровень загрязнителя",
   "aqiHelpAdviceLabel": "Рекомендация",
   "aqiHelpSource": "Источник: Open-Meteo Air Quality API — концентрации у земли (~10 м), сетка ~11 км.",
-  "widgetBatteryHint": "Для стабильного обновления виджета отключите оптимизацию батареи для Rain в настройках приложения",
+  "widgetBatteryHint": "Для стабильного обновления виджета отключите оптимизацию батареи для Weather в настройках приложения",
   "persistentNotification": "Постоянное уведомление",
   "lastUpdated": "Обновлено",
   "appFont": "Шрифт",

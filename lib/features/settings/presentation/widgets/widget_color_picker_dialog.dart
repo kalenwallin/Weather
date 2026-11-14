@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/utils/color_converter.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/features/settings/presentation/widgets/app_widget_color_picker.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_list_dialog_shell.dart';
-import 'package:rain/features/settings/presentation/widgets/widget_color_picker_ui.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/utils/color_converter.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/features/settings/presentation/widgets/app_widget_color_picker.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_list_dialog_shell.dart';
+import 'package:weather/features/settings/presentation/widgets/widget_color_picker_ui.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Opens the widget color picker used on the widget settings page.
 Future<void> showWidgetColorPicker({

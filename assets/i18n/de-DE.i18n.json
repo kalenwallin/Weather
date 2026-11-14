@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Höchster Schadstoffwert",
   "aqiHelpAdviceLabel": "Empfehlung",
   "aqiHelpSource": "Quelle: Open-Meteo Air Quality API — Bodenkonzentrationen (~10 m), ~11 km Raster.",
-  "widgetBatteryHint": "Für zuverlässige Widget-Aktualisierungen deaktivieren Sie die Akku-Optimierung für Rain in den App-Einstellungen",
+  "widgetBatteryHint": "Für zuverlässige Widget-Aktualisierungen deaktivieren Sie die Akku-Optimierung für Weather in den App-Einstellungen",
   "persistentNotification": "Dauerhafte Benachrichtigung",
   "lastUpdated": "Aktualisiert",
   "appFont": "Schriftart",

@@ -7,8 +7,8 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card_info.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card_info.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -18,7 +18,7 @@ void main() {
   });
 
   testWidgets('DailyCardInfo renders paged daily detail', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       DailyCardInfo(weatherData: dailyDetailSavedPlace(), index: 0),
       bootstrap: ctx.bootstrap,
@@ -30,7 +30,7 @@ void main() {
   });
 
   testWidgets('back button closes daily detail without error', (tester) async {
-    await pumpRainRouter(
+    await pumpWeatherRouter(
       tester,
       bootstrap: ctx.bootstrap,
       router: GoRouter(

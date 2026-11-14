@@ -198,7 +198,7 @@
   "aqiHelpDominant": "დამაბინძურებლის უმაღლესი დონე",
   "aqiHelpAdviceLabel": "რეკომენდაცია",
   "aqiHelpSource": "წყარო: Open-Meteo Air Quality API — კონცენტრაციები მიწის დონეზე (~10 მ), ~11 კმ ბადე.",
-  "widgetBatteryHint": "ვიჯეტის საიმედო განახლებისთვის გამორთეთ Rain-ის ბატარეის ოპტიმიზაცია აპის პარამეტრებში",
+  "widgetBatteryHint": "ვიჯეტის საიმედო განახლებისთვის გამორთეთ Weather-ის ბატარეის ოპტიმიზაცია აპის პარამეტრებში",
   "persistentNotification": "მუდმივი შეტყობინება",
   "lastUpdated": "განახლებულია",
   "appFont": "შრიფტი",

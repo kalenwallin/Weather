@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/i18n/tr.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
 
 /// Single row inside a [SettingsSection] card.
 class SettingsTile extends StatelessWidget {

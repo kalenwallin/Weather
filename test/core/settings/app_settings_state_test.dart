@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
 
 void main() {
   group('AppSettingsState.fromAppSettings', () {

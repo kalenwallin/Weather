@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/saved_place.dart';
+import 'package:weather/domain/entities/saved_place.dart';
 
 /// Validates completeness, expiry, and searchability of saved weather cards.
 class WeatherCardValidator {

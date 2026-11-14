@@ -16,4 +16,4 @@ echo "==> Restore default (pub.dev) dependencies"
 "$scripts/restore_pub_default.sh"
 
 echo "==> Done: build/app/outputs/flutter-apk/"
-ls -1 "$scripts/../build/app/outputs/flutter-apk/"rain-*-release-*.apk 2>/dev/null || true
+ls -1 "$scripts/../build/app/outputs/flutter-apk/"weather-*-release-*.apk 2>/dev/null || true

@@ -3,9 +3,9 @@ import '../../helpers/fixtures.dart';
 import '../../helpers/isar_test_helper.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/repositories/settings_repository.dart';
-import 'package:rain/domain/repositories/settings_repository.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/repositories/settings_repository.dart';
+import 'package:weather/domain/repositories/settings_repository.dart';
 
 void main() {
   late TestIsarContext ctx;

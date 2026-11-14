@@ -2,16 +2,16 @@ import 'dart:async';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
-import 'package:rain/core/widgets/shimmer.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card_list.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_detail_view.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
+import 'package:weather/core/widgets/shimmer.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card_list.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_detail_view.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/i18n/tr.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Main tab showing the current location's full weather detail view.
 class MainWeatherScreen extends ConsumerStatefulWidget {

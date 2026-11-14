@@ -51,7 +51,7 @@ void main() {
       if (_allowsPrefix(relative, _allowedDbImportPrefixes)) continue;
 
       final content = File(relative).readAsStringSync();
-      if (content.contains('package:rain/data/models/db.dart')) {
+      if (content.contains('package:weather/data/models/db.dart')) {
         violations.add(relative);
       }
     }
@@ -74,7 +74,7 @@ void main() {
       }
 
       final content = File(relative).readAsStringSync();
-      if (content.contains('package:rain/data/repositories/')) {
+      if (content.contains('package:weather/data/repositories/')) {
         violations.add(relative);
       }
     }

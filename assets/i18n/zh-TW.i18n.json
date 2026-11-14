@@ -198,7 +198,7 @@
   "aqiHelpDominant": "最高污染物濃度",
   "aqiHelpAdviceLabel": "建議",
   "aqiHelpSource": "來源：Open-Meteo Air Quality API — 近地面濃度（約 10 公尺），約 11 公里網格。",
-  "widgetBatteryHint": "為確保小工具可靠更新，請在應用程式設定中關閉 Rain 的電池最佳化",
+  "widgetBatteryHint": "為確保小工具可靠更新，請在應用程式設定中關閉 Weather 的電池最佳化",
   "persistentNotification": "常駐通知",
   "lastUpdated": "已更新",
   "appFont": "字體",

@@ -198,7 +198,7 @@
   "aqiHelpDominant": "سب سے زیادہ آلودگی کی سطح",
   "aqiHelpAdviceLabel": "سفارش",
   "aqiHelpSource": "ماخذ: Open-Meteo Air Quality API — زمینی سطح کی ارتکاز (~10 میٹر)، ~11 کلومیٹر گرڈ۔",
-  "widgetBatteryHint": "قابلِ اعتماد ویجٹ اپ ڈیٹس کے لیے ایپ کی ترتیبات میں Rain کی بیٹری پابندی بند کریں",
+  "widgetBatteryHint": "قابلِ اعتماد ویجٹ اپ ڈیٹس کے لیے ایپ کی ترتیبات میں Weather کی بیٹری پابندی بند کریں",
   "persistentNotification": "مستقل اطلاع",
   "lastUpdated": "اپ ڈیٹ",
   "appFont": "فونٹ",

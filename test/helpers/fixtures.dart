@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:rain/data/datasources/weather_remote_datasource.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/data/models/weather_api.dart';
+import 'package:weather/data/datasources/weather_remote_datasource.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/data/models/weather_api.dart';
 
 String _fixtureIsoTime(int dayOffset, {int hour = 12}) =>
     '2026-06-${(5 + dayOffset).toString().padLeft(2, '0')}T${hour.toString().padLeft(2, '0')}:00';

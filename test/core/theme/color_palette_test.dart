@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/theme/color_palette.dart';
+import 'package:weather/core/theme/color_palette.dart';
 
 void main() {
   test('resolve falls back to default for unknown ids', () {

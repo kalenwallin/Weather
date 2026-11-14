@@ -5,8 +5,8 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/features/settings/presentation/widgets/selection_dialog.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/features/settings/presentation/widgets/selection_dialog.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -16,7 +16,7 @@ void main() {
   });
 
   testWidgets('SelectionDialog lists items', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Scaffold(
         body: SelectionDialog<String>(
@@ -37,7 +37,7 @@ void main() {
   });
 
   testWidgets('closes dialog when item is selected', (tester) async {
-    await pumpRainRouter(
+    await pumpWeatherRouter(
       tester,
       bootstrap: ctx.bootstrap,
       router: GoRouter(
@@ -80,7 +80,7 @@ void main() {
   });
 
   testWidgets('search filters visible items', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Scaffold(
         body: SelectionDialog<String>(

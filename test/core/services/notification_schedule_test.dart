@@ -2,11 +2,11 @@ import '../../helpers/fixtures.dart';
 import '../../helpers/test_helpers.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/forecast_notification_time.dart';
-import 'package:rain/core/services/notification_content_builder.dart';
-import 'package:rain/core/services/notification_service.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/services/forecast_notification_time.dart';
+import 'package:weather/core/services/notification_content_builder.dart';
+import 'package:weather/core/services/notification_service.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/domain/entities/entities.dart';
 import 'package:timezone/data/latest_all.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 

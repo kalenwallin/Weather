@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/aqi_helper.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/weather/aqi_helper.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 void main() {
   setUpAll(() {

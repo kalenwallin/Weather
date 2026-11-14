@@ -1,6 +1,6 @@
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/features/cities/application/cities_notifier.dart';
-import 'package:rain/features/weather/application/main_weather_notifier.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/features/cities/application/cities_notifier.dart';
+import 'package:weather/features/weather/application/main_weather_notifier.dart';
 
 import 'fixtures.dart';
 

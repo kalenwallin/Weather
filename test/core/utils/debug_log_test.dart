@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/debug_log.dart';
+import 'package:weather/core/utils/debug_log.dart';
 
 void main() {
   test('debugLogError prints context and error in debug mode', () {

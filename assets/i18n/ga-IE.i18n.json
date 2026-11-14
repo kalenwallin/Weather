@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Leibhéal is airde truailleáin",
   "aqiHelpAdviceLabel": "Moladh",
   "aqiHelpSource": "Foinse: Open-Meteo Air Quality API — tiúchan ag leibhéal na talún (~10 m), greille ~11 km.",
-  "widgetBatteryHint": "Le haghaidh nuashonruithe iontaofa giuirléid, díchumasaigh optamú ceallraí do Rain sna socruithe aipe",
+  "widgetBatteryHint": "Le haghaidh nuashonruithe iontaofa giuirléid, díchumasaigh optamú ceallraí do Weather sna socruithe aipe",
   "persistentNotification": "Fógra buan",
   "lastUpdated": "Nuashonraithe",
   "appFont": "Cló",

@@ -1,4 +1,4 @@
-name: rain
+name: weather
 description: Weather application
 
 publish_to: "none"

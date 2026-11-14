@@ -13,13 +13,13 @@ void installFakePathProvider() {
       .setMockMethodCallHandler(channel, (call) async {
         if (call.method == 'getApplicationSupportDirectory') {
           _supportDirectory ??= Directory.systemTemp.createTempSync(
-            'rain_path_provider_',
+            'weather_path_provider_',
           );
           return _supportDirectory!.path;
         }
         if (call.method == 'getTemporaryDirectory') {
           _tempDirectory ??= Directory.systemTemp.createTempSync(
-            'rain_path_provider_tmp_',
+            'weather_path_provider_tmp_',
           );
           return _tempDirectory!.path;
         }

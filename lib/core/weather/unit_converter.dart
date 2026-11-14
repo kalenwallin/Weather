@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Converts and formats weather units according to user settings.
 class UnitConverter {

@@ -198,7 +198,7 @@
   "aqiHelpDominant": "أعلى مستوى للملوث",
   "aqiHelpAdviceLabel": "توصية",
   "aqiHelpSource": "المصدر: Open-Meteo Air Quality API — تركيزات على مستوى الأرض (~10 م)، شبكة ~11 كم.",
-  "widgetBatteryHint": "لتحديثات موثوقة للأداة، عطّل تحسين البطارية لتطبيق Rain في إعدادات التطبيق",
+  "widgetBatteryHint": "لتحديثات موثوقة للأداة، عطّل تحسين البطارية لتطبيق Weather في إعدادات التطبيق",
   "persistentNotification": "إشعار دائم",
   "lastUpdated": "تم التحديث",
   "appFont": "الخط",

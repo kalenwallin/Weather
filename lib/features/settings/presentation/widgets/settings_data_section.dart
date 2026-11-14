@@ -1,15 +1,15 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/config/setting_enum_pickers.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/features/settings/presentation/widgets/selection_dialog.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section_state.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_switch_tile.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_tile.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/config/setting_enum_pickers.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/features/settings/presentation/widgets/selection_dialog.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section_state.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_switch_tile.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_tile.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Units, formats, and display data settings.
 class SettingsDataSection extends ConsumerStatefulWidget {

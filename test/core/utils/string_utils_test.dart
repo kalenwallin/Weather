@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/string_utils.dart';
+import 'package:weather/core/utils/string_utils.dart';
 
 void main() {
   group('capitalizeFirst', () {

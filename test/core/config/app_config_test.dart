@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/config/app_config.dart';
+import 'package:weather/core/config/app_config.dart';
 
 void main() {
   group('appLanguages', () {

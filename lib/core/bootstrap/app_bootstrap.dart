@@ -1,5 +1,5 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/data/models/db.dart';
 
 /// Immutable startup context created during app initialization.
 class AppBootstrap {

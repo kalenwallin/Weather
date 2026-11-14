@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/weather/aqi_helper.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/weather/aqi_helper.dart';
 
 /// Colored AQI scale bar with a circular marker for the current value.
 class AqiScaleBar extends StatelessWidget {

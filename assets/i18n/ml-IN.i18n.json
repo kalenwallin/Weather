@@ -198,7 +198,7 @@
   "aqiHelpDominant": "ഏറ്റവും ഉയർന്ന മലിനത്വ നില",
   "aqiHelpAdviceLabel": "ശുപാർശ",
   "aqiHelpSource": "ഉറവിടം: Open-Meteo Air Quality API — നിലത്തിന്റെ സാന്ദ്രത (~10 മീ), ~11 കിമീ ഗ്രിഡ്.",
-  "widgetBatteryHint": "വിശ്വസനീയമായ വിജറ്റ് അപ്‌ഡേറ്റുകൾക്ക് ആപ്പ് settings-ൽ Rain-ന്റെ ബാറ്ററി പരിമിതം ഓഫ് ചെയ്യുക",
+  "widgetBatteryHint": "വിശ്വസനീയമായ വിജറ്റ് അപ്‌ഡേറ്റുകൾക്ക് ആപ്പ് settings-ൽ Weather-ന്റെ ബാറ്ററി പരിമിതം ഓഫ് ചെയ്യുക",
   "persistentNotification": "സ്ഥിരമായ അറിയിപ്പ്",
   "lastUpdated": "അപ്ഡേറ്റ് ചെയ്തു",
   "appFont": "ഫോണ്ട്",

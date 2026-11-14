@@ -1,10 +1,10 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/home_widget_service.dart';
-import 'package:rain/core/services/location_service.dart';
-import 'package:rain/core/services/notification_service.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/home_widget_service.dart';
+import 'package:weather/core/services/location_service.dart';
+import 'package:weather/core/services/notification_service.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Fake location service with configurable behavior for tests.
 class FakeLocationService extends LocationService {

@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:home_widget/home_widget.dart';
-import 'package:rain/core/bootstrap/background_bootstrap.dart';
+import 'package:weather/core/bootstrap/background_bootstrap.dart';
 
 const _lastRefreshAtKey = 'last_background_refresh_at';
 const _lastRefreshErrorKey = 'last_background_refresh_error';
@@ -24,9 +24,9 @@ Future<void> recordBackgroundRefreshResult({
 
   if (!kDebugMode) return;
   if (success) {
-    debugPrint('RainBackground: refresh succeeded at $now');
+    debugPrint('WeatherBackground: refresh succeeded at $now');
   } else {
-    debugPrint('RainBackground: refresh failed at $now — $error');
+    debugPrint('WeatherBackground: refresh failed at $now — $error');
   }
 }
 

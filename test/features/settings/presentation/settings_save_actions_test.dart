@@ -6,11 +6,11 @@ import '../../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/config/setting_enum_pickers.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/domain/repositories/settings_repository.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_save_actions.dart';
+import 'package:weather/core/config/setting_enum_pickers.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/domain/repositories/settings_repository.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_save_actions.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -29,7 +29,7 @@ void main() {
   }) async {
     SettingsSaveActions? actions;
 
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       Consumer(
         builder: (context, ref, _) =>

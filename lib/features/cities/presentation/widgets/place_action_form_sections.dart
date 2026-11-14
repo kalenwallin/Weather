@@ -1,13 +1,13 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
-import 'package:rain/core/widgets/city_search_field.dart';
-import 'package:rain/core/widgets/place_form_fields.dart';
-import 'package:rain/core/widgets/text_form.dart';
-import 'package:rain/domain/entities/city_search_result.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action_editing_controller.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
+import 'package:weather/core/widgets/city_search_field.dart';
+import 'package:weather/core/widgets/place_form_fields.dart';
+import 'package:weather/core/widgets/text_form.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action_editing_controller.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Search + coordinate/city fields used inside [PlaceAction].
 class PlaceActionFormSections extends StatelessWidget {

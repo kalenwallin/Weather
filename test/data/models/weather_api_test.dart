@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/data/models/weather_api.dart';
+import 'package:weather/data/models/weather_api.dart';
 
 void main() {
   group('WeatherDataApi.fromJson', () {

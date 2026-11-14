@@ -4,10 +4,10 @@ import '../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/widgets/shimmer.dart';
-import 'package:rain/features/weather/application/main_weather_notifier.dart';
-import 'package:rain/features/weather/presentation/main_weather_screen.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_detail_view.dart';
+import 'package:weather/core/widgets/shimmer.dart';
+import 'package:weather/features/weather/application/main_weather_notifier.dart';
+import 'package:weather/features/weather/presentation/main_weather_screen.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_detail_view.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -18,7 +18,7 @@ void main() {
 
   group('MainWeatherScreen', () {
     testWidgets('shows weather detail when cache is loaded', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const MainWeatherScreen(),
         bootstrap: ctx.bootstrap,
@@ -34,7 +34,7 @@ void main() {
     });
 
     testWidgets('shows empty state without forecast data', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const MainWeatherScreen(),
         bootstrap: ctx.bootstrap,
@@ -50,7 +50,7 @@ void main() {
     });
 
     testWidgets('shows shimmer while loading', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const MainWeatherScreen(),
         bootstrap: ctx.bootstrap,

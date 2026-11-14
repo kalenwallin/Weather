@@ -6,20 +6,20 @@ import 'package:flutter_map_animations/flutter_map_animations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/core/widgets/city_search_field.dart';
-import 'package:rain/core/widgets/map_tiles.dart';
-import 'package:rain/features/cities/presentation/view/place_info.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action.dart';
-import 'package:rain/features/cities/presentation/widgets/weather_card_tile.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/utils/url_launcher_util.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/core/widgets/city_search_field.dart';
+import 'package:weather/core/widgets/map_tiles.dart';
+import 'package:weather/features/cities/presentation/view/place_info.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action.dart';
+import 'package:weather/features/cities/presentation/widgets/weather_card_tile.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/utils/url_launcher_util.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Interactive map showing the main location and saved city markers.
 class MapPage extends ConsumerStatefulWidget {
@@ -249,7 +249,7 @@ class _MapPageState extends ConsumerState<MapPage>
 
   /// Builds the cached OpenStreetMap [TileLayer] for the weather map.
   Widget _buildMapTileLayer(CacheStore cacheStore) =>
-      buildRainMapTileLayer(cacheStore: cacheStore);
+      buildWeatherMapTileLayer(cacheStore: cacheStore);
 
   /// Builds the sliding [WeatherCardTile] overlay for the selected marker.
   Widget _buildSavedPlace() {
@@ -419,7 +419,7 @@ class _MapPageState extends ConsumerState<MapPage>
                   ),
                 ),
                 children: [
-                  buildRainMapDarkModeFilter(
+                  buildWeatherMapDarkModeFilter(
                     isDark: Theme.of(context).brightness == Brightness.dark,
                     child: _buildMapTileLayer(cacheStore),
                   ),

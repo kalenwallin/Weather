@@ -1,6 +1,6 @@
-import 'package:rain/domain/entities/city_search_result.dart';
-import 'package:rain/domain/entities/geo_place.dart';
-import 'package:rain/domain/entities/weather_forecast.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
+import 'package:weather/domain/entities/geo_place.dart';
+import 'package:weather/domain/entities/weather_forecast.dart';
 
 /// Port for main-weather fetch and local cache persistence.
 abstract class WeatherRepository {

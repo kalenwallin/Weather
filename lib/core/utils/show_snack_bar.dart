@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/utils/snackbar_overlay.dart';
+import 'package:weather/core/utils/snackbar_overlay.dart';
 
 /// Shows a global toast via [SnackBarOverlay].
 void showSnackBar(

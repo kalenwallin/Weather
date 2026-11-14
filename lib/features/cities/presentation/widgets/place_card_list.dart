@@ -1,14 +1,14 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/widgets/confirmation_dialog.dart';
-import 'package:rain/features/cities/domain/weather_card_validator.dart';
-import 'package:rain/features/cities/presentation/view/place_info.dart';
-import 'package:rain/features/cities/presentation/widgets/weather_card_tile.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/widgets/confirmation_dialog.dart';
+import 'package:weather/features/cities/domain/weather_card_validator.dart';
+import 'package:weather/features/cities/presentation/view/place_info.dart';
+import 'package:weather/features/cities/presentation/widgets/weather_card_tile.dart';
 import 'package:reorderables/reorderables.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Reorderable list of saved city cards with swipe-to-delete.
 class PlaceCardList extends ConsumerWidget {

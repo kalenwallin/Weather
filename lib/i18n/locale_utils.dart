@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/i18n/strings.g.dart';
-import 'package:rain/core/i18n/locale_format_helper.dart';
+import 'package:weather/i18n/strings.g.dart';
+import 'package:weather/core/i18n/locale_format_helper.dart';
 
 /// Parses a stored language code (e.g. `en_US`) into an [AppLocale].
 AppLocale appLocaleFromLanguageCode(String? language) {

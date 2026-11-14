@@ -1,7 +1,7 @@
-package com.yoshi.rain.widget
+package com.yoshi.weather.widget
 
 import androidx.annotation.ColorInt
-import com.yoshi.rain.R
+import com.yoshi.weather.R
 import androidx.core.content.ContextCompat
 import android.content.Context
 

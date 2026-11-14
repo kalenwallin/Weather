@@ -1,18 +1,18 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/utils/place_form_helpers.dart';
-import 'package:rain/core/widgets/place_form_fields.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/widgets/confirmation_dialog.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action_editing_controller.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action_form_sections.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/utils/place_form_helpers.dart';
+import 'package:weather/core/widgets/place_form_fields.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/widgets/confirmation_dialog.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action_editing_controller.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action_form_sections.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Bottom sheet for creating or editing a saved city card.
 class PlaceAction extends ConsumerStatefulWidget {

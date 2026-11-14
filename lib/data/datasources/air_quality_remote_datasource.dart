@@ -1,10 +1,10 @@
 import 'dart:isolate';
 
 import 'package:dio/dio.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/utils/http_request.dart';
-import 'package:rain/data/datasources/json_isolate_parsers.dart';
-import 'package:rain/data/models/air_quality_api.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/utils/http_request.dart';
+import 'package:weather/data/datasources/json_isolate_parsers.dart';
+import 'package:weather/data/models/air_quality_api.dart';
 
 /// Fetches air quality forecast data from the Open-Meteo Air Quality API.
 class AirQualityRemoteDatasource {

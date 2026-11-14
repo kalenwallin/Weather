@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/notification_weekdays.dart';
+import 'package:weather/core/services/notification_weekdays.dart';
 
 import '../../helpers/test_helpers.dart';
 

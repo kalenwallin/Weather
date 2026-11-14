@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/features/settings/application/package_licenses.dart';
+import 'package:weather/features/settings/application/package_licenses.dart';
 
 void main() {
   test('licenseParagraphsText extracts paragraph text', () {

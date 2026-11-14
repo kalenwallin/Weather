@@ -1,21 +1,21 @@
 import 'dart:io';
 
-import 'package:rain/core/bootstrap/background_bootstrap.dart';
-import 'package:rain/core/settings/clock_skew_persistence.dart';
+import 'package:weather/core/bootstrap/background_bootstrap.dart';
+import 'package:weather/core/settings/clock_skew_persistence.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/database/isar_schemas.dart';
-import 'package:rain/core/services/background_refresh_log.dart';
-import 'package:rain/core/services/notification_isar_bridge.dart';
-import 'package:rain/core/utils/error_sanitizer.dart';
-import 'package:rain/i18n/locale_utils.dart';
-import 'package:rain/i18n/strings.g.dart';
-import 'package:rain/data/datasources/weather_local_datasource.dart';
-import 'package:rain/data/datasources/weather_remote_datasource.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/data/repositories/weather_repository.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/database/isar_schemas.dart';
+import 'package:weather/core/services/background_refresh_log.dart';
+import 'package:weather/core/services/notification_isar_bridge.dart';
+import 'package:weather/core/utils/error_sanitizer.dart';
+import 'package:weather/i18n/locale_utils.dart';
+import 'package:weather/i18n/strings.g.dart';
+import 'package:weather/data/datasources/weather_local_datasource.dart';
+import 'package:weather/data/datasources/weather_remote_datasource.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/data/repositories/weather_repository.dart';
 import 'package:workmanager/workmanager.dart';
 
 const _widgetUpdateTaskName = 'widgetUpdate';
@@ -120,7 +120,7 @@ Future<bool> runWidgetBackgroundRefresh(
 
     isar = Isar.getInstance();
     if (isar == null || !isar.isOpen) {
-      isar = await openRainIsar();
+      isar = await openWeatherIsar();
       ownsIsar = true;
     }
 

@@ -4,20 +4,20 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/config/widget_color_sections.dart';
-import 'package:rain/core/config/widget_registry.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/services/background_platform_service.dart';
-import 'package:rain/core/services/background_refresh_log.dart';
-import 'package:rain/core/utils/color_converter.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_secondary_app_bar.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_tile.dart';
-import 'package:rain/features/settings/presentation/widgets/widget_color_picker_dialog.dart';
-import 'package:rain/features/settings/presentation/widgets/widget_color_picker_ui.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/config/widget_color_sections.dart';
+import 'package:weather/core/config/widget_registry.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/services/background_platform_service.dart';
+import 'package:weather/core/services/background_refresh_log.dart';
+import 'package:weather/core/utils/color_converter.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_secondary_app_bar.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_tile.dart';
+import 'package:weather/features/settings/presentation/widgets/widget_color_picker_dialog.dart';
+import 'package:weather/features/settings/presentation/widgets/widget_color_picker_ui.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Android home-screen widget configuration and pin-to-home actions.
 class WidgetSettingsPage extends ConsumerStatefulWidget {
@@ -195,7 +195,7 @@ class _WidgetSettingsPageState extends ConsumerState<WidgetSettingsPage> {
               title: 'widget',
               icon: IconsaxPlusBold.setting_3,
               children: [
-                ...rainWidgetRegistry.map(
+                ...weatherWidgetRegistry.map(
                   (widget) => SettingsTile(
                     leading: const Icon(IconsaxPlusLinear.add_square),
                     title: widget.labelKey.tr,

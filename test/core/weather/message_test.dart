@@ -1,7 +1,7 @@
 import '../../helpers/test_helpers.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/message.dart';
+import 'package:weather/core/weather/message.dart';
 
 void main() {
   setUpAll(() async {

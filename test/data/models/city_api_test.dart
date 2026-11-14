@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/data/models/city_api.dart';
+import 'package:weather/data/models/city_api.dart';
 
 void main() {
   group('CityApi.fromJson', () {

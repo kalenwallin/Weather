@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
-import 'package:rain/core/theme/app_font.dart';
-import 'package:rain/core/theme/color_palette.dart';
-import 'package:rain/core/constants/app_constants.dart';
+import 'package:weather/core/theme/app_font.dart';
+import 'package:weather/core/theme/color_palette.dart';
+import 'package:weather/core/constants/app_constants.dart';
 
 final ThemeData baseLight = ThemeData.light(useMaterial3: true);
 final ThemeData baseDark = ThemeData.dark(useMaterial3: true);

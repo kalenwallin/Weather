@@ -2,12 +2,12 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_hsvcolor_picker/flutter_hsvcolor_picker.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/utils/color_converter.dart';
-import 'package:rain/core/widgets/checkerboard_painter.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_card_shape.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/utils/color_converter.dart';
+import 'package:weather/core/widgets/checkerboard_painter.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_card_shape.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Bordered panel that groups widget color controls inside settings dialogs.
 class WidgetColorPickerPanel extends StatelessWidget {

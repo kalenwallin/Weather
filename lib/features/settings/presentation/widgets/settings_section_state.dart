@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_save_actions.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_save_actions.dart';
 
 /// Base [ConsumerState] for settings sections with shared [actions] helpers.
 abstract class SettingsSectionConsumerState<T extends ConsumerStatefulWidget>

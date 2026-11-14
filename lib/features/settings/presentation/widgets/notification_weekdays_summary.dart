@@ -1,5 +1,5 @@
-import 'package:rain/core/services/notification_weekdays.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/services/notification_weekdays.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Settings subtitle for [Settings.notificationWeekdaysMask].
 String formatNotificationWeekdaysSummary({

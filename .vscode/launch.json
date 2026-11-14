@@ -2,13 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Rain (gms)",
+      "name": "Weather (gms)",
       "request": "launch",
       "type": "dart",
       "args": ["--flavor", "gms"]
     },
     {
-      "name": "Rain (floss)",
+      "name": "Weather (floss)",
       "request": "launch",
       "type": "dart",
       "args": ["--flavor", "floss"]

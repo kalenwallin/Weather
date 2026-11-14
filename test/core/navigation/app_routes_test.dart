@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/navigation/app_routes.dart';
+import 'package:weather/core/navigation/app_routes.dart';
 
 void main() {
   group('AppRoutes', () {

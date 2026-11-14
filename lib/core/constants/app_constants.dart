@@ -2,6 +2,9 @@
 class AppConstants {
   AppConstants._();
 
+  /// App display name (not translated).
+  static const String appName = 'Weather';
+
   // --- Animation ---
 
   static const Duration animationDuration = Duration(milliseconds: 300);
@@ -157,13 +160,13 @@ class AppConstants {
       'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
   static const String openStreetMapCopyrightUrl =
       'https://openstreetmap.org/copyright';
-  static const String mapUserAgentPackageName = 'com.yoshi.rain.personal';
+  static const String mapUserAgentPackageName = 'com.yoshi.weather.personal';
 
   /// Nominatim reverse geocoding (OpenStreetMap); requires a descriptive User-Agent.
   static const String nominatimReverseUrl =
       'https://nominatim.openstreetmap.org/reverse';
   static const String nominatimUserAgent =
-      'Rain Personal (com.yoshi.rain.personal; https://github.com/kalenwallin/Rain)';
+      'Weather (com.yoshi.weather.personal; https://github.com/kalenwallin/Weather)';
 
   // --- Map dark-mode color matrix ---
 

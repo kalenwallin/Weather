@@ -2,19 +2,19 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:rain/core/bootstrap/background_bootstrap.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/forecast_notification_time.dart';
-import 'package:rain/core/services/notification_content_builder.dart';
-import 'package:rain/core/services/notification_reschedule_guard.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/weather/weather_cache_validator.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
+import 'package:weather/core/bootstrap/background_bootstrap.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/forecast_notification_time.dart';
+import 'package:weather/core/services/notification_content_builder.dart';
+import 'package:weather/core/services/notification_reschedule_guard.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/weather/weather_cache_validator.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
 import 'package:timezone/timezone.dart' as tz;
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
-export 'package:rain/core/services/notification_content_builder.dart';
+export 'package:weather/core/services/notification_content_builder.dart';
 
 class NotificationService {
   NotificationService(this._assets);
@@ -116,20 +116,20 @@ class NotificationService {
     return olderActiveForecastIdsToCancel(activeForecastIds);
   }
 
-  static const forecastChannelId = 'RainForecastSilent';
-  static const forecastChannelName = 'Rain Forecast';
+  static const forecastChannelId = 'WeatherForecastSilent';
+  static const forecastChannelName = 'Weather Forecast';
   static const forecastChannelDescription =
       'Weather forecast alerts without sound';
 
   /// Pre-schema-v2 sound channel; deleted on migration (Android locks channel sound).
   static const legacyForecastSoundChannelId = 'RainForecastSound';
 
-  static const forecastSoundChannelId = 'RainForecastSoundV2';
-  static const forecastSoundChannelName = 'Rain Forecast (sound)';
+  static const forecastSoundChannelId = 'WeatherForecastSoundV2';
+  static const forecastSoundChannelName = 'Weather Forecast (sound)';
   static const forecastSoundChannelDescription =
       'Weather forecast alerts with sound';
-  static const persistentChannelId = 'RainPersistent';
-  static const persistentChannelName = 'Rain Current';
+  static const persistentChannelId = 'WeatherPersistent';
+  static const persistentChannelName = 'Weather Current';
   static const persistentChannelDescription =
       'Current weather in the status bar';
 

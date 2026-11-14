@@ -1,13 +1,13 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/widgets/collapsible_section.dart';
-import 'package:rain/core/weather/desc_metrics_catalog.dart';
-import 'package:rain/core/weather/message.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/features/weather/presentation/widgets/desc/desc.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/widgets/collapsible_section.dart';
+import 'package:weather/core/weather/desc_metrics_catalog.dart';
+import 'package:weather/core/weather/message.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/features/weather/presentation/widgets/desc/desc.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Expandable grid of hourly or daily weather variables.
 class DescContainer extends ConsumerWidget {

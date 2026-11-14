@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/navigation/route_transitions.dart';
+import 'package:weather/core/navigation/route_transitions.dart';
 
 void main() {
   testWidgets('slideRoute builds SlideTransition', (tester) async {

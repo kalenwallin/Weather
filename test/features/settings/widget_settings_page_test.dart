@@ -3,9 +3,9 @@ import '../../helpers/test_bootstrap.dart';
 import '../../helpers/widget_test_harness.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/background_refresh_log.dart';
-import 'package:rain/features/settings/presentation/view/widget_settings_page.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/services/background_refresh_log.dart';
+import 'package:weather/features/settings/presentation/view/widget_settings_page.dart';
+import 'package:weather/i18n/tr.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -26,7 +26,7 @@ void main() {
   testWidgets('WidgetSettingsPage shows background refresh diagnostics', (
     tester,
   ) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const WidgetSettingsPage(),
       bootstrap: ctx.bootstrap,

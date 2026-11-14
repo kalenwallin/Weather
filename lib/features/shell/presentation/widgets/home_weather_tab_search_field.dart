@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/widgets/city_search_field.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/widgets/city_search_field.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Inline city search field shown in the weather tab app bar.
 class HomeWeatherTabSearchField extends ConsumerWidget {

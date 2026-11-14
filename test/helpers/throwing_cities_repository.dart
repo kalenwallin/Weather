@@ -1,5 +1,5 @@
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/data/repositories/cities_repository.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/data/repositories/cities_repository.dart';
 
 /// Test double that can simulate [getAllSorted] failures.
 class ThrowingCitiesRepository extends IsarCitiesRepository {

@@ -1,10 +1,10 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/data/datasources/weather_remote_datasource.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/saved_place.dart';
-import 'package:rain/domain/repositories/cities_repository.dart';
-import 'package:rain/features/cities/domain/weather_card_validator.dart';
+import 'package:weather/data/datasources/weather_remote_datasource.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/saved_place.dart';
+import 'package:weather/domain/repositories/cities_repository.dart';
+import 'package:weather/features/cities/domain/weather_card_validator.dart';
 
 /// Isar + remote implementation of [CitiesRepository].
 class IsarCitiesRepository implements CitiesRepository {

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:rain/core/utils/location_label.dart';
+import 'package:weather/core/utils/location_label.dart';
 
 /// Wraps Geolocator and geocoding — the only layer that talks to platform GPS APIs.
 ///

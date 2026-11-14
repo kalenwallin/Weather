@@ -1,26 +1,27 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/bootstrap/app_bootstrap.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/theme/material_ui_dynamic_color_builder.dart';
-import 'package:rain/core/theme/theme.dart';
-import 'package:rain/core/utils/device_info.dart';
-import 'package:rain/core/utils/snackbar_overlay.dart';
+import 'package:weather/core/bootstrap/app_bootstrap.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/theme/material_ui_dynamic_color_builder.dart';
+import 'package:weather/core/theme/theme.dart';
+import 'package:weather/core/utils/device_info.dart';
+import 'package:weather/core/utils/snackbar_overlay.dart';
 
 /// Root widget: routing, theming, localization, and global overlays.
-class RainApp extends ConsumerStatefulWidget {
-  const RainApp({super.key, required this.bootstrap});
+class WeatherApp extends ConsumerStatefulWidget {
+  const WeatherApp({super.key, required this.bootstrap});
 
   final AppBootstrap bootstrap;
 
   @override
-  ConsumerState<RainApp> createState() => _RainAppState();
+  ConsumerState<WeatherApp> createState() => _WeatherAppState();
 }
 
-class _RainAppState extends ConsumerState<RainApp> {
+class _WeatherAppState extends ConsumerState<WeatherApp> {
   @override
   void initState() {
     super.initState();
@@ -64,7 +65,7 @@ class _RainAppState extends ConsumerState<RainApp> {
               supportedLocales: AppLocaleUtils.supportedLocales,
               localizationsDelegates: GlobalMaterialLocalizations.delegates,
               debugShowCheckedModeBanner: false,
-              title: 'rain'.tr,
+              title: AppConstants.appName,
               builder: (context, child) {
                 final content = Stack(
                   children: [?child, const SnackBarOverlayWidget()],

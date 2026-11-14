@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/http_date_parser.dart';
+import 'package:weather/core/utils/http_date_parser.dart';
 
 void main() {
   test('parseHttpDate reads RFC 1123 GMT timestamps', () {

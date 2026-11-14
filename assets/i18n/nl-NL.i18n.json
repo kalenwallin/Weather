@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Hoogste vervuilingsniveau",
   "aqiHelpAdviceLabel": "Aanbeveling",
   "aqiHelpSource": "Bron: Open-Meteo Air Quality API — concentraties op grondniveau (~10 m), raster ~11 km.",
-  "widgetBatteryHint": "Schakel voor betrouwbare widget-updates batterijoptimalisatie voor Rain uit in de app-instellingen",
+  "widgetBatteryHint": "Schakel voor betrouwbare widget-updates batterijoptimalisatie voor Weather uit in de app-instellingen",
   "persistentNotification": "Vaste melding",
   "lastUpdated": "Bijgewerkt",
   "appFont": "Lettertype",

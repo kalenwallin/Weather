@@ -1,7 +1,7 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/bootstrap/background_bootstrap.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/core/bootstrap/background_bootstrap.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/data/models/db.dart';
 
 /// Deletes legacy Android forecast channels and bumps [Settings.notificationChannelVersion].
 ///

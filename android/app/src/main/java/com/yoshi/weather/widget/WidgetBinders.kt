@@ -1,4 +1,4 @@
-package com.yoshi.rain.widget
+package com.yoshi.weather.widget
 
 import android.app.PendingIntent
 import android.content.Context
@@ -6,8 +6,8 @@ import android.content.Intent
 import android.os.Build
 import android.widget.RemoteViews
 import androidx.annotation.IdRes
-import com.yoshi.rain.MainActivity
-import com.yoshi.rain.R
+import com.yoshi.weather.MainActivity
+import com.yoshi.weather.R
 import kotlin.math.roundToInt
 
 /**

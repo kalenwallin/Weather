@@ -1,7 +1,7 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/weather/weather_cache_validator.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/weather/weather_cache_validator.dart';
+import 'package:weather/data/models/db.dart';
 
 /// Re-saves weather caches when the Isar schema changes (Isar migration recipe).
 ///

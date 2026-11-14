@@ -2,8 +2,8 @@ import '../../helpers/fixtures.dart';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/data/datasources/air_quality_remote_datasource.dart';
-import 'package:rain/data/datasources/weather_remote_datasource.dart';
+import 'package:weather/data/datasources/air_quality_remote_datasource.dart';
+import 'package:weather/data/datasources/weather_remote_datasource.dart';
 
 void main() {
   group('WeatherRemoteDatasource', () {

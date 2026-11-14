@@ -1,11 +1,11 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/core/services/asset_cache_service.dart';
-import 'package:rain/core/services/notification_service.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/app_settings.dart';
-import 'package:rain/domain/entities/weather_forecast.dart';
+import 'package:weather/core/services/asset_cache_service.dart';
+import 'package:weather/core/services/notification_service.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/app_settings.dart';
+import 'package:weather/domain/entities/weather_forecast.dart';
 
 typedef NotificationIsarPayload = ({
   AppSettings settings,

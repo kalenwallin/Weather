@@ -1,4 +1,4 @@
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Localized severity labels and long-press help text for weather metrics.
 class Message {

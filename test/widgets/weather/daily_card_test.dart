@@ -3,7 +3,7 @@ import '../../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -13,7 +13,7 @@ void main() {
   });
 
   testWidgets('DailyCard renders forecast summary row', (tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       DailyCard(
         timeDaily: DateTime(2026, 6, 5),
@@ -32,7 +32,7 @@ void main() {
   testWidgets('DailyCard renders empty container without weather code', (
     tester,
   ) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       DailyCard(
         timeDaily: DateTime(2026, 6, 5),

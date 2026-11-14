@@ -1,10 +1,10 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/i18n/tr.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_card_shape.dart';
-import 'package:rain/core/di/provider_refs.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_card_shape.dart';
+import 'package:weather/core/di/provider_refs.dart';
 
 /// Grouped settings rows with a section title and card container.
 class SettingsSection extends ConsumerWidget {

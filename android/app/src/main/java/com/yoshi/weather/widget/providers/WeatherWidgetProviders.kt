@@ -1,23 +1,23 @@
-package com.yoshi.rain.widget.providers
+package com.yoshi.weather.widget.providers
 
 import android.content.Context
 import android.widget.RemoteViews
-import com.yoshi.rain.widget.RainHomeWidgetProvider
-import com.yoshi.rain.widget.WidgetBinders
-import com.yoshi.rain.widget.WidgetBundle
+import com.yoshi.weather.widget.WeatherHomeWidgetProvider
+import com.yoshi.weather.widget.WidgetBinders
+import com.yoshi.weather.widget.WidgetBundle
 
-/** Thin [RainHomeWidgetProvider] subclasses mapped to [WidgetBinders]. */
-class WidgetMaterialYouForecast1x1Provider : RainHomeWidgetProvider() {
+/** Thin [WeatherHomeWidgetProvider] subclasses mapped to [WidgetBinders]. */
+class WidgetMaterialYouForecast1x1Provider : WeatherHomeWidgetProvider() {
     override fun buildViews(context: Context, bundle: WidgetBundle): RemoteViews =
         WidgetBinders.materialYouForecast1x1(context, bundle)
 }
 
-class WidgetMaterialYouCurrentProvider : RainHomeWidgetProvider() {
+class WidgetMaterialYouCurrentProvider : WeatherHomeWidgetProvider() {
     override fun buildViews(context: Context, bundle: WidgetBundle): RemoteViews =
         WidgetBinders.materialYouCurrent(context, bundle)
 }
 
-class WidgetClockDayHorizontalProvider : RainHomeWidgetProvider() {
+class WidgetClockDayHorizontalProvider : WeatherHomeWidgetProvider() {
     override fun buildViews(context: Context, bundle: WidgetBundle): RemoteViews =
         WidgetBinders.clockHorizontal(context, bundle)
 }

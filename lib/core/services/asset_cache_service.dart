@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
 
 /// Copies bundled weather icons to disk for widgets and notifications.
 class AssetCacheService {

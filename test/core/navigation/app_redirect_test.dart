@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 AppSettings _settings({bool onboard = true}) => AppSettings(onboard: onboard);
 

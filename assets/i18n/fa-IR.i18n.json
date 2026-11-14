@@ -198,7 +198,7 @@
   "aqiHelpDominant": "بالاترین سطح آلاینده",
   "aqiHelpAdviceLabel": "توصیه",
   "aqiHelpSource": "منبع: Open-Meteo Air Quality API — غلظت در سطح زمین (~۱۰ م)، شبکهٔ ~۱۱ کیلومتر.",
-  "widgetBatteryHint": "برای به‌روزرسانی پایدار ویجت، بهینه‌سازی باتری Rain را در تنظیمات برنامه غیرفعال کنید",
+  "widgetBatteryHint": "برای به‌روزرسانی پایدار ویجت، بهینه‌سازی باتری Weather را در تنظیمات برنامه غیرفعال کنید",
   "persistentNotification": "اعلان دائمی",
   "lastUpdated": "به‌روزرسانی",
   "appFont": "قلم",

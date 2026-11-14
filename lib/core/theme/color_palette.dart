@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/config/settings_catalog.dart';
+import 'package:weather/core/config/settings_catalog.dart';
 
 /// One row in the color palette picker ([id] is stored in Isar settings).
 class _PaletteEntry {

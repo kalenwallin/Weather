@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/utils/place_form_validators.dart';
-import 'package:rain/core/widgets/text_form.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/utils/place_form_validators.dart';
+import 'package:weather/core/widgets/text_form.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Trims [controller] and collapses repeated spaces (geolocation form helper).
 void trimPlaceController(TextEditingController controller) {

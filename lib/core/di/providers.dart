@@ -5,11 +5,11 @@
 /// notifier exports.
 library;
 
-export 'package:rain/core/di/city_clock_provider.dart';
-export 'package:rain/core/di/provider_refs.dart';
-export 'package:rain/core/services/widget_settings_service.dart'
+export 'package:weather/core/di/city_clock_provider.dart';
+export 'package:weather/core/di/provider_refs.dart';
+export 'package:weather/core/services/widget_settings_service.dart'
     show WidgetSettingsService;
-export 'package:rain/core/settings/app_settings_notifier.dart';
-export 'package:rain/core/theme/theme_mode_notifier.dart';
-export 'package:rain/features/cities/application/cities_notifier.dart';
-export 'package:rain/features/weather/application/main_weather_notifier.dart';
+export 'package:weather/core/settings/app_settings_notifier.dart';
+export 'package:weather/core/theme/theme_mode_notifier.dart';
+export 'package:weather/features/cities/application/cities_notifier.dart';
+export 'package:weather/features/weather/application/main_weather_notifier.dart';

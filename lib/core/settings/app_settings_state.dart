@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/domain/entities/app_settings.dart';
-import 'package:rain/i18n/locale_utils.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/domain/entities/app_settings.dart';
+import 'package:weather/i18n/locale_utils.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 /// In-memory snapshot of user-facing app settings for UI and services.
 class AppSettingsState {

@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
-import 'package:rain/core/utils/snackbar_overlay.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
+import 'package:weather/core/utils/snackbar_overlay.dart';
 
 void main() {
   tearDown(() {

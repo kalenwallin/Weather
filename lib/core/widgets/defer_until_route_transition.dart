@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/constants/app_constants.dart';
+import 'package:weather/core/constants/app_constants.dart';
 
 /// Shows [placeholder] until the enclosing route's push animation finishes.
 ///

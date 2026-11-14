@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:rain/domain/entities/geo_place.dart';
-import 'package:rain/domain/entities/weather_forecast.dart';
+import 'package:weather/domain/entities/geo_place.dart';
+import 'package:weather/domain/entities/weather_forecast.dart';
 
 part 'saved_place.freezed.dart';
 

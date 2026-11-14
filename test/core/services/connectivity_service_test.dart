@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/connectivity_service.dart';
+import 'package:weather/core/services/connectivity_service.dart';
 
 void main() {
   group('ConnectivityService', () {

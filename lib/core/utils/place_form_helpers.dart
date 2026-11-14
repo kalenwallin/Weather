@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/domain/entities/city_search_result.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
 
 /// Fills place form controllers from a [CitySearchResult] selection.
 void fillPlaceControllers({

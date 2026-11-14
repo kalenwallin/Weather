@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:gap/gap.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/weather/aqi_helper.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/weather/aqi_helper.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Single pollutant row with label, concentration, and a colored progress bar.
 class AqiPollutantBar extends StatelessWidget {

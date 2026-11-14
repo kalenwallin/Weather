@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Applies [update] to domain settings and persists via the settings repository.
 Future<void> persistSettings(

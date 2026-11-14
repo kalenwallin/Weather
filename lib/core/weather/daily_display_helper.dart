@@ -1,10 +1,10 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/i18n/locale_format_helper.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/weather/status_weather.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card_info.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/i18n/locale_format_helper.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/weather/status_weather.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card_info.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Resolves day/hour context for preview rows and navigation into [DailyCardInfo].
 class DailyForecastAnchor {

@@ -1,11 +1,11 @@
 import '../../helpers/test_helpers.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/desc_metrics_catalog.dart';
-import 'package:rain/core/weather/message.dart';
-import 'package:rain/core/weather/status_data.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
+import 'package:weather/core/weather/desc_metrics_catalog.dart';
+import 'package:weather/core/weather/message.dart';
+import 'package:weather/core/weather/status_data.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
 
 void main() {
   setUpAll(() async => initTestEnvironment());

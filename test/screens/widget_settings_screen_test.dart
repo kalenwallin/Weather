@@ -4,12 +4,12 @@ import '../helpers/widget_test_harness.dart';
 
 import 'package:flutter_hsvcolor_picker/flutter_hsvcolor_picker.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/config/widget_registry.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/features/settings/presentation/view/widget_settings_page.dart';
-import 'package:rain/features/settings/presentation/widgets/app_widget_color_picker.dart';
-import 'package:rain/features/settings/presentation/widgets/settings_section.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/config/widget_registry.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/features/settings/presentation/view/widget_settings_page.dart';
+import 'package:weather/features/settings/presentation/widgets/app_widget_color_picker.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_section.dart';
+import 'package:weather/i18n/tr.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -21,7 +21,7 @@ void main() {
   });
 
   Future<void> pumpPage(WidgetTester tester) async {
-    await pumpRainWidget(
+    await pumpWeatherWidget(
       tester,
       const WidgetSettingsPage(),
       bootstrap: ctx.bootstrap,
@@ -37,7 +37,7 @@ void main() {
       expect(find.byType(SettingsSection), findsNWidgets(4));
       expect(find.text('Light'), findsOneWidget);
       expect(find.text('Dark'), findsOneWidget);
-      for (final widget in rainWidgetRegistry) {
+      for (final widget in weatherWidgetRegistry) {
         expect(find.text(widget.labelKey.tr), findsOneWidget);
       }
       expect(find.text('Battery usage'), findsOneWidget);

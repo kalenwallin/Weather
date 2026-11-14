@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/device_info.dart';
+import 'package:weather/core/utils/device_info.dart';
 
 void main() {
   group('DeviceFeature', () {

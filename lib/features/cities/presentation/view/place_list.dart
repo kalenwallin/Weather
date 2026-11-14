@@ -1,14 +1,14 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/weather/cache_display_helper.dart';
-import 'package:rain/core/widgets/async_state_views.dart';
-import 'package:rain/core/widgets/text_form.dart';
-import 'package:rain/features/cities/domain/weather_card_validator.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/features/cities/presentation/widgets/place_card_list.dart';
-import 'package:rain/features/cities/presentation/widgets/place_card_shimmer.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/weather/cache_display_helper.dart';
+import 'package:weather/core/widgets/async_state_views.dart';
+import 'package:weather/core/widgets/text_form.dart';
+import 'package:weather/features/cities/domain/weather_card_validator.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/features/cities/presentation/widgets/place_card_list.dart';
+import 'package:weather/features/cities/presentation/widgets/place_card_shimmer.dart';
 
 /// Searchable, refreshable list of saved city weather cards.
 class PlaceList extends ConsumerStatefulWidget {

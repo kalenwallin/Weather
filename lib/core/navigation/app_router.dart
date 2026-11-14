@@ -1,14 +1,14 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/core/navigation/route_transitions.dart';
-import 'package:rain/core/utils/location_label.dart';
-import 'package:rain/features/geolocation/presentation/geolocation_screen.dart';
-import 'package:rain/features/onboarding/presentation/onboarding_screen.dart';
-import 'package:rain/features/shell/presentation/home_screen.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/core/navigation/route_transitions.dart';
+import 'package:weather/core/utils/location_label.dart';
+import 'package:weather/features/geolocation/presentation/geolocation_screen.dart';
+import 'package:weather/features/onboarding/presentation/onboarding_screen.dart';
+import 'package:weather/features/shell/presentation/home_screen.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Forces [appRouterProvider] to re-evaluate redirects from a [WidgetRef].
 void refreshAppRouter(WidgetRef ref) {

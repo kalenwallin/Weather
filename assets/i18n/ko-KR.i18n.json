@@ -198,7 +198,7 @@
   "aqiHelpDominant": "가장 높은 오염물질 수준",
   "aqiHelpAdviceLabel": "권장 사항",
   "aqiHelpSource": "출처: Open-Meteo Air Quality API — 지상 농도(~10 m), ~11 km 격자.",
-  "widgetBatteryHint": "위젯을 안정적으로 업데이트하려면 앱 설정에서 Rain의 배터리 최적화를 끄세요",
+  "widgetBatteryHint": "위젯을 안정적으로 업데이트하려면 앱 설정에서 Weather의 배터리 최적화를 끄세요",
   "persistentNotification": "상시 알림",
   "lastUpdated": "업데이트",
   "appFont": "글꼴",

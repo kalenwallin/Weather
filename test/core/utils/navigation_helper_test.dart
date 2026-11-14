@@ -4,8 +4,8 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -42,7 +42,7 @@ void main() {
         ],
       );
 
-      await pumpRainRouter(tester, bootstrap: ctx.bootstrap, router: router);
+      await pumpWeatherRouter(tester, bootstrap: ctx.bootstrap, router: router);
 
       await tester.tap(find.text('Open'));
       await tester.pump();
@@ -58,7 +58,7 @@ void main() {
     });
 
     testWidgets('showAppDialog presents dialog content', (tester) async {
-      await pumpRainRouter(
+      await pumpWeatherRouter(
         tester,
         bootstrap: ctx.bootstrap,
         router: GoRouter(
@@ -118,7 +118,7 @@ void main() {
         ],
       );
 
-      await pumpRainRouter(tester, bootstrap: ctx.bootstrap, router: router);
+      await pumpWeatherRouter(tester, bootstrap: ctx.bootstrap, router: router);
 
       await tester.tap(find.text('Go details'));
       await tester.pumpAndSettle();
@@ -133,7 +133,7 @@ void main() {
     });
 
     testWidgets('back closes showAppDialog without GoError', (tester) async {
-      await pumpRainRouter(
+      await pumpWeatherRouter(
         tester,
         bootstrap: ctx.bootstrap,
         router: GoRouter(

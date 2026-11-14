@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/config/setting_enum_pickers.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/settings/settings_persistence.dart';
+import 'package:weather/core/config/setting_enum_pickers.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/settings/settings_persistence.dart';
 import 'package:restart_app/restart_app.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Shared save and notification side-effect helpers for settings sections.
 class SettingsSaveActions {

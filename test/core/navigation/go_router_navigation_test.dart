@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/navigation/app_router.dart';
+import 'package:weather/core/navigation/app_router.dart';
 
 void main() {
   group('GoRouterNavigation', () {

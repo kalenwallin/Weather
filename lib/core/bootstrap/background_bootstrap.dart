@@ -4,8 +4,8 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:rain/core/bootstrap/timezone_bootstrap.dart';
-import 'package:rain/core/services/notification_service.dart';
+import 'package:weather/core/bootstrap/timezone_bootstrap.dart';
+import 'package:weather/core/services/notification_service.dart';
 import 'package:timezone/timezone.dart' as tz;
 
 /// Shared local notifications plugin for main and background isolates.
@@ -54,7 +54,7 @@ Future<void> initializeNotificationsPlugin() async {
     const initializationSettings = InitializationSettings(
       android: AndroidInitializationSettings('ic_notification'),
       iOS: DarwinInitializationSettings(),
-      linux: LinuxInitializationSettings(defaultActionName: 'Rain'),
+      linux: LinuxInitializationSettings(defaultActionName: 'Weather'),
     );
     await flutterLocalNotificationsPlugin.initialize(
       settings: initializationSettings,
@@ -152,7 +152,7 @@ void logBackgroundError(
   StackTrace? stackTrace,
 ]) {
   if (!kDebugMode) return;
-  debugPrint('RainBackground[$context]: $error');
+  debugPrint('WeatherBackground[$context]: $error');
   if (stackTrace != null) {
     debugPrint(stackTrace.toString());
   }

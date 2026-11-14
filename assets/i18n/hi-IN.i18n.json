@@ -198,7 +198,7 @@
   "aqiHelpDominant": "सर्वोच्च प्रदूषक स्तर",
   "aqiHelpAdviceLabel": "सिफ़ारिश",
   "aqiHelpSource": "स्रोत: Open-Meteo Air Quality API — ज़मीन स्तर की सांद्रता (~10 मी), ~11 किमी ग्रिड।",
-  "widgetBatteryHint": "विश्वसनीय विजेट अपडेट के लिए ऐप सेटिंग्स में Rain की बैटरी अनुकूलन बंद करें",
+  "widgetBatteryHint": "विश्वसनीय विजेट अपडेट के लिए ऐप सेटिंग्स में Weather की बैटरी अनुकूलन बंद करें",
   "persistentNotification": "स्थायी सूचना",
   "lastUpdated": "अपडेट किया गया",
   "appFont": "फ़ॉन्ट",

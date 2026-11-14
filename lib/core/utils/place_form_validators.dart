@@ -1,5 +1,5 @@
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Shared latitude, longitude, city, and district validators for place forms.
 class PlaceFormValidators {

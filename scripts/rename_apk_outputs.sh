@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Rename Flutter APK outputs to match GitHub release asset names:
-#   rain-{abi}-release-{gms|floss}.apk  or  rain-release-{gms|floss}.apk
+#   weather-{abi}-release-{gms|floss}.apk  or  weather-release-{gms|floss}.apk
 set -euo pipefail
 
 variant="${1:-}"
@@ -19,11 +19,11 @@ fi
 apk_dest_name() {
   local base="$1"
   if [[ "$base" == "app-${variant}-release" ]]; then
-    echo "rain-release-${variant}.apk"
+    echo "weather-release-${variant}.apk"
     return 0
   fi
   if [[ "$base" =~ ^app-(.+)-${variant}-release$ ]]; then
-    echo "rain-${BASH_REMATCH[1]}-release-${variant}.apk"
+    echo "weather-${BASH_REMATCH[1]}-release-${variant}.apk"
     return 0
   fi
   return 1

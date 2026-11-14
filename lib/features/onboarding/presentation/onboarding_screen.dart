@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/navigation/app_router.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/settings/settings_persistence.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/utils/responsive_utils.dart';
+import 'package:weather/core/navigation/app_router.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/settings/settings_persistence.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/utils/responsive_utils.dart';
 
 /// One slide in the first-run onboarding carousel.
 class OnboardingData {
@@ -28,7 +28,7 @@ class OnboardingConstants {
   /// Returns localized slides for the onboarding carousel.
   static List<OnboardingData> getData() => [
     OnboardingData(
-      image: '${imagesPath}Rain.png',
+      image: '${imagesPath}Weather.png',
       title: 'name'.tr,
       description: 'description'.tr,
     ),

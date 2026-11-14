@@ -6,13 +6,13 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/features/cities/application/cities_notifier.dart';
-import 'package:rain/features/cities/presentation/view/place_list.dart';
-import 'package:rain/features/cities/presentation/widgets/place_card.dart';
-import 'package:rain/features/cities/presentation/widgets/place_card_list.dart';
-import 'package:rain/features/cities/presentation/widgets/place_card_shimmer.dart';
-import 'package:rain/features/cities/presentation/widgets/weather_card_tile.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/features/cities/application/cities_notifier.dart';
+import 'package:weather/features/cities/presentation/view/place_list.dart';
+import 'package:weather/features/cities/presentation/widgets/place_card.dart';
+import 'package:weather/features/cities/presentation/widgets/place_card_list.dart';
+import 'package:weather/features/cities/presentation/widgets/place_card_shimmer.dart';
+import 'package:weather/features/cities/presentation/widgets/weather_card_tile.dart';
 import 'package:shimmer/shimmer.dart';
 
 void main() {
@@ -37,7 +37,7 @@ void main() {
     testWidgets('renders city and temperature', (tester) async {
       final cardWidget = PlaceCard.tryFromSavedPlace(completeSavedPlace())!;
 
-      await pumpRainWidget(tester, cardWidget, bootstrap: ctx.bootstrap);
+      await pumpWeatherWidget(tester, cardWidget, bootstrap: ctx.bootstrap);
 
       expect(find.textContaining('Moscow'), findsWidgets);
     });
@@ -45,7 +45,7 @@ void main() {
 
   group('WeatherCardTile', () {
     testWidgets('renders complete card tile', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         WeatherCardTile(card: completeSavedPlace()),
         bootstrap: ctx.bootstrap,
@@ -55,7 +55,7 @@ void main() {
     });
 
     testWidgets('renders invalid tile for incomplete card', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const WeatherCardTile(card: SavedPlace(city: 'Broken')),
         bootstrap: ctx.bootstrap,
@@ -71,7 +71,7 @@ void main() {
     ) async {
       final card = completeSavedPlace();
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         SizedBox(
           height: 400,
@@ -122,7 +122,7 @@ void main() {
         district: 'Berlin',
       );
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceCardList(searchCity: 'berlin')),
         bootstrap: ctx.bootstrap,
@@ -139,7 +139,7 @@ void main() {
     });
 
     testWidgets('renders cards from notifier state', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceCardList(searchCity: '')),
         bootstrap: ctx.bootstrap,
@@ -155,7 +155,7 @@ void main() {
 
   group('PlaceList', () {
     testWidgets('shows shimmer placeholders while loading', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -172,7 +172,7 @@ void main() {
     });
 
     testWidgets('keeps cached cards visible while loading', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -190,7 +190,7 @@ void main() {
     testWidgets('shows Add a city when list is empty without loadError', (
       tester,
     ) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -206,7 +206,7 @@ void main() {
     });
 
     testWidgets('shows Retry when loadError with empty cards', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -228,7 +228,7 @@ void main() {
         district: 'Berlin',
       );
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -250,7 +250,7 @@ void main() {
     testWidgets('pull-to-refresh calls notifier refresh', (tester) async {
       final tracking = _RefreshTrackingCitiesNotifier([completeSavedPlace()]);
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -268,7 +268,7 @@ void main() {
     testWidgets('shows error banner when refresh fails with cards', (
       tester,
     ) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,
@@ -283,7 +283,7 @@ void main() {
     });
 
     testWidgets('renders saved cards in list', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: PlaceList()),
         bootstrap: ctx.bootstrap,

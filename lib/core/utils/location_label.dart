@@ -1,4 +1,4 @@
-import 'package:rain/domain/entities/geo_place.dart';
+import 'package:weather/domain/entities/geo_place.dart';
 
 /// True when [value] contains non-whitespace text.
 bool hasNonEmptyLocationText(String? value) =>

@@ -1,5 +1,5 @@
-import 'package:rain/data/models/air_quality_api.dart';
-import 'package:rain/data/models/weather_api.dart';
+import 'package:weather/data/models/air_quality_api.dart';
+import 'package:weather/data/models/weather_api.dart';
 
 /// Top-level parsers for [Isolate.run] / [compute] (must not capture state).
 

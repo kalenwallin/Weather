@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/unit_converter.dart';
-import 'package:rain/core/weather/weather_cache_validator.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/weather/unit_converter.dart';
+import 'package:weather/core/weather/weather_cache_validator.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 void main() {
   WeatherForecast validMainCache() => WeatherForecast(

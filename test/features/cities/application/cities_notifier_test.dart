@@ -8,10 +8,10 @@ import 'dart:async';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/data/repositories/cities_repository.dart';
-import 'package:rain/domain/entities/entities.dart';
-import 'package:rain/features/cities/application/cities_notifier.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/data/repositories/cities_repository.dart';
+import 'package:weather/domain/entities/entities.dart';
+import 'package:weather/features/cities/application/cities_notifier.dart';
 
 void main() {
   group('CitiesNotifier', () {

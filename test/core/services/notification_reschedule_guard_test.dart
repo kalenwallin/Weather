@@ -1,14 +1,14 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/services/notification_reschedule_guard.dart';
+import 'package:weather/core/services/notification_reschedule_guard.dart';
 
 void main() {
   late Directory tempDir;
   late File guardFile;
 
   setUp(() async {
-    tempDir = await Directory.systemTemp.createTemp('rain_guard_test');
+    tempDir = await Directory.systemTemp.createTemp('weather_guard_test');
     guardFile = File('${tempDir.path}/forecast_reschedule_guard.txt');
     setForecastRescheduleGuardTestDependencies(
       guardFileFactory: () async => guardFile,

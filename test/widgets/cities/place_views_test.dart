@@ -6,12 +6,12 @@ import '../../helpers/widget_test_harness.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/domain/entities/entities.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/features/cities/presentation/view/place_info.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_detail_view.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/features/cities/presentation/view/place_info.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_detail_view.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -24,7 +24,7 @@ void main() {
     testWidgets('renders weather detail for saved card', (tester) async {
       final card = weeklySavedPlace().copyWith(id: 1);
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const PlaceInfo(cardId: 1),
         bootstrap: ctx.bootstrap,
@@ -43,7 +43,7 @@ void main() {
     ) async {
       final card = weeklySavedPlace();
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         PlaceInfo(cardId: card.id, card: card),
         bootstrap: ctx.bootstrap,
@@ -64,7 +64,7 @@ void main() {
     testWidgets('shows city not found when card id is missing', (tester) async {
       final card = weeklySavedPlace().copyWith(id: 1);
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const PlaceInfo(cardId: 999),
         bootstrap: ctx.bootstrap,
@@ -80,7 +80,7 @@ void main() {
     testWidgets('shows city not found when list is empty without loadError', (
       tester,
     ) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const PlaceInfo(cardId: 999),
         bootstrap: ctx.bootstrap,
@@ -95,7 +95,7 @@ void main() {
     });
 
     testWidgets('shows load error when loadError is true', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const PlaceInfo(cardId: 999),
         bootstrap: ctx.bootstrap,
@@ -112,7 +112,7 @@ void main() {
     testWidgets('back button closes place info without error', (tester) async {
       final card = weeklySavedPlace().copyWith(id: 1);
 
-      await pumpRainRouter(
+      await pumpWeatherRouter(
         tester,
         bootstrap: ctx.bootstrap,
         router: GoRouter(

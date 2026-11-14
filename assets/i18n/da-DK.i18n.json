@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Højeste forureningsniveau",
   "aqiHelpAdviceLabel": "Anbefaling",
   "aqiHelpSource": "Kilde: Open-Meteo Air Quality API — koncentrationer ved jorden (~10 m), ~11 km gitter.",
-  "widgetBatteryHint": "For pålidelige widget-opdateringer skal du deaktivere batterioptimering for Rain i appindstillingerne",
+  "widgetBatteryHint": "For pålidelige widget-opdateringer skal du deaktivere batterioptimering for Weather i appindstillingerne",
   "persistentNotification": "Vedvarende notifikation",
   "lastUpdated": "Opdateret",
   "appFont": "Skrifttype",

@@ -3,20 +3,20 @@ import 'dart:async';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/widgets/app_back_button.dart';
-import 'package:rain/core/widgets/confirmation_dialog.dart';
-import 'package:rain/core/utils/location_label.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/weather/time_index_helper.dart';
-import 'package:rain/features/cities/domain/weather_card_validator.dart';
-import 'package:rain/features/cities/presentation/widgets/place_action.dart';
-import 'package:rain/features/weather/presentation/widgets/daily/daily_card_list.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_detail_view.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/widgets/app_back_button.dart';
+import 'package:weather/core/widgets/confirmation_dialog.dart';
+import 'package:weather/core/utils/location_label.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/weather/time_index_helper.dart';
+import 'package:weather/features/cities/domain/weather_card_validator.dart';
+import 'package:weather/features/cities/presentation/widgets/place_action.dart';
+import 'package:weather/features/weather/presentation/widgets/daily/daily_card_list.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_detail_view.dart';
+import 'package:weather/i18n/tr.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Full weather detail screen for a single saved city card.
 class PlaceInfo extends ConsumerStatefulWidget {

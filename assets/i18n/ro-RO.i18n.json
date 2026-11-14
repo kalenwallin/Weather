@@ -198,7 +198,7 @@
   "aqiHelpDominant": "Cel mai ridicat nivel de poluant",
   "aqiHelpAdviceLabel": "Recomandare",
   "aqiHelpSource": "Sursă: Open-Meteo Air Quality API — concentrații la sol (~10 m), grilă ~11 km.",
-  "widgetBatteryHint": "Pentru actualizări fiabile ale widgetului, dezactivați optimizarea bateriei pentru Rain în setările aplicației",
+  "widgetBatteryHint": "Pentru actualizări fiabile ale widgetului, dezactivați optimizarea bateriei pentru Weather în setările aplicației",
   "persistentNotification": "Notificare persistentă",
   "lastUpdated": "Actualizat",
   "appFont": "Fonturi",

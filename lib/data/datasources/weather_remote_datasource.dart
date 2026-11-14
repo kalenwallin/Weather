@@ -2,22 +2,22 @@ import 'dart:isolate';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/utils/http_date_parser.dart';
-import 'package:rain/core/utils/http_request.dart';
-import 'package:rain/core/utils/location_label.dart';
-import 'package:rain/data/datasources/air_quality_remote_datasource.dart';
-import 'package:rain/data/datasources/json_isolate_parsers.dart';
-import 'package:rain/data/mappers/air_quality_mapper.dart';
-import 'package:rain/data/models/air_quality_api.dart';
-import 'package:rain/data/models/city_api.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/data/models/weather_api.dart';
-import 'package:rain/data/mappers/domain_mapper.dart';
-import 'package:rain/data/mappers/weather_mapper.dart';
-import 'package:rain/core/weather/weather_cache_validator.dart';
-import 'package:rain/domain/entities/city_search_result.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/utils/http_date_parser.dart';
+import 'package:weather/core/utils/http_request.dart';
+import 'package:weather/core/utils/location_label.dart';
+import 'package:weather/data/datasources/air_quality_remote_datasource.dart';
+import 'package:weather/data/datasources/json_isolate_parsers.dart';
+import 'package:weather/data/mappers/air_quality_mapper.dart';
+import 'package:weather/data/models/air_quality_api.dart';
+import 'package:weather/data/models/city_api.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/data/models/weather_api.dart';
+import 'package:weather/data/mappers/domain_mapper.dart';
+import 'package:weather/data/mappers/weather_mapper.dart';
+import 'package:weather/core/weather/weather_cache_validator.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
 
 /// Fetches forecast data from Open-Meteo and city suggestions from its geocoding API.
 class WeatherRemoteDatasource {

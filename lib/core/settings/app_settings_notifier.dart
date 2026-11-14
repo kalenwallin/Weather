@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/di/settings_revision.dart';
-import 'package:rain/core/settings/app_settings_state.dart';
-import 'package:rain/core/settings/settings_persistence.dart';
-import 'package:rain/domain/entities/app_settings.dart';
-import 'package:rain/i18n/locale_utils.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/di/settings_revision.dart';
+import 'package:weather/core/settings/app_settings_state.dart';
+import 'package:weather/core/settings/settings_persistence.dart';
+import 'package:weather/domain/entities/app_settings.dart';
+import 'package:weather/i18n/locale_utils.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 /// Exposes derived app settings for widgets and services.
 ///

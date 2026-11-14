@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/widgets.dart' show Locale;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/location_label.dart';
+import 'package:weather/core/utils/location_label.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:rain/core/services/location_service.dart';
+import 'package:weather/core/services/location_service.dart';
 
 Position _testPosition({double lat = 55.75, double lon = 37.62}) {
   return Position(

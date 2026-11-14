@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
 
 /// Standard app-bar back control (no custom splash; see global theme).
 class AppBackButton extends StatelessWidget {

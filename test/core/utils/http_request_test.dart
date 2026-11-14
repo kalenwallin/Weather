@@ -3,7 +3,7 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/utils/http_request.dart';
+import 'package:weather/core/utils/http_request.dart';
 
 class _StalledAdapter implements HttpClientAdapter {
   bool cancelled = false;
@@ -45,7 +45,7 @@ void main() {
     dio.interceptors.add(
       InterceptorsWrapper(
         onRequest: (options, handler) {
-          expect(options.headers['User-Agent'], 'Rain test');
+          expect(options.headers['User-Agent'], 'Weather test');
           handler.resolve(
             Response(requestOptions: options, data: {'ok': true}),
           );
@@ -56,7 +56,7 @@ void main() {
     final response = await getWithDeadline(
       dio,
       'https://example.invalid',
-      options: Options(headers: {'User-Agent': 'Rain test'}),
+      options: Options(headers: {'User-Agent': 'Weather test'}),
     );
 
     expect(response.data, {'ok': true});

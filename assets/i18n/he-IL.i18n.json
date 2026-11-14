@@ -198,7 +198,7 @@
   "aqiHelpDominant": "רמת המזהם הגבוהה ביותר",
   "aqiHelpAdviceLabel": "המלצה",
   "aqiHelpSource": "מקור: Open-Meteo Air Quality API — ריכוזים בגובה הקרקע (~10 מ'), רשת ~11 ק\"מ.",
-  "widgetBatteryHint": "לעדכוני ווידג'ט אמינים, השבת אופטימיזציית סוללה עבור Rain בהגדרות האפליקציה",
+  "widgetBatteryHint": "לעדכוני ווידג'ט אמינים, השבת אופטימיזציית סוללה עבור Weather בהגדרות האפליקציה",
   "persistentNotification": "התראה קבועה",
   "lastUpdated": "עודכן",
   "appFont": "גופן",

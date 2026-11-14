@@ -1,14 +1,14 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:gap/gap.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/widgets/collapsible_section.dart';
-import 'package:rain/core/widgets/metric_help_tooltip.dart';
-import 'package:rain/core/weather/aqi_helper.dart';
-import 'package:rain/features/weather/presentation/widgets/air_quality/aqi_pollutant_list.dart';
-import 'package:rain/features/weather/presentation/widgets/air_quality/aqi_scale_bar.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/widgets/collapsible_section.dart';
+import 'package:weather/core/widgets/metric_help_tooltip.dart';
+import 'package:weather/core/weather/aqi_helper.dart';
+import 'package:weather/features/weather/presentation/widgets/air_quality/aqi_pollutant_list.dart';
+import 'package:weather/features/weather/presentation/widgets/air_quality/aqi_scale_bar.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Summary air quality card: AQI core on top, collapsible pollutant bars below.
 class AirQualityCard extends StatelessWidget {

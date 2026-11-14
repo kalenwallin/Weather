@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/navigation/app_router.dart';
+import 'package:weather/core/navigation/app_router.dart';
 
 /// Thin wrappers around common navigation and modal presentation patterns.
 class NavigationHelper {

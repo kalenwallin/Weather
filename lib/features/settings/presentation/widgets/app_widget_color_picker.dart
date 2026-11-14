@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/utils/color_converter.dart';
-import 'package:rain/features/settings/presentation/widgets/widget_color_picker_ui.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/utils/color_converter.dart';
+import 'package:weather/features/settings/presentation/widgets/widget_color_picker_ui.dart';
 
-/// HSV color picker styled for Rain widget settings dialogs.
+/// HSV color picker styled for Weather widget settings dialogs.
 class AppWidgetColorPicker extends StatefulWidget {
   const AppWidgetColorPicker({
     super.key,

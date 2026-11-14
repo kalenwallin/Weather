@@ -10,7 +10,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = 'com.yoshi.rain'
+    namespace = 'com.yoshi.weather'
     compileSdk {
         version = release(37) {
             minorApiLevel = 0
@@ -36,7 +36,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = 'com.yoshi.rain.personal'
+        applicationId = 'com.yoshi.weather.personal'
         minSdkVersion = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -106,7 +106,7 @@ dependencies {
 def isFlossBuild =
         gradle.startParameter.taskNames.any { it.toLowerCase().contains('floss') } ||
         project.hasProperty('floss') ||
-        'true' == System.getenv('RAIN_FLOSS')
+        'true' == System.getenv('WEATHER_FLOSS')
 
 if (isFlossBuild) {
     configurations.configureEach {

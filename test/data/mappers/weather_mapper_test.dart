@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/data/mappers/weather_mapper.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/data/models/weather_api.dart';
+import 'package:weather/data/mappers/weather_mapper.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/data/models/weather_api.dart';
 
 WeatherDataApi _sampleApi() => WeatherDataApi(
   hourly: const Hourly(

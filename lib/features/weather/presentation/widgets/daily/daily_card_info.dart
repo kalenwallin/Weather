@@ -1,18 +1,18 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/i18n/locale_format_helper.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/widgets/app_back_button.dart';
-import 'package:rain/features/weather/presentation/widgets/desc/desc_container.dart';
-import 'package:rain/features/weather/presentation/widgets/weather_hourly_sections.dart';
-import 'package:rain/features/weather/presentation/widgets/hourly.dart';
-import 'package:rain/features/weather/presentation/widgets/hourly_strip.dart';
-import 'package:rain/features/weather/presentation/widgets/now.dart';
-import 'package:rain/features/weather/presentation/widgets/sunset_sunrise.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/i18n/locale_format_helper.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/widgets/app_back_button.dart';
+import 'package:weather/features/weather/presentation/widgets/desc/desc_container.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_hourly_sections.dart';
+import 'package:weather/features/weather/presentation/widgets/hourly.dart';
+import 'package:weather/features/weather/presentation/widgets/hourly_strip.dart';
+import 'package:weather/features/weather/presentation/widgets/now.dart';
+import 'package:weather/features/weather/presentation/widgets/sunset_sunrise.dart';
+import 'package:weather/i18n/tr.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Paged full-day weather detail opened from the daily forecast list or preview.
 class DailyCardInfo extends ConsumerStatefulWidget {

@@ -6,24 +6,24 @@ import 'package:gap/gap.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:rain/core/utils/place_form_helpers.dart';
-import 'package:rain/core/widgets/city_search_field.dart';
-import 'package:rain/core/widgets/map_tiles.dart';
-import 'package:rain/core/widgets/place_form_fields.dart';
-import 'package:rain/domain/entities/city_search_result.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/navigation/app_routes.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/core/utils/url_launcher_util.dart';
+import 'package:weather/core/utils/place_form_helpers.dart';
+import 'package:weather/core/widgets/city_search_field.dart';
+import 'package:weather/core/widgets/map_tiles.dart';
+import 'package:weather/core/widgets/place_form_fields.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/navigation/app_routes.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/core/utils/url_launcher_util.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rain/core/theme/theme_text.dart';
-import 'package:rain/core/widgets/app_back_button.dart';
-import 'package:rain/core/widgets/button.dart';
-import 'package:rain/core/widgets/confirmation_dialog.dart';
-import 'package:rain/core/utils/navigation_helper.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
+import 'package:weather/core/theme/theme_text.dart';
+import 'package:weather/core/widgets/app_back_button.dart';
+import 'package:weather/core/widgets/button.dart';
+import 'package:weather/core/widgets/confirmation_dialog.dart';
+import 'package:weather/core/utils/navigation_helper.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
 
 /// Onboarding or in-app screen for choosing the primary weather location.
 class SelectGeolocation extends ConsumerStatefulWidget {
@@ -121,9 +121,9 @@ class _SelectGeolocationState extends ConsumerState<SelectGeolocation> {
                 fillMap(point.latitude, point.longitude),
           ),
           children: [
-            buildRainMapDarkModeFilter(
+            buildWeatherMapDarkModeFilter(
               isDark: isDark,
-              child: buildRainMapTileLayer(),
+              child: buildWeatherMapTileLayer(),
             ),
             RichAttributionWidget(
               animationConfig: const ScaleRAWA(),

@@ -3,10 +3,10 @@ import 'dart:io';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rain/core/di/provider_refs.dart';
-import 'package:rain/core/settings/settings_persistence.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/app_settings.dart';
+import 'package:weather/core/di/provider_refs.dart';
+import 'package:weather/core/settings/settings_persistence.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/app_settings.dart';
 
 /// Provides the persisted theme mode preference as [ThemeMode].
 final themeModeProvider = NotifierProvider<ThemeModeNotifier, ThemeMode>(

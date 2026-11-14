@@ -1,6 +1,6 @@
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:rain/i18n/strings.g.dart';
+import 'package:weather/i18n/strings.g.dart';
 
 bool _initialized = false;
 

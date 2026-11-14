@@ -1,6 +1,6 @@
 import 'package:isar_community/isar.dart';
-import 'package:rain/data/models/db.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/data/models/db.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// Maps between Isar persistence models and domain entities.
 class DomainMapper {

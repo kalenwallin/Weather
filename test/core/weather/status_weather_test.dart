@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/weather/status_weather.dart';
-import 'package:rain/core/weather/weather_icon_theme.dart';
+import 'package:weather/core/weather/status_weather.dart';
+import 'package:weather/core/weather/weather_icon_theme.dart';
 
 void main() {
   final statusWeather = StatusWeather();

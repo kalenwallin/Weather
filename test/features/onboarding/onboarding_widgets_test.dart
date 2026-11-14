@@ -2,12 +2,12 @@ import '../../helpers/widget_test_harness.dart';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/features/onboarding/presentation/onboarding_screen.dart';
+import 'package:weather/features/onboarding/presentation/onboarding_screen.dart';
 
 void main() {
   group('DotIndicator', () {
     testWidgets('active dot is wider than inactive', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(
           body: Row(children: [DotIndicator(isActive: true), DotIndicator()]),
@@ -24,7 +24,7 @@ void main() {
     });
 
     testWidgets('completed dot uses primary container color', (tester) async {
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         const Scaffold(body: DotIndicator(isCompleted: true)),
       );
@@ -45,7 +45,7 @@ void main() {
     testWidgets('renders slide title and description', (tester) async {
       final slide = OnboardingConstants.getData().first;
 
-      await pumpRainWidget(
+      await pumpWeatherWidget(
         tester,
         Scaffold(body: OnboardingContent(data: slide)),
       );

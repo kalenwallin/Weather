@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:rain/i18n/tr.dart';
-import 'package:rain/domain/entities/entities.dart';
+import 'package:weather/i18n/tr.dart';
+import 'package:weather/domain/entities/entities.dart';
 
 /// European and United States AQI thresholds, colors, and formatting.
 class AqiHelper {

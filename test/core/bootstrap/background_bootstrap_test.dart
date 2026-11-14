@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rain/core/bootstrap/background_bootstrap.dart';
+import 'package:weather/core/bootstrap/background_bootstrap.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

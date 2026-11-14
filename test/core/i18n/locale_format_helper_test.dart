@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:rain/core/i18n/locale_format_helper.dart';
+import 'package:weather/core/i18n/locale_format_helper.dart';
 
 import '../../helpers/test_helpers.dart';
 

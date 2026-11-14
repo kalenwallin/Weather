@@ -1,4 +1,4 @@
-package com.yoshi.rain.widget
+package com.yoshi.weather.widget
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
@@ -8,22 +8,22 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.widget.RemoteViews
-import com.yoshi.rain.R
-import com.yoshi.rain.widget.providers.WidgetClockDayHorizontalProvider
-import com.yoshi.rain.widget.providers.WidgetMaterialYouCurrentProvider
-import com.yoshi.rain.widget.providers.WidgetMaterialYouForecast1x1Provider
+import com.yoshi.weather.R
+import com.yoshi.weather.widget.providers.WidgetClockDayHorizontalProvider
+import com.yoshi.weather.widget.providers.WidgetMaterialYouCurrentProvider
+import com.yoshi.weather.widget.providers.WidgetMaterialYouForecast1x1Provider
 import es.antonborri.home_widget.HomeWidgetPlugin
 import es.antonborri.home_widget.HomeWidgetProvider
 
-/** Base class for Rain home-screen widgets backed by HomeWidget prefs. */
-abstract class RainHomeWidgetProvider : HomeWidgetProvider() {
+/** Base class for Weather home-screen widgets backed by HomeWidget prefs. */
+abstract class WeatherHomeWidgetProvider : HomeWidgetProvider() {
 
     companion object {
-        private const val TAG = "RainHomeWidgetProvider"
+        private const val TAG = "WeatherHomeWidgetProvider"
 
         private val providerClasses =
             listOf(
-                // Keep in sync with [rainWidgetRegistry] in widget_registry.dart.
+                // Keep in sync with [weatherWidgetRegistry] in widget_registry.dart.
                 WidgetMaterialYouForecast1x1Provider::class.java,
                 WidgetMaterialYouCurrentProvider::class.java,
                 WidgetClockDayHorizontalProvider::class.java,
@@ -33,7 +33,7 @@ abstract class RainHomeWidgetProvider : HomeWidgetProvider() {
             providerClasses.forEach { providerClass ->
                 val provider =
                     providerClass.getDeclaredConstructor().newInstance()
-                        as RainHomeWidgetProvider
+                        as WeatherHomeWidgetProvider
                 provider.refreshWidgets(context, configuration)
             }
         }

@@ -1,13 +1,13 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
-import 'package:rain/core/constants/app_constants.dart';
-import 'package:rain/core/di/providers.dart';
-import 'package:rain/core/utils/debug_log.dart';
-import 'package:rain/core/utils/show_snack_bar.dart';
-import 'package:rain/core/widgets/text_form.dart';
-import 'package:rain/domain/entities/city_search_result.dart';
-import 'package:rain/i18n/tr.dart';
+import 'package:weather/core/constants/app_constants.dart';
+import 'package:weather/core/di/providers.dart';
+import 'package:weather/core/utils/debug_log.dart';
+import 'package:weather/core/utils/show_snack_bar.dart';
+import 'package:weather/core/widgets/text_form.dart';
+import 'package:weather/domain/entities/city_search_result.dart';
+import 'package:weather/i18n/tr.dart';
 
 /// Layout preset for the city search suggestion dropdown.
 enum CitySearchOptionsStyle {
