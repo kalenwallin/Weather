@@ -309,5 +309,15 @@
   "colorPaletteSand": "Homok",
   "lastBackgroundRefresh": "Utolsó háttérfrissítés",
   "lastBackgroundRefreshNever": "Még nincs háttérfrissítés",
-  "backgroundRefreshError": "Utolsó háttérhiba"
+  "backgroundRefreshError": "Utolsó háttérhiba",
+  "desktop": "Számítógép",
+  "syncToDesktop": "Szinkronizálás számítógéppel",
+  "desktopSyncSubtitle": "Városok és beállítások másolása a böngészőbe",
+  "desktopSyncInstructions": "Nyisd meg a weather.kalenwallin.com oldalt a számítógépen, válaszd a telefonos szinkronizálást, és írd be ide a kódot.",
+  "desktopPairingCode": "Párosítási kód",
+  "desktopSyncSend": "Beállítások küldése",
+  "desktopSyncSuccess": "Városaid és beállításaid készen állnak a számítógépen.",
+  "desktopSyncPrivacy": "A böngésző csak másolatot kap. A telefon beállításai nem változnak.",
+  "desktopSyncInvalidCode": "Írd be a számítógépen látható nyolckarakteres kódot.",
+  "desktopSyncAnother": "Másik böngésző szinkronizálása"
 }

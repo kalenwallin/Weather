@@ -350,6 +350,16 @@ class TranslationsCsCz extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Poslední aktualizace na pozadí';
 	@override String get last_background_refresh_never => 'Zatím žádná aktualizace na pozadí';
 	@override String get background_refresh_error => 'Poslední chyba na pozadí';
+	@override String get desktop => 'Počítač';
+	@override String get sync_to_desktop => 'Synchronizovat s počítačem';
+	@override String get desktop_sync_subtitle => 'Zkopírujte města a nastavení do prohlížeče';
+	@override String get desktop_sync_instructions => 'Na počítači otevřete weather.kalenwallin.com, zvolte synchronizaci z telefonu a sem zadejte kód.';
+	@override String get desktop_pairing_code => 'Párovací kód';
+	@override String get desktop_sync_send => 'Odeslat nastavení';
+	@override String get desktop_sync_success => 'Vaše města a nastavení jsou připravena na počítači.';
+	@override String get desktop_sync_privacy => 'Prohlížeč obdrží pouze kopii. Nastavení telefonu se nezmění.';
+	@override String get desktop_sync_invalid_code => 'Zadejte osmiznakový kód zobrazený na počítači.';
+	@override String get desktop_sync_another => 'Synchronizovat další prohlížeč';
 }
 
 /// The flat map containing all translations for locale <cs-CZ>.
@@ -671,6 +681,16 @@ extension on TranslationsCsCz {
 			'last_background_refresh' => 'Poslední aktualizace na pozadí',
 			'last_background_refresh_never' => 'Zatím žádná aktualizace na pozadí',
 			'background_refresh_error' => 'Poslední chyba na pozadí',
+			'desktop' => 'Počítač',
+			'sync_to_desktop' => 'Synchronizovat s počítačem',
+			'desktop_sync_subtitle' => 'Zkopírujte města a nastavení do prohlížeče',
+			'desktop_sync_instructions' => 'Na počítači otevřete weather.kalenwallin.com, zvolte synchronizaci z telefonu a sem zadejte kód.',
+			'desktop_pairing_code' => 'Párovací kód',
+			'desktop_sync_send' => 'Odeslat nastavení',
+			'desktop_sync_success' => 'Vaše města a nastavení jsou připravena na počítači.',
+			'desktop_sync_privacy' => 'Prohlížeč obdrží pouze kopii. Nastavení telefonu se nezmění.',
+			'desktop_sync_invalid_code' => 'Zadejte osmiznakový kód zobrazený na počítači.',
+			'desktop_sync_another' => 'Synchronizovat další prohlížeč',
 			_ => null,
 		};
 	}

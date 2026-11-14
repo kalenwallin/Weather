@@ -350,6 +350,16 @@ class TranslationsJaJp extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => '最後のバックグラウンド更新';
 	@override String get last_background_refresh_never => 'バックグラウンド更新はまだありません';
 	@override String get background_refresh_error => '最後のバックグラウンドエラー';
+	@override String get desktop => 'パソコン';
+	@override String get sync_to_desktop => 'パソコンに同期';
+	@override String get desktop_sync_subtitle => '都市と設定をブラウザーにコピー';
+	@override String get desktop_sync_instructions => 'パソコンで weather.kalenwallin.com を開き、スマートフォンからの同期を選んで、表示されたコードをここに入力してください。';
+	@override String get desktop_pairing_code => 'ペアリングコード';
+	@override String get desktop_sync_send => '設定を送信';
+	@override String get desktop_sync_success => '都市と設定がパソコンで利用できるようになりました。';
+	@override String get desktop_sync_privacy => 'ブラウザーにはコピーだけを送信します。このスマートフォンの設定は変更されません。';
+	@override String get desktop_sync_invalid_code => 'パソコンに表示された8文字のコードを入力してください。';
+	@override String get desktop_sync_another => '別のブラウザーに同期';
 }
 
 /// The flat map containing all translations for locale <ja-JP>.
@@ -671,6 +681,16 @@ extension on TranslationsJaJp {
 			'last_background_refresh' => '最後のバックグラウンド更新',
 			'last_background_refresh_never' => 'バックグラウンド更新はまだありません',
 			'background_refresh_error' => '最後のバックグラウンドエラー',
+			'desktop' => 'パソコン',
+			'sync_to_desktop' => 'パソコンに同期',
+			'desktop_sync_subtitle' => '都市と設定をブラウザーにコピー',
+			'desktop_sync_instructions' => 'パソコンで weather.kalenwallin.com を開き、スマートフォンからの同期を選んで、表示されたコードをここに入力してください。',
+			'desktop_pairing_code' => 'ペアリングコード',
+			'desktop_sync_send' => '設定を送信',
+			'desktop_sync_success' => '都市と設定がパソコンで利用できるようになりました。',
+			'desktop_sync_privacy' => 'ブラウザーにはコピーだけを送信します。このスマートフォンの設定は変更されません。',
+			'desktop_sync_invalid_code' => 'パソコンに表示された8文字のコードを入力してください。',
+			'desktop_sync_another' => '別のブラウザーに同期',
 			_ => null,
 		};
 	}

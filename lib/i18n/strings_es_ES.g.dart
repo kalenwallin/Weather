@@ -350,6 +350,16 @@ class TranslationsEsEs extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Última actualización en segundo plano';
 	@override String get last_background_refresh_never => 'Aún no hay actualización en segundo plano';
 	@override String get background_refresh_error => 'Último error en segundo plano';
+	@override String get desktop => 'Ordenador';
+	@override String get sync_to_desktop => 'Sincronizar con el ordenador';
+	@override String get desktop_sync_subtitle => 'Copia ciudades y ajustes al navegador';
+	@override String get desktop_sync_instructions => 'Abre weather.kalenwallin.com en el ordenador, elige sincronizar desde el teléfono e introduce aquí el código.';
+	@override String get desktop_pairing_code => 'Código de vinculación';
+	@override String get desktop_sync_send => 'Enviar configuración';
+	@override String get desktop_sync_success => 'Tus ciudades y ajustes están listos en el ordenador.';
+	@override String get desktop_sync_privacy => 'El navegador solo recibe una copia. Los ajustes de este teléfono no cambian.';
+	@override String get desktop_sync_invalid_code => 'Introduce el código de ocho caracteres que aparece en el ordenador.';
+	@override String get desktop_sync_another => 'Sincronizar otro navegador';
 }
 
 /// The flat map containing all translations for locale <es-ES>.
@@ -671,6 +681,16 @@ extension on TranslationsEsEs {
 			'last_background_refresh' => 'Última actualización en segundo plano',
 			'last_background_refresh_never' => 'Aún no hay actualización en segundo plano',
 			'background_refresh_error' => 'Último error en segundo plano',
+			'desktop' => 'Ordenador',
+			'sync_to_desktop' => 'Sincronizar con el ordenador',
+			'desktop_sync_subtitle' => 'Copia ciudades y ajustes al navegador',
+			'desktop_sync_instructions' => 'Abre weather.kalenwallin.com en el ordenador, elige sincronizar desde el teléfono e introduce aquí el código.',
+			'desktop_pairing_code' => 'Código de vinculación',
+			'desktop_sync_send' => 'Enviar configuración',
+			'desktop_sync_success' => 'Tus ciudades y ajustes están listos en el ordenador.',
+			'desktop_sync_privacy' => 'El navegador solo recibe una copia. Los ajustes de este teléfono no cambian.',
+			'desktop_sync_invalid_code' => 'Introduce el código de ocho caracteres que aparece en el ordenador.',
+			'desktop_sync_another' => 'Sincronizar otro navegador',
 			_ => null,
 		};
 	}

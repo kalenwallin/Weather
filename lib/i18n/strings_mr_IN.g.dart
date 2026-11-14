@@ -350,6 +350,16 @@ class TranslationsMrIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'शेवटचे पार्श्वभूमी रिफ्रेश';
 	@override String get last_background_refresh_never => 'अद्याप पार्श्वभूमी रिफ्रेश नाही';
 	@override String get background_refresh_error => 'शेवटची पार्श्वभूमी त्रुटी';
+	@override String get desktop => 'डेस्कटॉप';
+	@override String get sync_to_desktop => 'संगणकाशी समक्रमित करा';
+	@override String get desktop_sync_subtitle => 'शहरे आणि सेटिंग्ज ब्राउझरमध्ये कॉपी करा';
+	@override String get desktop_sync_instructions => 'संगणकावर weather.kalenwallin.com उघडा, फोनवरून समक्रमण निवडा आणि येथे कोड टाका.';
+	@override String get desktop_pairing_code => 'जोडणी कोड';
+	@override String get desktop_sync_send => 'सेटिंग्ज पाठवा';
+	@override String get desktop_sync_success => 'तुमची शहरे आणि सेटिंग्ज संगणकावर तयार आहेत.';
+	@override String get desktop_sync_privacy => 'ब्राउझरला फक्त प्रत मिळते. या फोनची सेटिंग्ज बदलत नाहीत.';
+	@override String get desktop_sync_invalid_code => 'संगणकावर दिसणारा आठ अक्षरांचा कोड टाका.';
+	@override String get desktop_sync_another => 'दुसरा ब्राउझर समक्रमित करा';
 }
 
 /// The flat map containing all translations for locale <mr-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsMrIn {
 			'last_background_refresh' => 'शेवटचे पार्श्वभूमी रिफ्रेश',
 			'last_background_refresh_never' => 'अद्याप पार्श्वभूमी रिफ्रेश नाही',
 			'background_refresh_error' => 'शेवटची पार्श्वभूमी त्रुटी',
+			'desktop' => 'डेस्कटॉप',
+			'sync_to_desktop' => 'संगणकाशी समक्रमित करा',
+			'desktop_sync_subtitle' => 'शहरे आणि सेटिंग्ज ब्राउझरमध्ये कॉपी करा',
+			'desktop_sync_instructions' => 'संगणकावर weather.kalenwallin.com उघडा, फोनवरून समक्रमण निवडा आणि येथे कोड टाका.',
+			'desktop_pairing_code' => 'जोडणी कोड',
+			'desktop_sync_send' => 'सेटिंग्ज पाठवा',
+			'desktop_sync_success' => 'तुमची शहरे आणि सेटिंग्ज संगणकावर तयार आहेत.',
+			'desktop_sync_privacy' => 'ब्राउझरला फक्त प्रत मिळते. या फोनची सेटिंग्ज बदलत नाहीत.',
+			'desktop_sync_invalid_code' => 'संगणकावर दिसणारा आठ अक्षरांचा कोड टाका.',
+			'desktop_sync_another' => 'दुसरा ब्राउझर समक्रमित करा',
 			_ => null,
 		};
 	}

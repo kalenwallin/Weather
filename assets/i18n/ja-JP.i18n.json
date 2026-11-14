@@ -309,5 +309,15 @@
   "colorPaletteSand": "砂",
   "lastBackgroundRefresh": "最後のバックグラウンド更新",
   "lastBackgroundRefreshNever": "バックグラウンド更新はまだありません",
-  "backgroundRefreshError": "最後のバックグラウンドエラー"
+  "backgroundRefreshError": "最後のバックグラウンドエラー",
+  "desktop": "パソコン",
+  "syncToDesktop": "パソコンに同期",
+  "desktopSyncSubtitle": "都市と設定をブラウザーにコピー",
+  "desktopSyncInstructions": "パソコンで weather.kalenwallin.com を開き、スマートフォンからの同期を選んで、表示されたコードをここに入力してください。",
+  "desktopPairingCode": "ペアリングコード",
+  "desktopSyncSend": "設定を送信",
+  "desktopSyncSuccess": "都市と設定がパソコンで利用できるようになりました。",
+  "desktopSyncPrivacy": "ブラウザーにはコピーだけを送信します。このスマートフォンの設定は変更されません。",
+  "desktopSyncInvalidCode": "パソコンに表示された8文字のコードを入力してください。",
+  "desktopSyncAnother": "別のブラウザーに同期"
 }

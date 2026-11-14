@@ -350,6 +350,16 @@ class TranslationsMlIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'അവസാന പശ്ചാത്തല റിഫ്രഷ്';
 	@override String get last_background_refresh_never => 'ഇതുവരെ പശ്ചാത്തല റിഫ്രESH ഇല്ല';
 	@override String get background_refresh_error => 'അവസാന പശ്ചാത്തല പിശക്';
+	@override String get desktop => 'ഡെസ്ക്ടോപ്പ്';
+	@override String get sync_to_desktop => 'കമ്പ്യൂട്ടറുമായി സമന്വയിപ്പിക്കുക';
+	@override String get desktop_sync_subtitle => 'നഗരങ്ങളും ക്രമീകരണങ്ങളും ബ്രൗസറിലേക്ക് പകർത്തുക';
+	@override String get desktop_sync_instructions => 'കമ്പ്യൂട്ടറിൽ weather.kalenwallin.com തുറന്ന് ഫോണിൽനിന്നുള്ള സമന്വയം തിരഞ്ഞെടുത്ത് കോഡ് ഇവിടെ നൽകുക.';
+	@override String get desktop_pairing_code => 'ജോടിയാക്കൽ കോഡ്';
+	@override String get desktop_sync_send => 'ക്രമീകരണങ്ങൾ അയയ്ക്കുക';
+	@override String get desktop_sync_success => 'നിങ്ങളുടെ നഗരങ്ങളും ക്രമീകരണങ്ങളും കമ്പ്യൂട്ടറിൽ തയ്യാറാണ്.';
+	@override String get desktop_sync_privacy => 'ബ്രൗസറിന് ഒരു പകർപ്പ് മാത്രമാണ് ലഭിക്കുന്നത്. ഫോണിന്റെ ക്രമീകരണങ്ങൾ മാറില്ല.';
+	@override String get desktop_sync_invalid_code => 'കമ്പ്യൂട്ടറിൽ കാണുന്ന എട്ടക്ഷര കോഡ് നൽകുക.';
+	@override String get desktop_sync_another => 'മറ്റൊരു ബ്രൗസർ സമന്വയിപ്പിക്കുക';
 }
 
 /// The flat map containing all translations for locale <ml-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsMlIn {
 			'last_background_refresh' => 'അവസാന പശ്ചാത്തല റിഫ്രഷ്',
 			'last_background_refresh_never' => 'ഇതുവരെ പശ്ചാത്തല റിഫ്രESH ഇല്ല',
 			'background_refresh_error' => 'അവസാന പശ്ചാത്തല പിശക്',
+			'desktop' => 'ഡെസ്ക്ടോപ്പ്',
+			'sync_to_desktop' => 'കമ്പ്യൂട്ടറുമായി സമന്വയിപ്പിക്കുക',
+			'desktop_sync_subtitle' => 'നഗരങ്ങളും ക്രമീകരണങ്ങളും ബ്രൗസറിലേക്ക് പകർത്തുക',
+			'desktop_sync_instructions' => 'കമ്പ്യൂട്ടറിൽ weather.kalenwallin.com തുറന്ന് ഫോണിൽനിന്നുള്ള സമന്വയം തിരഞ്ഞെടുത്ത് കോഡ് ഇവിടെ നൽകുക.',
+			'desktop_pairing_code' => 'ജോടിയാക്കൽ കോഡ്',
+			'desktop_sync_send' => 'ക്രമീകരണങ്ങൾ അയയ്ക്കുക',
+			'desktop_sync_success' => 'നിങ്ങളുടെ നഗരങ്ങളും ക്രമീകരണങ്ങളും കമ്പ്യൂട്ടറിൽ തയ്യാറാണ്.',
+			'desktop_sync_privacy' => 'ബ്രൗസറിന് ഒരു പകർപ്പ് മാത്രമാണ് ലഭിക്കുന്നത്. ഫോണിന്റെ ക്രമീകരണങ്ങൾ മാറില്ല.',
+			'desktop_sync_invalid_code' => 'കമ്പ്യൂട്ടറിൽ കാണുന്ന എട്ടക്ഷര കോഡ് നൽകുക.',
+			'desktop_sync_another' => 'മറ്റൊരു ബ്രൗസർ സമന്വയിപ്പിക്കുക',
 			_ => null,
 		};
 	}

@@ -350,6 +350,16 @@ class TranslationsTeIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'చివరి నేపథ్య రిఫ్రెష్';
 	@override String get last_background_refresh_never => 'ఇంకా నేపథ్య రిఫ్రెష్ లేదు';
 	@override String get background_refresh_error => 'చివరి నేపథ్య లోపం';
+	@override String get desktop => 'డెస్క్‌టాప్';
+	@override String get sync_to_desktop => 'కంప్యూటర్‌తో సమకాలీకరించండి';
+	@override String get desktop_sync_subtitle => 'నగరాలు మరియు సెట్టింగ్‌లను బ్రౌజర్‌కు కాపీ చేయండి';
+	@override String get desktop_sync_instructions => 'కంప్యూటర్‌లో weather.kalenwallin.com తెరిచి, ఫోన్ నుండి సమకాలీకరణ ఎంచుకుని కోడ్‌ను ఇక్కడ నమోదు చేయండి.';
+	@override String get desktop_pairing_code => 'జత చేసే కోడ్';
+	@override String get desktop_sync_send => 'సెట్టింగ్‌లను పంపండి';
+	@override String get desktop_sync_success => 'మీ నగరాలు మరియు సెట్టింగ్‌లు కంప్యూటర్‌లో సిద్ధంగా ఉన్నాయి.';
+	@override String get desktop_sync_privacy => 'బ్రౌజర్‌కు కాపీ మాత్రమే అందుతుంది. ఈ ఫోన్ సెట్టింగ్‌లు మారవు.';
+	@override String get desktop_sync_invalid_code => 'కంప్యూటర్‌లో కనిపించే ఎనిమిది అక్షరాల కోడ్‌ను నమోదు చేయండి.';
+	@override String get desktop_sync_another => 'మరో బ్రౌజర్‌ను సమకాలీకరించండి';
 }
 
 /// The flat map containing all translations for locale <te-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsTeIn {
 			'last_background_refresh' => 'చివరి నేపథ్య రిఫ్రెష్',
 			'last_background_refresh_never' => 'ఇంకా నేపథ్య రిఫ్రెష్ లేదు',
 			'background_refresh_error' => 'చివరి నేపథ్య లోపం',
+			'desktop' => 'డెస్క్‌టాప్',
+			'sync_to_desktop' => 'కంప్యూటర్‌తో సమకాలీకరించండి',
+			'desktop_sync_subtitle' => 'నగరాలు మరియు సెట్టింగ్‌లను బ్రౌజర్‌కు కాపీ చేయండి',
+			'desktop_sync_instructions' => 'కంప్యూటర్‌లో weather.kalenwallin.com తెరిచి, ఫోన్ నుండి సమకాలీకరణ ఎంచుకుని కోడ్‌ను ఇక్కడ నమోదు చేయండి.',
+			'desktop_pairing_code' => 'జత చేసే కోడ్',
+			'desktop_sync_send' => 'సెట్టింగ్‌లను పంపండి',
+			'desktop_sync_success' => 'మీ నగరాలు మరియు సెట్టింగ్‌లు కంప్యూటర్‌లో సిద్ధంగా ఉన్నాయి.',
+			'desktop_sync_privacy' => 'బ్రౌజర్‌కు కాపీ మాత్రమే అందుతుంది. ఈ ఫోన్ సెట్టింగ్‌లు మారవు.',
+			'desktop_sync_invalid_code' => 'కంప్యూటర్‌లో కనిపించే ఎనిమిది అక్షరాల కోడ్‌ను నమోదు చేయండి.',
+			'desktop_sync_another' => 'మరో బ్రౌజర్‌ను సమకాలీకరించండి',
 			_ => null,
 		};
 	}

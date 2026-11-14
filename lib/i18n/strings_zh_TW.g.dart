@@ -350,6 +350,16 @@ class TranslationsZhTw extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => '上次背景更新';
 	@override String get last_background_refresh_never => '尚無背景更新';
 	@override String get background_refresh_error => '上次背景錯誤';
+	@override String get desktop => '電腦';
+	@override String get sync_to_desktop => '同步至電腦';
+	@override String get desktop_sync_subtitle => '將城市和設定複製到瀏覽器';
+	@override String get desktop_sync_instructions => '在電腦上開啟 weather.kalenwallin.com，選擇從手機同步，然後在此輸入配對碼。';
+	@override String get desktop_pairing_code => '配對碼';
+	@override String get desktop_sync_send => '傳送設定';
+	@override String get desktop_sync_success => '你的城市和設定已在電腦上就緒。';
+	@override String get desktop_sync_privacy => '瀏覽器只接收副本，不會變更此手機的設定。';
+	@override String get desktop_sync_invalid_code => '請輸入電腦上顯示的八位配對碼。';
+	@override String get desktop_sync_another => '同步至其他瀏覽器';
 }
 
 /// The flat map containing all translations for locale <zh-TW>.
@@ -671,6 +681,16 @@ extension on TranslationsZhTw {
 			'last_background_refresh' => '上次背景更新',
 			'last_background_refresh_never' => '尚無背景更新',
 			'background_refresh_error' => '上次背景錯誤',
+			'desktop' => '電腦',
+			'sync_to_desktop' => '同步至電腦',
+			'desktop_sync_subtitle' => '將城市和設定複製到瀏覽器',
+			'desktop_sync_instructions' => '在電腦上開啟 weather.kalenwallin.com，選擇從手機同步，然後在此輸入配對碼。',
+			'desktop_pairing_code' => '配對碼',
+			'desktop_sync_send' => '傳送設定',
+			'desktop_sync_success' => '你的城市和設定已在電腦上就緒。',
+			'desktop_sync_privacy' => '瀏覽器只接收副本，不會變更此手機的設定。',
+			'desktop_sync_invalid_code' => '請輸入電腦上顯示的八位配對碼。',
+			'desktop_sync_another' => '同步至其他瀏覽器',
 			_ => null,
 		};
 	}

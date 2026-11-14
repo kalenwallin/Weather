@@ -309,5 +309,15 @@
   "colorPaletteSand": "Piaskowy",
   "lastBackgroundRefresh": "Ostatnie odświeżenie w tle",
   "lastBackgroundRefreshNever": "Brak odświeżenia w tle",
-  "backgroundRefreshError": "Ostatni błąd w tle"
+  "backgroundRefreshError": "Ostatni błąd w tle",
+  "desktop": "Komputer",
+  "syncToDesktop": "Synchronizuj z komputerem",
+  "desktopSyncSubtitle": "Skopiuj miasta i ustawienia do przeglądarki",
+  "desktopSyncInstructions": "Otwórz weather.kalenwallin.com na komputerze, wybierz synchronizację z telefonu i wpisz tutaj kod.",
+  "desktopPairingCode": "Kod parowania",
+  "desktopSyncSend": "Wyślij konfigurację",
+  "desktopSyncSuccess": "Twoje miasta i ustawienia są gotowe na komputerze.",
+  "desktopSyncPrivacy": "Przeglądarka otrzymuje tylko kopię. Ustawienia telefonu nie ulegają zmianie.",
+  "desktopSyncInvalidCode": "Wpisz ośmioznakowy kod wyświetlany na komputerze.",
+  "desktopSyncAnother": "Synchronizuj kolejną przeglądarkę"
 }

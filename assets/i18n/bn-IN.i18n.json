@@ -309,5 +309,15 @@
   "colorPaletteSand": "বালি",
   "lastBackgroundRefresh": "সর্বশেষ ব্যাকগ্রাউন্ড রিফ্রেশ",
   "lastBackgroundRefreshNever": "এখনও কোনো ব্যাকগ্রাউন্ড রিফ্রেশ নেই",
-  "backgroundRefreshError": "সর্বশেষ ব্যাকগ্রাউন্ড ত্রুটি"
+  "backgroundRefreshError": "সর্বশেষ ব্যাকগ্রাউন্ড ত্রুটি",
+  "desktop": "ডেস্কটপ",
+  "syncToDesktop": "কম্পিউটারের সঙ্গে সিঙ্ক করুন",
+  "desktopSyncSubtitle": "শহর ও সেটিংস ব্রাউজারে কপি করুন",
+  "desktopSyncInstructions": "কম্পিউটারে weather.kalenwallin.com খুলুন, ফোন থেকে সিঙ্ক বেছে নিন এবং এখানে কোড লিখুন।",
+  "desktopPairingCode": "পেয়ারিং কোড",
+  "desktopSyncSend": "সেটিংস পাঠান",
+  "desktopSyncSuccess": "আপনার শহর ও সেটিংস কম্পিউটারে প্রস্তুত।",
+  "desktopSyncPrivacy": "ব্রাউজার শুধু একটি কপি পায়। এই ফোনের সেটিংস বদলায় না।",
+  "desktopSyncInvalidCode": "কম্পিউটারে দেখানো আট অক্ষরের কোড লিখুন।",
+  "desktopSyncAnother": "অন্য ব্রাউজার সিঙ্ক করুন"
 }

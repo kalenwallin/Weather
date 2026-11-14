@@ -974,6 +974,36 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 
 	/// en-US: 'packages'
 	String get license_packages => 'packages';
+
+	/// en-US: 'Desktop'
+	String get desktop => 'Desktop';
+
+	/// en-US: 'Sync to desktop'
+	String get sync_to_desktop => 'Sync to desktop';
+
+	/// en-US: 'Copy your cities and settings to a browser'
+	String get desktop_sync_subtitle => 'Copy your cities and settings to a browser';
+
+	/// en-US: 'On your desktop, open weather.kalenwallin.com and choose Sync from phone. Enter its eight-character code below.'
+	String get desktop_sync_instructions => 'On your desktop, open weather.kalenwallin.com and choose Sync from phone. Enter its eight-character code below.';
+
+	/// en-US: 'Pairing code'
+	String get desktop_pairing_code => 'Pairing code';
+
+	/// en-US: 'Send configuration'
+	String get desktop_sync_send => 'Send configuration';
+
+	/// en-US: 'Your cities and settings are ready on your desktop.'
+	String get desktop_sync_success => 'Your cities and settings are ready on your desktop.';
+
+	/// en-US: 'Your main city, saved cities, and settings are copied to that browser. Your phone’s configuration stays as it is.'
+	String get desktop_sync_privacy => 'Your main city, saved cities, and settings are copied to that browser. Your phone’s configuration stays as it is.';
+
+	/// en-US: 'Enter the eight-character code shown on your desktop.'
+	String get desktop_sync_invalid_code => 'Enter the eight-character code shown on your desktop.';
+
+	/// en-US: 'Sync another browser'
+	String get desktop_sync_another => 'Sync another browser';
 }
 
 /// The flat map containing all translations for locale <en-US>.
@@ -1295,6 +1325,16 @@ extension on Translations {
 			'license_app_summary' => 'Built with open-source software. Tap a package to read its license.',
 			'license_dependencies' => 'Dependencies',
 			'license_packages' => 'packages',
+			'desktop' => 'Desktop',
+			'sync_to_desktop' => 'Sync to desktop',
+			'desktop_sync_subtitle' => 'Copy your cities and settings to a browser',
+			'desktop_sync_instructions' => 'On your desktop, open weather.kalenwallin.com and choose Sync from phone. Enter its eight-character code below.',
+			'desktop_pairing_code' => 'Pairing code',
+			'desktop_sync_send' => 'Send configuration',
+			'desktop_sync_success' => 'Your cities and settings are ready on your desktop.',
+			'desktop_sync_privacy' => 'Your main city, saved cities, and settings are copied to that browser. Your phone’s configuration stays as it is.',
+			'desktop_sync_invalid_code' => 'Enter the eight-character code shown on your desktop.',
+			'desktop_sync_another' => 'Sync another browser',
 			_ => null,
 		};
 	}

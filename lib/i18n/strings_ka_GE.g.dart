@@ -350,6 +350,16 @@ class TranslationsKaGe extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'ბოლო ფონური განახლება';
 	@override String get last_background_refresh_never => 'ფონური განახლება ჯერ არ მომხდარა';
 	@override String get background_refresh_error => 'ბოლო ფონური შეცდომა';
+	@override String get desktop => 'კომპიუტერი';
+	@override String get sync_to_desktop => 'კომპიუტერთან სინქრონიზაცია';
+	@override String get desktop_sync_subtitle => 'ქალაქებისა და პარამეტრების ბრაუზერში კოპირება';
+	@override String get desktop_sync_instructions => 'კომპიუტერში გახსენით weather.kalenwallin.com, აირჩიეთ ტელეფონიდან სინქრონიზაცია და აქ შეიყვანეთ კოდი.';
+	@override String get desktop_pairing_code => 'დაწყვილების კოდი';
+	@override String get desktop_sync_send => 'პარამეტრების გაგზავნა';
+	@override String get desktop_sync_success => 'თქვენი ქალაქები და პარამეტრები კომპიუტერში მზადაა.';
+	@override String get desktop_sync_privacy => 'ბრაუზერი მხოლოდ ასლს იღებს. ტელეფონის პარამეტრები არ იცვლება.';
+	@override String get desktop_sync_invalid_code => 'შეიყვანეთ კომპიუტერში ნაჩვენები რვასიმბოლოიანი კოდი.';
+	@override String get desktop_sync_another => 'სხვა ბრაუზერთან სინქრონიზაცია';
 }
 
 /// The flat map containing all translations for locale <ka-GE>.
@@ -671,6 +681,16 @@ extension on TranslationsKaGe {
 			'last_background_refresh' => 'ბოლო ფონური განახლება',
 			'last_background_refresh_never' => 'ფონური განახლება ჯერ არ მომხდარა',
 			'background_refresh_error' => 'ბოლო ფონური შეცდომა',
+			'desktop' => 'კომპიუტერი',
+			'sync_to_desktop' => 'კომპიუტერთან სინქრონიზაცია',
+			'desktop_sync_subtitle' => 'ქალაქებისა და პარამეტრების ბრაუზერში კოპირება',
+			'desktop_sync_instructions' => 'კომპიუტერში გახსენით weather.kalenwallin.com, აირჩიეთ ტელეფონიდან სინქრონიზაცია და აქ შეიყვანეთ კოდი.',
+			'desktop_pairing_code' => 'დაწყვილების კოდი',
+			'desktop_sync_send' => 'პარამეტრების გაგზავნა',
+			'desktop_sync_success' => 'თქვენი ქალაქები და პარამეტრები კომპიუტერში მზადაა.',
+			'desktop_sync_privacy' => 'ბრაუზერი მხოლოდ ასლს იღებს. ტელეფონის პარამეტრები არ იცვლება.',
+			'desktop_sync_invalid_code' => 'შეიყვანეთ კომპიუტერში ნაჩვენები რვასიმბოლოიანი კოდი.',
+			'desktop_sync_another' => 'სხვა ბრაუზერთან სინქრონიზაცია',
 			_ => null,
 		};
 	}

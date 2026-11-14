@@ -1,0 +1,37 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "weather-desktop",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-11-14",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "upload_source_maps": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "PAIRING",
+        "class_name": "WeatherPairing"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "WeatherPairing"
+      ]
+    }
+  ],
+  "account_id": "237d967ddf37a3b1587e673236320925",
+  "routes": [
+    {
+      "pattern": "weather.kalenwallin.com",
+      "custom_domain": true
+    }
+  ]
+}

@@ -350,6 +350,16 @@ class TranslationsFrFr extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Dernière actualisation en arrière-plan';
 	@override String get last_background_refresh_never => 'Aucune actualisation en arrière-plan';
 	@override String get background_refresh_error => 'Dernière erreur en arrière-plan';
+	@override String get desktop => 'Ordinateur';
+	@override String get sync_to_desktop => 'Synchroniser avec l’ordinateur';
+	@override String get desktop_sync_subtitle => 'Copier les villes et réglages dans le navigateur';
+	@override String get desktop_sync_instructions => 'Sur l’ordinateur, ouvrez weather.kalenwallin.com, choisissez la synchronisation depuis le téléphone et saisissez le code ici.';
+	@override String get desktop_pairing_code => 'Code d’association';
+	@override String get desktop_sync_send => 'Envoyer les réglages';
+	@override String get desktop_sync_success => 'Vos villes et réglages sont prêts sur l’ordinateur.';
+	@override String get desktop_sync_privacy => 'Le navigateur reçoit uniquement une copie. Les réglages du téléphone restent inchangés.';
+	@override String get desktop_sync_invalid_code => 'Saisissez le code de huit caractères affiché sur l’ordinateur.';
+	@override String get desktop_sync_another => 'Synchroniser un autre navigateur';
 }
 
 /// The flat map containing all translations for locale <fr-FR>.
@@ -671,6 +681,16 @@ extension on TranslationsFrFr {
 			'last_background_refresh' => 'Dernière actualisation en arrière-plan',
 			'last_background_refresh_never' => 'Aucune actualisation en arrière-plan',
 			'background_refresh_error' => 'Dernière erreur en arrière-plan',
+			'desktop' => 'Ordinateur',
+			'sync_to_desktop' => 'Synchroniser avec l’ordinateur',
+			'desktop_sync_subtitle' => 'Copier les villes et réglages dans le navigateur',
+			'desktop_sync_instructions' => 'Sur l’ordinateur, ouvrez weather.kalenwallin.com, choisissez la synchronisation depuis le téléphone et saisissez le code ici.',
+			'desktop_pairing_code' => 'Code d’association',
+			'desktop_sync_send' => 'Envoyer les réglages',
+			'desktop_sync_success' => 'Vos villes et réglages sont prêts sur l’ordinateur.',
+			'desktop_sync_privacy' => 'Le navigateur reçoit uniquement une copie. Les réglages du téléphone restent inchangés.',
+			'desktop_sync_invalid_code' => 'Saisissez le code de huit caractères affiché sur l’ordinateur.',
+			'desktop_sync_another' => 'Synchroniser un autre navigateur',
 			_ => null,
 		};
 	}

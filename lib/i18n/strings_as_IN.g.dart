@@ -350,6 +350,16 @@ class TranslationsAsIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'শেষৰ পটভূমি সতেজকৰণ';
 	@override String get last_background_refresh_never => 'এতিয়ালৈকে কোনো পটভূমি সতেজকৰণ নাই';
 	@override String get background_refresh_error => 'শেষৰ পটভূমি ত্ৰুটি';
+	@override String get desktop => 'ডেস্কটপ';
+	@override String get sync_to_desktop => 'কম্পিউটাৰৰ সৈতে সমন্বয় কৰক';
+	@override String get desktop_sync_subtitle => 'চহৰ আৰু ছেটিংছ ব্ৰাউজাৰলৈ কপি কৰক';
+	@override String get desktop_sync_instructions => 'কম্পিউটাৰত weather.kalenwallin.com খোলক, ফোনৰ পৰা সমন্বয় বাছক আৰু ইয়াত ক’ড দিয়ক।';
+	@override String get desktop_pairing_code => 'যোৰা লগোৱা ক’ড';
+	@override String get desktop_sync_send => 'ছেটিংছ পঠিয়াওক';
+	@override String get desktop_sync_success => 'আপোনাৰ চহৰ আৰু ছেটিংছ কম্পিউটাৰত সাজু।';
+	@override String get desktop_sync_privacy => 'ব্ৰাউজাৰে কেৱল এটা প্ৰতিলিপি পায়। এই ফোনৰ ছেটিংছ সলনি নহয়।';
+	@override String get desktop_sync_invalid_code => 'কম্পিউটাৰত দেখুওৱা আঠটা আখৰৰ ক’ড দিয়ক।';
+	@override String get desktop_sync_another => 'আন এটা ব্ৰাউজাৰ সমন্বয় কৰক';
 }
 
 /// The flat map containing all translations for locale <as-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsAsIn {
 			'last_background_refresh' => 'শেষৰ পটভূমি সতেজকৰণ',
 			'last_background_refresh_never' => 'এতিয়ালৈকে কোনো পটভূমি সতেজকৰণ নাই',
 			'background_refresh_error' => 'শেষৰ পটভূমি ত্ৰুটি',
+			'desktop' => 'ডেস্কটপ',
+			'sync_to_desktop' => 'কম্পিউটাৰৰ সৈতে সমন্বয় কৰক',
+			'desktop_sync_subtitle' => 'চহৰ আৰু ছেটিংছ ব্ৰাউজাৰলৈ কপি কৰক',
+			'desktop_sync_instructions' => 'কম্পিউটাৰত weather.kalenwallin.com খোলক, ফোনৰ পৰা সমন্বয় বাছক আৰু ইয়াত ক’ড দিয়ক।',
+			'desktop_pairing_code' => 'যোৰা লগোৱা ক’ড',
+			'desktop_sync_send' => 'ছেটিংছ পঠিয়াওক',
+			'desktop_sync_success' => 'আপোনাৰ চহৰ আৰু ছেটিংছ কম্পিউটাৰত সাজু।',
+			'desktop_sync_privacy' => 'ব্ৰাউজাৰে কেৱল এটা প্ৰতিলিপি পায়। এই ফোনৰ ছেটিংছ সলনি নহয়।',
+			'desktop_sync_invalid_code' => 'কম্পিউটাৰত দেখুওৱা আঠটা আখৰৰ ক’ড দিয়ক।',
+			'desktop_sync_another' => 'আন এটা ব্ৰাউজাৰ সমন্বয় কৰক',
 			_ => null,
 		};
 	}

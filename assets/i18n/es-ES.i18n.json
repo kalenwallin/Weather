@@ -309,5 +309,15 @@
   "colorPaletteSand": "Arena",
   "lastBackgroundRefresh": "Última actualización en segundo plano",
   "lastBackgroundRefreshNever": "Aún no hay actualización en segundo plano",
-  "backgroundRefreshError": "Último error en segundo plano"
+  "backgroundRefreshError": "Último error en segundo plano",
+  "desktop": "Ordenador",
+  "syncToDesktop": "Sincronizar con el ordenador",
+  "desktopSyncSubtitle": "Copia ciudades y ajustes al navegador",
+  "desktopSyncInstructions": "Abre weather.kalenwallin.com en el ordenador, elige sincronizar desde el teléfono e introduce aquí el código.",
+  "desktopPairingCode": "Código de vinculación",
+  "desktopSyncSend": "Enviar configuración",
+  "desktopSyncSuccess": "Tus ciudades y ajustes están listos en el ordenador.",
+  "desktopSyncPrivacy": "El navegador solo recibe una copia. Los ajustes de este teléfono no cambian.",
+  "desktopSyncInvalidCode": "Introduce el código de ocho caracteres que aparece en el ordenador.",
+  "desktopSyncAnother": "Sincronizar otro navegador"
 }

@@ -350,6 +350,16 @@ class TranslationsSkSk extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Posledná aktualizácia na pozadí';
 	@override String get last_background_refresh_never => 'Zatiaľ žiadna aktualizácia na pozadí';
 	@override String get background_refresh_error => 'Posledná chyba na pozadí';
+	@override String get desktop => 'Počítač';
+	@override String get sync_to_desktop => 'Synchronizovať s počítačom';
+	@override String get desktop_sync_subtitle => 'Skopírujte mestá a nastavenia do prehliadača';
+	@override String get desktop_sync_instructions => 'Na počítači otvorte weather.kalenwallin.com, vyberte synchronizáciu z telefónu a sem zadajte kód.';
+	@override String get desktop_pairing_code => 'Párovací kód';
+	@override String get desktop_sync_send => 'Odoslať nastavenia';
+	@override String get desktop_sync_success => 'Vaše mestá a nastavenia sú pripravené na počítači.';
+	@override String get desktop_sync_privacy => 'Prehliadač dostane iba kópiu. Nastavenia telefónu sa nezmenia.';
+	@override String get desktop_sync_invalid_code => 'Zadajte osemznakový kód zobrazený na počítači.';
+	@override String get desktop_sync_another => 'Synchronizovať ďalší prehliadač';
 }
 
 /// The flat map containing all translations for locale <sk-SK>.
@@ -671,6 +681,16 @@ extension on TranslationsSkSk {
 			'last_background_refresh' => 'Posledná aktualizácia na pozadí',
 			'last_background_refresh_never' => 'Zatiaľ žiadna aktualizácia na pozadí',
 			'background_refresh_error' => 'Posledná chyba na pozadí',
+			'desktop' => 'Počítač',
+			'sync_to_desktop' => 'Synchronizovať s počítačom',
+			'desktop_sync_subtitle' => 'Skopírujte mestá a nastavenia do prehliadača',
+			'desktop_sync_instructions' => 'Na počítači otvorte weather.kalenwallin.com, vyberte synchronizáciu z telefónu a sem zadajte kód.',
+			'desktop_pairing_code' => 'Párovací kód',
+			'desktop_sync_send' => 'Odoslať nastavenia',
+			'desktop_sync_success' => 'Vaše mestá a nastavenia sú pripravené na počítači.',
+			'desktop_sync_privacy' => 'Prehliadač dostane iba kópiu. Nastavenia telefónu sa nezmenia.',
+			'desktop_sync_invalid_code' => 'Zadajte osemznakový kód zobrazený na počítači.',
+			'desktop_sync_another' => 'Synchronizovať ďalší prehliadač',
 			_ => null,
 		};
 	}

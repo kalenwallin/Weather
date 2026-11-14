@@ -309,5 +309,15 @@
   "colorPaletteSand": "沙",
   "lastBackgroundRefresh": "上次背景更新",
   "lastBackgroundRefreshNever": "尚無背景更新",
-  "backgroundRefreshError": "上次背景錯誤"
+  "backgroundRefreshError": "上次背景錯誤",
+  "desktop": "電腦",
+  "syncToDesktop": "同步至電腦",
+  "desktopSyncSubtitle": "將城市和設定複製到瀏覽器",
+  "desktopSyncInstructions": "在電腦上開啟 weather.kalenwallin.com，選擇從手機同步，然後在此輸入配對碼。",
+  "desktopPairingCode": "配對碼",
+  "desktopSyncSend": "傳送設定",
+  "desktopSyncSuccess": "你的城市和設定已在電腦上就緒。",
+  "desktopSyncPrivacy": "瀏覽器只接收副本，不會變更此手機的設定。",
+  "desktopSyncInvalidCode": "請輸入電腦上顯示的八位配對碼。",
+  "desktopSyncAnother": "同步至其他瀏覽器"
 }

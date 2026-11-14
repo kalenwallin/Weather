@@ -350,6 +350,16 @@ class TranslationsRuRu extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Последнее фоновое обновление';
 	@override String get last_background_refresh_never => 'Фоновых обновлений ещё не было';
 	@override String get background_refresh_error => 'Последняя фоновая ошибка';
+	@override String get desktop => 'Компьютер';
+	@override String get sync_to_desktop => 'Синхронизация с компьютером';
+	@override String get desktop_sync_subtitle => 'Скопируйте города и настройки в браузер';
+	@override String get desktop_sync_instructions => 'Откройте weather.kalenwallin.com на компьютере, выберите синхронизацию с телефона и введите код здесь.';
+	@override String get desktop_pairing_code => 'Код сопряжения';
+	@override String get desktop_sync_send => 'Отправить настройки';
+	@override String get desktop_sync_success => 'Ваши города и настройки готовы на компьютере.';
+	@override String get desktop_sync_privacy => 'Браузер получает только копию. Настройки этого телефона не изменяются.';
+	@override String get desktop_sync_invalid_code => 'Введите код из восьми символов, показанный на компьютере.';
+	@override String get desktop_sync_another => 'Синхронизировать другой браузер';
 }
 
 /// The flat map containing all translations for locale <ru-RU>.
@@ -671,6 +681,16 @@ extension on TranslationsRuRu {
 			'last_background_refresh' => 'Последнее фоновое обновление',
 			'last_background_refresh_never' => 'Фоновых обновлений ещё не было',
 			'background_refresh_error' => 'Последняя фоновая ошибка',
+			'desktop' => 'Компьютер',
+			'sync_to_desktop' => 'Синхронизация с компьютером',
+			'desktop_sync_subtitle' => 'Скопируйте города и настройки в браузер',
+			'desktop_sync_instructions' => 'Откройте weather.kalenwallin.com на компьютере, выберите синхронизацию с телефона и введите код здесь.',
+			'desktop_pairing_code' => 'Код сопряжения',
+			'desktop_sync_send' => 'Отправить настройки',
+			'desktop_sync_success' => 'Ваши города и настройки готовы на компьютере.',
+			'desktop_sync_privacy' => 'Браузер получает только копию. Настройки этого телефона не изменяются.',
+			'desktop_sync_invalid_code' => 'Введите код из восьми символов, показанный на компьютере.',
+			'desktop_sync_another' => 'Синхронизировать другой браузер',
 			_ => null,
 		};
 	}

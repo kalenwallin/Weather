@@ -350,6 +350,16 @@ class TranslationsPaIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਰਿਫ੍ਰੈਸ਼';
 	@override String get last_background_refresh_never => 'ਹਾਲੇ ਕੋਈ ਬੈਕਗ੍ਰਾਊਂਡ ਰਿਫ੍ਰੈਸ਼ ਨਹੀਂ';
 	@override String get background_refresh_error => 'ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਗਲਤੀ';
+	@override String get desktop => 'ਡੈਸਕਟਾਪ';
+	@override String get sync_to_desktop => 'ਕੰਪਿਊਟਰ ਨਾਲ ਸਿੰਕ ਕਰੋ';
+	@override String get desktop_sync_subtitle => 'ਸ਼ਹਿਰ ਅਤੇ ਸੈਟਿੰਗਾਂ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਕਾਪੀ ਕਰੋ';
+	@override String get desktop_sync_instructions => 'ਕੰਪਿਊਟਰ ਉੱਤੇ weather.kalenwallin.com ਖੋਲ੍ਹੋ, ਫ਼ੋਨ ਤੋਂ ਸਿੰਕ ਚੁਣੋ ਅਤੇ ਇੱਥੇ ਕੋਡ ਭਰੋ।';
+	@override String get desktop_pairing_code => 'ਜੋੜਨ ਦਾ ਕੋਡ';
+	@override String get desktop_sync_send => 'ਸੈਟਿੰਗਾਂ ਭੇਜੋ';
+	@override String get desktop_sync_success => 'ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਅਤੇ ਸੈਟਿੰਗਾਂ ਕੰਪਿਊਟਰ ਉੱਤੇ ਤਿਆਰ ਹਨ।';
+	@override String get desktop_sync_privacy => 'ਬ੍ਰਾਊਜ਼ਰ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਕਾਪੀ ਮਿਲਦੀ ਹੈ। ਇਸ ਫ਼ੋਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨਹੀਂ ਬਦਲਦੀਆਂ।';
+	@override String get desktop_sync_invalid_code => 'ਕੰਪਿਊਟਰ ਉੱਤੇ ਦਿਖਦਾ ਅੱਠ ਅੱਖਰਾਂ ਦਾ ਕੋਡ ਭਰੋ।';
+	@override String get desktop_sync_another => 'ਹੋਰ ਬ੍ਰਾਊਜ਼ਰ ਸਿੰਕ ਕਰੋ';
 }
 
 /// The flat map containing all translations for locale <pa-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsPaIn {
 			'last_background_refresh' => 'ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਰਿਫ੍ਰੈਸ਼',
 			'last_background_refresh_never' => 'ਹਾਲੇ ਕੋਈ ਬੈਕਗ੍ਰਾਊਂਡ ਰਿਫ੍ਰੈਸ਼ ਨਹੀਂ',
 			'background_refresh_error' => 'ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਗਲਤੀ',
+			'desktop' => 'ਡੈਸਕਟਾਪ',
+			'sync_to_desktop' => 'ਕੰਪਿਊਟਰ ਨਾਲ ਸਿੰਕ ਕਰੋ',
+			'desktop_sync_subtitle' => 'ਸ਼ਹਿਰ ਅਤੇ ਸੈਟਿੰਗਾਂ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਕਾਪੀ ਕਰੋ',
+			'desktop_sync_instructions' => 'ਕੰਪਿਊਟਰ ਉੱਤੇ weather.kalenwallin.com ਖੋਲ੍ਹੋ, ਫ਼ੋਨ ਤੋਂ ਸਿੰਕ ਚੁਣੋ ਅਤੇ ਇੱਥੇ ਕੋਡ ਭਰੋ।',
+			'desktop_pairing_code' => 'ਜੋੜਨ ਦਾ ਕੋਡ',
+			'desktop_sync_send' => 'ਸੈਟਿੰਗਾਂ ਭੇਜੋ',
+			'desktop_sync_success' => 'ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਅਤੇ ਸੈਟਿੰਗਾਂ ਕੰਪਿਊਟਰ ਉੱਤੇ ਤਿਆਰ ਹਨ।',
+			'desktop_sync_privacy' => 'ਬ੍ਰਾਊਜ਼ਰ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਕਾਪੀ ਮਿਲਦੀ ਹੈ। ਇਸ ਫ਼ੋਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨਹੀਂ ਬਦਲਦੀਆਂ।',
+			'desktop_sync_invalid_code' => 'ਕੰਪਿਊਟਰ ਉੱਤੇ ਦਿਖਦਾ ਅੱਠ ਅੱਖਰਾਂ ਦਾ ਕੋਡ ਭਰੋ।',
+			'desktop_sync_another' => 'ਹੋਰ ਬ੍ਰਾਊਜ਼ਰ ਸਿੰਕ ਕਰੋ',
 			_ => null,
 		};
 	}

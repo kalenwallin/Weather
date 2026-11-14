@@ -350,6 +350,16 @@ class TranslationsNlNl extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Laatste achtergrondvernieuwing';
 	@override String get last_background_refresh_never => 'Nog geen achtergrondvernieuwing';
 	@override String get background_refresh_error => 'Laatste achtergrondfout';
+	@override String get desktop => 'Computer';
+	@override String get sync_to_desktop => 'Synchroniseren met de computer';
+	@override String get desktop_sync_subtitle => 'Kopieer steden en instellingen naar de browser';
+	@override String get desktop_sync_instructions => 'Open weather.kalenwallin.com op de computer, kies synchroniseren vanaf de telefoon en voer de code hier in.';
+	@override String get desktop_pairing_code => 'Koppelcode';
+	@override String get desktop_sync_send => 'Configuratie verzenden';
+	@override String get desktop_sync_success => 'Je steden en instellingen staan klaar op de computer.';
+	@override String get desktop_sync_privacy => 'De browser ontvangt alleen een kopie. De instellingen van deze telefoon veranderen niet.';
+	@override String get desktop_sync_invalid_code => 'Voer de code van acht tekens in die op de computer staat.';
+	@override String get desktop_sync_another => 'Een andere browser synchroniseren';
 }
 
 /// The flat map containing all translations for locale <nl-NL>.
@@ -671,6 +681,16 @@ extension on TranslationsNlNl {
 			'last_background_refresh' => 'Laatste achtergrondvernieuwing',
 			'last_background_refresh_never' => 'Nog geen achtergrondvernieuwing',
 			'background_refresh_error' => 'Laatste achtergrondfout',
+			'desktop' => 'Computer',
+			'sync_to_desktop' => 'Synchroniseren met de computer',
+			'desktop_sync_subtitle' => 'Kopieer steden en instellingen naar de browser',
+			'desktop_sync_instructions' => 'Open weather.kalenwallin.com op de computer, kies synchroniseren vanaf de telefoon en voer de code hier in.',
+			'desktop_pairing_code' => 'Koppelcode',
+			'desktop_sync_send' => 'Configuratie verzenden',
+			'desktop_sync_success' => 'Je steden en instellingen staan klaar op de computer.',
+			'desktop_sync_privacy' => 'De browser ontvangt alleen een kopie. De instellingen van deze telefoon veranderen niet.',
+			'desktop_sync_invalid_code' => 'Voer de code van acht tekens in die op de computer staat.',
+			'desktop_sync_another' => 'Een andere browser synchroniseren',
 			_ => null,
 		};
 	}

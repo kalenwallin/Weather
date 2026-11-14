@@ -309,5 +309,15 @@
   "colorPaletteSand": "ریت",
   "lastBackgroundRefresh": "آخری پس منظر ریفریش",
   "lastBackgroundRefreshNever": "ابھی تک کوئی پس منظر ریفریش نہیں",
-  "backgroundRefreshError": "آخری پس منظر خرابی"
+  "backgroundRefreshError": "آخری پس منظر خرابی",
+  "desktop": "ڈیسک ٹاپ",
+  "syncToDesktop": "کمپیوٹر کے ساتھ ہم آہنگ کریں",
+  "desktopSyncSubtitle": "شہر اور ترتیبات براؤزر میں نقل کریں",
+  "desktopSyncInstructions": "کمپیوٹر پر weather.kalenwallin.com کھولیں، فون سے ہم آہنگی منتخب کریں اور یہاں کوڈ درج کریں۔",
+  "desktopPairingCode": "جوڑنے کا کوڈ",
+  "desktopSyncSend": "ترتیبات بھیجیں",
+  "desktopSyncSuccess": "آپ کے شہر اور ترتیبات کمپیوٹر پر تیار ہیں۔",
+  "desktopSyncPrivacy": "براؤزر کو صرف ایک نقل ملتی ہے۔ اس فون کی ترتیبات تبدیل نہیں ہوتیں۔",
+  "desktopSyncInvalidCode": "کمپیوٹر پر دکھایا گیا آٹھ حروف کا کوڈ درج کریں۔",
+  "desktopSyncAnother": "دوسرا براؤزر ہم آہنگ کریں"
 }

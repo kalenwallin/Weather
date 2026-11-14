@@ -1,5 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:gap/gap.dart';
+import 'package:weather/features/settings/presentation/widgets/settings_desktop_section.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:weather/core/constants/app_constants.dart';
 import 'package:weather/features/settings/presentation/widgets/settings_about_section.dart';
@@ -23,6 +24,8 @@ class SettingsPage extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SettingsDesktopSection(),
+            Gap(AppConstants.spacingXXL),
             SettingsAppearanceSection(),
             Gap(AppConstants.spacingXXL),
             SettingsFunctionsSection(),

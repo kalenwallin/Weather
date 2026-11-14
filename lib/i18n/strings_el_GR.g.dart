@@ -350,6 +350,16 @@ class TranslationsElGr extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Τελευταία ανανέωση στο παρασκήνιο';
 	@override String get last_background_refresh_never => 'Καμία ανανέωση στο παρασκήνιο ακόμα';
 	@override String get background_refresh_error => 'Τελευταίο σφάλμα παρασκηνίου';
+	@override String get desktop => 'Υπολογιστής';
+	@override String get sync_to_desktop => 'Συγχρονισμός με υπολογιστή';
+	@override String get desktop_sync_subtitle => 'Αντιγράψτε πόλεις και ρυθμίσεις στο πρόγραμμα περιήγησης';
+	@override String get desktop_sync_instructions => 'Ανοίξτε το weather.kalenwallin.com στον υπολογιστή, επιλέξτε συγχρονισμό από το τηλέφωνο και εισαγάγετε εδώ τον κωδικό.';
+	@override String get desktop_pairing_code => 'Κωδικός σύζευξης';
+	@override String get desktop_sync_send => 'Αποστολή ρυθμίσεων';
+	@override String get desktop_sync_success => 'Οι πόλεις και οι ρυθμίσεις σας είναι έτοιμες στον υπολογιστή.';
+	@override String get desktop_sync_privacy => 'Το πρόγραμμα περιήγησης λαμβάνει μόνο αντίγραφο. Οι ρυθμίσεις του τηλεφώνου δεν αλλάζουν.';
+	@override String get desktop_sync_invalid_code => 'Εισαγάγετε τον κωδικό οκτώ χαρακτήρων από τον υπολογιστή.';
+	@override String get desktop_sync_another => 'Συγχρονισμός άλλου προγράμματος περιήγησης';
 }
 
 /// The flat map containing all translations for locale <el-GR>.
@@ -671,6 +681,16 @@ extension on TranslationsElGr {
 			'last_background_refresh' => 'Τελευταία ανανέωση στο παρασκήνιο',
 			'last_background_refresh_never' => 'Καμία ανανέωση στο παρασκήνιο ακόμα',
 			'background_refresh_error' => 'Τελευταίο σφάλμα παρασκηνίου',
+			'desktop' => 'Υπολογιστής',
+			'sync_to_desktop' => 'Συγχρονισμός με υπολογιστή',
+			'desktop_sync_subtitle' => 'Αντιγράψτε πόλεις και ρυθμίσεις στο πρόγραμμα περιήγησης',
+			'desktop_sync_instructions' => 'Ανοίξτε το weather.kalenwallin.com στον υπολογιστή, επιλέξτε συγχρονισμό από το τηλέφωνο και εισαγάγετε εδώ τον κωδικό.',
+			'desktop_pairing_code' => 'Κωδικός σύζευξης',
+			'desktop_sync_send' => 'Αποστολή ρυθμίσεων',
+			'desktop_sync_success' => 'Οι πόλεις και οι ρυθμίσεις σας είναι έτοιμες στον υπολογιστή.',
+			'desktop_sync_privacy' => 'Το πρόγραμμα περιήγησης λαμβάνει μόνο αντίγραφο. Οι ρυθμίσεις του τηλεφώνου δεν αλλάζουν.',
+			'desktop_sync_invalid_code' => 'Εισαγάγετε τον κωδικό οκτώ χαρακτήρων από τον υπολογιστή.',
+			'desktop_sync_another' => 'Συγχρονισμός άλλου προγράμματος περιήγησης',
 			_ => null,
 		};
 	}

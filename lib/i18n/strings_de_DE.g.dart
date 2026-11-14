@@ -350,6 +350,16 @@ class TranslationsDeDe extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Letzte Hintergrundaktualisierung';
 	@override String get last_background_refresh_never => 'Noch keine Hintergrundaktualisierung';
 	@override String get background_refresh_error => 'Letzter Hintergrundfehler';
+	@override String get desktop => 'Computer';
+	@override String get sync_to_desktop => 'Mit dem Computer synchronisieren';
+	@override String get desktop_sync_subtitle => 'Städte und Einstellungen in den Browser kopieren';
+	@override String get desktop_sync_instructions => 'Öffne weather.kalenwallin.com am Computer, wähle die Synchronisierung vom Handy und gib den Code hier ein.';
+	@override String get desktop_pairing_code => 'Kopplungscode';
+	@override String get desktop_sync_send => 'Einstellungen senden';
+	@override String get desktop_sync_success => 'Deine Städte und Einstellungen sind am Computer bereit.';
+	@override String get desktop_sync_privacy => 'Der Browser erhält nur eine Kopie. Die Einstellungen dieses Handys bleiben unverändert.';
+	@override String get desktop_sync_invalid_code => 'Gib den achtstelligen Code vom Computer ein.';
+	@override String get desktop_sync_another => 'Weiteren Browser synchronisieren';
 }
 
 /// The flat map containing all translations for locale <de-DE>.
@@ -671,6 +681,16 @@ extension on TranslationsDeDe {
 			'last_background_refresh' => 'Letzte Hintergrundaktualisierung',
 			'last_background_refresh_never' => 'Noch keine Hintergrundaktualisierung',
 			'background_refresh_error' => 'Letzter Hintergrundfehler',
+			'desktop' => 'Computer',
+			'sync_to_desktop' => 'Mit dem Computer synchronisieren',
+			'desktop_sync_subtitle' => 'Städte und Einstellungen in den Browser kopieren',
+			'desktop_sync_instructions' => 'Öffne weather.kalenwallin.com am Computer, wähle die Synchronisierung vom Handy und gib den Code hier ein.',
+			'desktop_pairing_code' => 'Kopplungscode',
+			'desktop_sync_send' => 'Einstellungen senden',
+			'desktop_sync_success' => 'Deine Städte und Einstellungen sind am Computer bereit.',
+			'desktop_sync_privacy' => 'Der Browser erhält nur eine Kopie. Die Einstellungen dieses Handys bleiben unverändert.',
+			'desktop_sync_invalid_code' => 'Gib den achtstelligen Code vom Computer ein.',
+			'desktop_sync_another' => 'Weiteren Browser synchronisieren',
 			_ => null,
 		};
 	}

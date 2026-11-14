@@ -309,5 +309,15 @@
   "colorPaletteSand": "Sand",
   "lastBackgroundRefresh": "Seneste baggrundsopdatering",
   "lastBackgroundRefreshNever": "Ingen baggrundsopdatering endnu",
-  "backgroundRefreshError": "Seneste baggrundsfejl"
+  "backgroundRefreshError": "Seneste baggrundsfejl",
+  "desktop": "Computer",
+  "syncToDesktop": "Synkroniser med computer",
+  "desktopSyncSubtitle": "Kopiér byer og indstillinger til browseren",
+  "desktopSyncInstructions": "Åbn weather.kalenwallin.com på computeren, vælg synkronisering fra telefonen, og indtast koden her.",
+  "desktopPairingCode": "Parringskode",
+  "desktopSyncSend": "Send indstillinger",
+  "desktopSyncSuccess": "Dine byer og indstillinger er klar på computeren.",
+  "desktopSyncPrivacy": "Browseren modtager kun en kopi. Telefonens indstillinger ændres ikke.",
+  "desktopSyncInvalidCode": "Indtast koden på otte tegn, der vises på computeren.",
+  "desktopSyncAnother": "Synkroniser en anden browser"
 }

@@ -309,5 +309,15 @@
   "colorPaletteSand": "رمل",
   "lastBackgroundRefresh": "آخر تحديث في الخلفية",
   "lastBackgroundRefreshNever": "لا يوجد تحديث في الخلفية بعد",
-  "backgroundRefreshError": "آخر خطأ في الخلفية"
+  "backgroundRefreshError": "آخر خطأ في الخلفية",
+  "desktop": "سطح المكتب",
+  "syncToDesktop": "المزامنة مع الكمبيوتر",
+  "desktopSyncSubtitle": "انسخ المدن والإعدادات إلى المتصفح",
+  "desktopSyncInstructions": "افتح weather.kalenwallin.com على الكمبيوتر، واختر المزامنة من الهاتف، ثم أدخل الرمز هنا.",
+  "desktopPairingCode": "رمز الاقتران",
+  "desktopSyncSend": "إرسال الإعدادات",
+  "desktopSyncSuccess": "أصبحت مدنك وإعداداتك جاهزة على الكمبيوتر.",
+  "desktopSyncPrivacy": "يتلقى المتصفح نسخة فقط. لا تتغير إعدادات هذا الهاتف.",
+  "desktopSyncInvalidCode": "أدخل الرمز المكوّن من ثمانية أحرف الظاهر على الكمبيوتر.",
+  "desktopSyncAnother": "مزامنة متصفح آخر"
 }

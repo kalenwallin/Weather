@@ -309,5 +309,15 @@
   "colorPaletteSand": "חול",
   "lastBackgroundRefresh": "רענון רקע אחרון",
   "lastBackgroundRefreshNever": "עדיין אין רענון רקע",
-  "backgroundRefreshError": "שגיאת רקע אחרונה"
+  "backgroundRefreshError": "שגיאת רקע אחרונה",
+  "desktop": "מחשב",
+  "syncToDesktop": "סנכרון עם המחשב",
+  "desktopSyncSubtitle": "העתקת ערים והגדרות לדפדפן",
+  "desktopSyncInstructions": "פתחו במחשב את weather.kalenwallin.com, בחרו סנכרון מהטלפון והזינו כאן את הקוד.",
+  "desktopPairingCode": "קוד התאמה",
+  "desktopSyncSend": "שליחת הגדרות",
+  "desktopSyncSuccess": "הערים וההגדרות שלכם מוכנות במחשב.",
+  "desktopSyncPrivacy": "הדפדפן מקבל עותק בלבד. הגדרות הטלפון אינן משתנות.",
+  "desktopSyncInvalidCode": "הזינו את הקוד בן שמונה התווים שמוצג במחשב.",
+  "desktopSyncAnother": "סנכרון דפדפן נוסף"
 }

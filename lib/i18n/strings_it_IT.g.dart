@@ -350,6 +350,16 @@ class TranslationsItIt extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Ultimo aggiornamento in background';
 	@override String get last_background_refresh_never => 'Nessun aggiornamento in background';
 	@override String get background_refresh_error => 'Ultimo errore in background';
+	@override String get desktop => 'Computer';
+	@override String get sync_to_desktop => 'Sincronizza con il computer';
+	@override String get desktop_sync_subtitle => 'Copia città e impostazioni nel browser';
+	@override String get desktop_sync_instructions => 'Apri weather.kalenwallin.com sul computer, scegli la sincronizzazione dal telefono e inserisci qui il codice.';
+	@override String get desktop_pairing_code => 'Codice di abbinamento';
+	@override String get desktop_sync_send => 'Invia configurazione';
+	@override String get desktop_sync_success => 'Le tue città e impostazioni sono pronte sul computer.';
+	@override String get desktop_sync_privacy => 'Il browser riceve solo una copia. Le impostazioni del telefono non cambiano.';
+	@override String get desktop_sync_invalid_code => 'Inserisci il codice di otto caratteri mostrato sul computer.';
+	@override String get desktop_sync_another => 'Sincronizza un altro browser';
 }
 
 /// The flat map containing all translations for locale <it-IT>.
@@ -671,6 +681,16 @@ extension on TranslationsItIt {
 			'last_background_refresh' => 'Ultimo aggiornamento in background',
 			'last_background_refresh_never' => 'Nessun aggiornamento in background',
 			'background_refresh_error' => 'Ultimo errore in background',
+			'desktop' => 'Computer',
+			'sync_to_desktop' => 'Sincronizza con il computer',
+			'desktop_sync_subtitle' => 'Copia città e impostazioni nel browser',
+			'desktop_sync_instructions' => 'Apri weather.kalenwallin.com sul computer, scegli la sincronizzazione dal telefono e inserisci qui il codice.',
+			'desktop_pairing_code' => 'Codice di abbinamento',
+			'desktop_sync_send' => 'Invia configurazione',
+			'desktop_sync_success' => 'Le tue città e impostazioni sono pronte sul computer.',
+			'desktop_sync_privacy' => 'Il browser riceve solo una copia. Le impostazioni del telefono non cambiano.',
+			'desktop_sync_invalid_code' => 'Inserisci il codice di otto caratteri mostrato sul computer.',
+			'desktop_sync_another' => 'Sincronizza un altro browser',
 			_ => null,
 		};
 	}

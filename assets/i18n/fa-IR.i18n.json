@@ -309,5 +309,15 @@
   "colorPaletteSand": "شن",
   "lastBackgroundRefresh": "آخرین به‌روزرسانی پس‌زمینه",
   "lastBackgroundRefreshNever": "هنوز به‌روزرسانی پس‌زمینه‌ای انجام نشده",
-  "backgroundRefreshError": "آخرین خطای پس‌زمینه"
+  "backgroundRefreshError": "آخرین خطای پس‌زمینه",
+  "desktop": "رایانه",
+  "syncToDesktop": "همگام‌سازی با رایانه",
+  "desktopSyncSubtitle": "شهرها و تنظیمات را به مرورگر کپی کنید",
+  "desktopSyncInstructions": "در رایانه weather.kalenwallin.com را باز کنید، همگام‌سازی از تلفن را انتخاب کنید و کد را اینجا وارد کنید.",
+  "desktopPairingCode": "کد جفت‌سازی",
+  "desktopSyncSend": "ارسال تنظیمات",
+  "desktopSyncSuccess": "شهرها و تنظیمات شما در رایانه آماده‌اند.",
+  "desktopSyncPrivacy": "مرورگر فقط یک نسخه دریافت می‌کند. تنظیمات این تلفن تغییر نمی‌کند.",
+  "desktopSyncInvalidCode": "کد هشت‌نویسه‌ای نمایش‌داده‌شده در رایانه را وارد کنید.",
+  "desktopSyncAnother": "همگام‌سازی مرورگری دیگر"
 }

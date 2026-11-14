@@ -350,6 +350,16 @@ class TranslationsZhCn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => '上次后台刷新';
 	@override String get last_background_refresh_never => '尚无后台刷新';
 	@override String get background_refresh_error => '上次后台错误';
+	@override String get desktop => '电脑';
+	@override String get sync_to_desktop => '同步到电脑';
+	@override String get desktop_sync_subtitle => '将城市和设置复制到浏览器';
+	@override String get desktop_sync_instructions => '在电脑上打开 weather.kalenwallin.com，选择从手机同步，然后在此输入配对码。';
+	@override String get desktop_pairing_code => '配对码';
+	@override String get desktop_sync_send => '发送配置';
+	@override String get desktop_sync_success => '你的城市和设置已在电脑上就绪。';
+	@override String get desktop_sync_privacy => '浏览器只接收副本，不会更改此手机的设置。';
+	@override String get desktop_sync_invalid_code => '请输入电脑上显示的八位配对码。';
+	@override String get desktop_sync_another => '同步到其他浏览器';
 }
 
 /// The flat map containing all translations for locale <zh-CN>.
@@ -671,6 +681,16 @@ extension on TranslationsZhCn {
 			'last_background_refresh' => '上次后台刷新',
 			'last_background_refresh_never' => '尚无后台刷新',
 			'background_refresh_error' => '上次后台错误',
+			'desktop' => '电脑',
+			'sync_to_desktop' => '同步到电脑',
+			'desktop_sync_subtitle' => '将城市和设置复制到浏览器',
+			'desktop_sync_instructions' => '在电脑上打开 weather.kalenwallin.com，选择从手机同步，然后在此输入配对码。',
+			'desktop_pairing_code' => '配对码',
+			'desktop_sync_send' => '发送配置',
+			'desktop_sync_success' => '你的城市和设置已在电脑上就绪。',
+			'desktop_sync_privacy' => '浏览器只接收副本，不会更改此手机的设置。',
+			'desktop_sync_invalid_code' => '请输入电脑上显示的八位配对码。',
+			'desktop_sync_another' => '同步到其他浏览器',
 			_ => null,
 		};
 	}

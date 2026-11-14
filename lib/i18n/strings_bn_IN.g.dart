@@ -350,6 +350,16 @@ class TranslationsBnIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'সর্বশেষ ব্যাকগ্রাউন্ড রিফ্রেশ';
 	@override String get last_background_refresh_never => 'এখনও কোনো ব্যাকগ্রাউন্ড রিফ্রেশ নেই';
 	@override String get background_refresh_error => 'সর্বশেষ ব্যাকগ্রাউন্ড ত্রুটি';
+	@override String get desktop => 'ডেস্কটপ';
+	@override String get sync_to_desktop => 'কম্পিউটারের সঙ্গে সিঙ্ক করুন';
+	@override String get desktop_sync_subtitle => 'শহর ও সেটিংস ব্রাউজারে কপি করুন';
+	@override String get desktop_sync_instructions => 'কম্পিউটারে weather.kalenwallin.com খুলুন, ফোন থেকে সিঙ্ক বেছে নিন এবং এখানে কোড লিখুন।';
+	@override String get desktop_pairing_code => 'পেয়ারিং কোড';
+	@override String get desktop_sync_send => 'সেটিংস পাঠান';
+	@override String get desktop_sync_success => 'আপনার শহর ও সেটিংস কম্পিউটারে প্রস্তুত।';
+	@override String get desktop_sync_privacy => 'ব্রাউজার শুধু একটি কপি পায়। এই ফোনের সেটিংস বদলায় না।';
+	@override String get desktop_sync_invalid_code => 'কম্পিউটারে দেখানো আট অক্ষরের কোড লিখুন।';
+	@override String get desktop_sync_another => 'অন্য ব্রাউজার সিঙ্ক করুন';
 }
 
 /// The flat map containing all translations for locale <bn-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsBnIn {
 			'last_background_refresh' => 'সর্বশেষ ব্যাকগ্রাউন্ড রিফ্রেশ',
 			'last_background_refresh_never' => 'এখনও কোনো ব্যাকগ্রাউন্ড রিফ্রেশ নেই',
 			'background_refresh_error' => 'সর্বশেষ ব্যাকগ্রাউন্ড ত্রুটি',
+			'desktop' => 'ডেস্কটপ',
+			'sync_to_desktop' => 'কম্পিউটারের সঙ্গে সিঙ্ক করুন',
+			'desktop_sync_subtitle' => 'শহর ও সেটিংস ব্রাউজারে কপি করুন',
+			'desktop_sync_instructions' => 'কম্পিউটারে weather.kalenwallin.com খুলুন, ফোন থেকে সিঙ্ক বেছে নিন এবং এখানে কোড লিখুন।',
+			'desktop_pairing_code' => 'পেয়ারিং কোড',
+			'desktop_sync_send' => 'সেটিংস পাঠান',
+			'desktop_sync_success' => 'আপনার শহর ও সেটিংস কম্পিউটারে প্রস্তুত।',
+			'desktop_sync_privacy' => 'ব্রাউজার শুধু একটি কপি পায়। এই ফোনের সেটিংস বদলায় না।',
+			'desktop_sync_invalid_code' => 'কম্পিউটারে দেখানো আট অক্ষরের কোড লিখুন।',
+			'desktop_sync_another' => 'অন্য ব্রাউজার সিঙ্ক করুন',
 			_ => null,
 		};
 	}

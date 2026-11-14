@@ -309,5 +309,15 @@
   "colorPaletteSand": "Άμμος",
   "lastBackgroundRefresh": "Τελευταία ανανέωση στο παρασκήνιο",
   "lastBackgroundRefreshNever": "Καμία ανανέωση στο παρασκήνιο ακόμα",
-  "backgroundRefreshError": "Τελευταίο σφάλμα παρασκηνίου"
+  "backgroundRefreshError": "Τελευταίο σφάλμα παρασκηνίου",
+  "desktop": "Υπολογιστής",
+  "syncToDesktop": "Συγχρονισμός με υπολογιστή",
+  "desktopSyncSubtitle": "Αντιγράψτε πόλεις και ρυθμίσεις στο πρόγραμμα περιήγησης",
+  "desktopSyncInstructions": "Ανοίξτε το weather.kalenwallin.com στον υπολογιστή, επιλέξτε συγχρονισμό από το τηλέφωνο και εισαγάγετε εδώ τον κωδικό.",
+  "desktopPairingCode": "Κωδικός σύζευξης",
+  "desktopSyncSend": "Αποστολή ρυθμίσεων",
+  "desktopSyncSuccess": "Οι πόλεις και οι ρυθμίσεις σας είναι έτοιμες στον υπολογιστή.",
+  "desktopSyncPrivacy": "Το πρόγραμμα περιήγησης λαμβάνει μόνο αντίγραφο. Οι ρυθμίσεις του τηλεφώνου δεν αλλάζουν.",
+  "desktopSyncInvalidCode": "Εισαγάγετε τον κωδικό οκτώ χαρακτήρων από τον υπολογιστή.",
+  "desktopSyncAnother": "Συγχρονισμός άλλου προγράμματος περιήγησης"
 }

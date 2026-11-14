@@ -309,5 +309,15 @@
   "colorPaletteSand": "ବାଳି",
   "lastBackgroundRefresh": "ଶେଷ ପୃଷ୍ଠପଟି ରିଫ୍ରେଶ",
   "lastBackgroundRefreshNever": "ଏପର୍ଯ୍ୟନ୍ତ କono ପୃଷ୍ଠପଟି ରିଫ୍ରେଶ ନାହିଁ",
-  "backgroundRefreshError": "ଶେଷ ପୃଷ୍ଠପଟି ତ୍ରୁଟି"
+  "backgroundRefreshError": "ଶେଷ ପୃଷ୍ଠପଟି ତ୍ରୁଟି",
+  "desktop": "ଡେସ୍କଟପ୍",
+  "syncToDesktop": "କମ୍ପ୍ୟୁଟର ସହ ସିଙ୍କ୍ କରନ୍ତୁ",
+  "desktopSyncSubtitle": "ସହର ଓ ସେଟିଂସ୍ ବ୍ରାଉଜରକୁ କପି କରନ୍ତୁ",
+  "desktopSyncInstructions": "କମ୍ପ୍ୟୁଟରରେ weather.kalenwallin.com ଖୋଲନ୍ତୁ, ଫୋନ୍‌ରୁ ସିଙ୍କ୍ ବାଛନ୍ତୁ ଏବଂ ଏଠାରେ କୋଡ୍ ଦିଅନ୍ତୁ।",
+  "desktopPairingCode": "ଯୋଡ଼ିବା କୋଡ୍",
+  "desktopSyncSend": "ସେଟିଂସ୍ ପଠାନ୍ତୁ",
+  "desktopSyncSuccess": "ଆପଣଙ୍କ ସହର ଓ ସେଟିଂସ୍ କମ୍ପ୍ୟୁଟରରେ ପ୍ରସ୍ତୁତ।",
+  "desktopSyncPrivacy": "ବ୍ରାଉଜର କେବଳ ଏକ ନକଲ ପାଏ। ଏହି ଫୋନ୍‌ର ସେଟିଂସ୍ ବଦଳେ ନାହିଁ।",
+  "desktopSyncInvalidCode": "କମ୍ପ୍ୟୁଟରରେ ଦେଖାଯାଉଥିବା ଆଠ ଅକ୍ଷରର କୋଡ୍ ଦିଅନ୍ତୁ।",
+  "desktopSyncAnother": "ଅନ୍ୟ ବ୍ରାଉଜର ସିଙ୍କ୍ କରନ୍ତୁ"
 }

@@ -309,5 +309,15 @@
   "colorPaletteSand": "वाळू",
   "lastBackgroundRefresh": "शेवटचे पार्श्वभूमी रिफ्रेश",
   "lastBackgroundRefreshNever": "अद्याप पार्श्वभूमी रिफ्रेश नाही",
-  "backgroundRefreshError": "शेवटची पार्श्वभूमी त्रुटी"
+  "backgroundRefreshError": "शेवटची पार्श्वभूमी त्रुटी",
+  "desktop": "डेस्कटॉप",
+  "syncToDesktop": "संगणकाशी समक्रमित करा",
+  "desktopSyncSubtitle": "शहरे आणि सेटिंग्ज ब्राउझरमध्ये कॉपी करा",
+  "desktopSyncInstructions": "संगणकावर weather.kalenwallin.com उघडा, फोनवरून समक्रमण निवडा आणि येथे कोड टाका.",
+  "desktopPairingCode": "जोडणी कोड",
+  "desktopSyncSend": "सेटिंग्ज पाठवा",
+  "desktopSyncSuccess": "तुमची शहरे आणि सेटिंग्ज संगणकावर तयार आहेत.",
+  "desktopSyncPrivacy": "ब्राउझरला फक्त प्रत मिळते. या फोनची सेटिंग्ज बदलत नाहीत.",
+  "desktopSyncInvalidCode": "संगणकावर दिसणारा आठ अक्षरांचा कोड टाका.",
+  "desktopSyncAnother": "दुसरा ब्राउझर समक्रमित करा"
 }

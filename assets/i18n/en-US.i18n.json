@@ -309,5 +309,15 @@
   "timeUnavailable": "--:--",
   "licenseAppSummary": "Built with open-source software. Tap a package to read its license.",
   "licenseDependencies": "Dependencies",
-  "licensePackages": "packages"
+  "licensePackages": "packages",
+  "desktop": "Desktop",
+  "syncToDesktop": "Sync to desktop",
+  "desktopSyncSubtitle": "Copy your cities and settings to a browser",
+  "desktopSyncInstructions": "On your desktop, open weather.kalenwallin.com and choose Sync from phone. Enter its eight-character code below.",
+  "desktopPairingCode": "Pairing code",
+  "desktopSyncSend": "Send configuration",
+  "desktopSyncSuccess": "Your cities and settings are ready on your desktop.",
+  "desktopSyncPrivacy": "Your main city, saved cities, and settings are copied to that browser. Your phone’s configuration stays as it is.",
+  "desktopSyncInvalidCode": "Enter the eight-character code shown on your desktop.",
+  "desktopSyncAnother": "Sync another browser"
 }

@@ -309,5 +309,15 @@
   "colorPaletteSand": "Areia",
   "lastBackgroundRefresh": "Última atualização em segundo plano",
   "lastBackgroundRefreshNever": "Ainda sem atualização em segundo plano",
-  "backgroundRefreshError": "Último erro em segundo plano"
+  "backgroundRefreshError": "Último erro em segundo plano",
+  "desktop": "Computador",
+  "syncToDesktop": "Sincronizar com o computador",
+  "desktopSyncSubtitle": "Copie cidades e definições para o navegador",
+  "desktopSyncInstructions": "Abra weather.kalenwallin.com no computador, escolha sincronizar do telemóvel e introduza aqui o código.",
+  "desktopPairingCode": "Código de emparelhamento",
+  "desktopSyncSend": "Enviar definições",
+  "desktopSyncSuccess": "As suas cidades e definições estão prontas no computador.",
+  "desktopSyncPrivacy": "O navegador recebe apenas uma cópia. As definições deste telemóvel não mudam.",
+  "desktopSyncInvalidCode": "Introduza o código de oito carateres apresentado no computador.",
+  "desktopSyncAnother": "Sincronizar outro navegador"
 }

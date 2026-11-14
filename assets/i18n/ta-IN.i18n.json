@@ -309,5 +309,15 @@
   "colorPaletteSand": "மணல்",
   "lastBackgroundRefresh": "கடைசி பின்னணி புதுப்பிப்பு",
   "lastBackgroundRefreshNever": "இன்னும் பின்னணி புதுப்பிப்பு இல்லை",
-  "backgroundRefreshError": "கடைசி பின்னணி பிழை"
+  "backgroundRefreshError": "கடைசி பின்னணி பிழை",
+  "desktop": "டெஸ்க்டாப்",
+  "syncToDesktop": "கணினியுடன் ஒத்திசைக்கவும்",
+  "desktopSyncSubtitle": "நகரங்களையும் அமைப்புகளையும் உலாவியில் நகலெடுக்கவும்",
+  "desktopSyncInstructions": "கணினியில் weather.kalenwallin.com திறந்து, தொலைபேசியிலிருந்து ஒத்திசைப்பதைத் தேர்ந்தெடுத்து, குறியீட்டை இங்கே உள்ளிடவும்.",
+  "desktopPairingCode": "இணைத்தல் குறியீடு",
+  "desktopSyncSend": "அமைப்புகளை அனுப்பவும்",
+  "desktopSyncSuccess": "உங்கள் நகரங்களும் அமைப்புகளும் கணினியில் தயாராக உள்ளன.",
+  "desktopSyncPrivacy": "உலாவி நகலை மட்டுமே பெறும். இந்தத் தொலைபேசியின் அமைப்புகள் மாறாது.",
+  "desktopSyncInvalidCode": "கணினியில் காட்டப்படும் எட்டு எழுத்துக் குறியீட்டை உள்ளிடவும்.",
+  "desktopSyncAnother": "மற்றொரு உலாவியை ஒத்திசைக்கவும்"
 }

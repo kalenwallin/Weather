@@ -309,5 +309,15 @@
   "colorPaletteSand": "ఇసుక",
   "lastBackgroundRefresh": "చివరి నేపథ్య రిఫ్రెష్",
   "lastBackgroundRefreshNever": "ఇంకా నేపథ్య రిఫ్రెష్ లేదు",
-  "backgroundRefreshError": "చివరి నేపథ్య లోపం"
+  "backgroundRefreshError": "చివరి నేపథ్య లోపం",
+  "desktop": "డెస్క్‌టాప్",
+  "syncToDesktop": "కంప్యూటర్‌తో సమకాలీకరించండి",
+  "desktopSyncSubtitle": "నగరాలు మరియు సెట్టింగ్‌లను బ్రౌజర్‌కు కాపీ చేయండి",
+  "desktopSyncInstructions": "కంప్యూటర్‌లో weather.kalenwallin.com తెరిచి, ఫోన్ నుండి సమకాలీకరణ ఎంచుకుని కోడ్‌ను ఇక్కడ నమోదు చేయండి.",
+  "desktopPairingCode": "జత చేసే కోడ్",
+  "desktopSyncSend": "సెట్టింగ్‌లను పంపండి",
+  "desktopSyncSuccess": "మీ నగరాలు మరియు సెట్టింగ్‌లు కంప్యూటర్‌లో సిద్ధంగా ఉన్నాయి.",
+  "desktopSyncPrivacy": "బ్రౌజర్‌కు కాపీ మాత్రమే అందుతుంది. ఈ ఫోన్ సెట్టింగ్‌లు మారవు.",
+  "desktopSyncInvalidCode": "కంప్యూటర్‌లో కనిపించే ఎనిమిది అక్షరాల కోడ్‌ను నమోదు చేయండి.",
+  "desktopSyncAnother": "మరో బ్రౌజర్‌ను సమకాలీకరించండి"
 }

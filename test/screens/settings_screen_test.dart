@@ -32,7 +32,8 @@ void main() {
 
       expect(find.text('Appearance'), findsOneWidget);
       expect(find.text('Functions'), findsOneWidget);
-      expect(find.byType(SettingsSection), findsNWidgets(7));
+      expect(find.text('Sync to desktop'), findsOneWidget);
+      expect(find.byType(SettingsSection), findsNWidgets(8));
     });
 
     testWidgets('reflects persisted AMOLED theme setting', (tester) async {

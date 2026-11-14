@@ -309,5 +309,15 @@
   "colorPaletteSand": "Zand",
   "lastBackgroundRefresh": "Laatste achtergrondvernieuwing",
   "lastBackgroundRefreshNever": "Nog geen achtergrondvernieuwing",
-  "backgroundRefreshError": "Laatste achtergrondfout"
+  "backgroundRefreshError": "Laatste achtergrondfout",
+  "desktop": "Computer",
+  "syncToDesktop": "Synchroniseren met de computer",
+  "desktopSyncSubtitle": "Kopieer steden en instellingen naar de browser",
+  "desktopSyncInstructions": "Open weather.kalenwallin.com op de computer, kies synchroniseren vanaf de telefoon en voer de code hier in.",
+  "desktopPairingCode": "Koppelcode",
+  "desktopSyncSend": "Configuratie verzenden",
+  "desktopSyncSuccess": "Je steden en instellingen staan klaar op de computer.",
+  "desktopSyncPrivacy": "De browser ontvangt alleen een kopie. De instellingen van deze telefoon veranderen niet.",
+  "desktopSyncInvalidCode": "Voer de code van acht tekens in die op de computer staat.",
+  "desktopSyncAnother": "Een andere browser synchroniseren"
 }

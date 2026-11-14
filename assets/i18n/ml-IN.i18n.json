@@ -309,5 +309,15 @@
   "colorPaletteSand": "മണൽ",
   "lastBackgroundRefresh": "അവസാന പശ്ചാത്തല റിഫ്രഷ്",
   "lastBackgroundRefreshNever": "ഇതുവരെ പശ്ചാത്തല റിഫ്രESH ഇല്ല",
-  "backgroundRefreshError": "അവസാന പശ്ചാത്തല പിശക്"
+  "backgroundRefreshError": "അവസാന പശ്ചാത്തല പിശക്",
+  "desktop": "ഡെസ്ക്ടോപ്പ്",
+  "syncToDesktop": "കമ്പ്യൂട്ടറുമായി സമന്വയിപ്പിക്കുക",
+  "desktopSyncSubtitle": "നഗരങ്ങളും ക്രമീകരണങ്ങളും ബ്രൗസറിലേക്ക് പകർത്തുക",
+  "desktopSyncInstructions": "കമ്പ്യൂട്ടറിൽ weather.kalenwallin.com തുറന്ന് ഫോണിൽനിന്നുള്ള സമന്വയം തിരഞ്ഞെടുത്ത് കോഡ് ഇവിടെ നൽകുക.",
+  "desktopPairingCode": "ജോടിയാക്കൽ കോഡ്",
+  "desktopSyncSend": "ക്രമീകരണങ്ങൾ അയയ്ക്കുക",
+  "desktopSyncSuccess": "നിങ്ങളുടെ നഗരങ്ങളും ക്രമീകരണങ്ങളും കമ്പ്യൂട്ടറിൽ തയ്യാറാണ്.",
+  "desktopSyncPrivacy": "ബ്രൗസറിന് ഒരു പകർപ്പ് മാത്രമാണ് ലഭിക്കുന്നത്. ഫോണിന്റെ ക്രമീകരണങ്ങൾ മാറില്ല.",
+  "desktopSyncInvalidCode": "കമ്പ്യൂട്ടറിൽ കാണുന്ന എട്ടക്ഷര കോഡ് നൽകുക.",
+  "desktopSyncAnother": "മറ്റൊരു ബ്രൗസർ സമന്വയിപ്പിക്കുക"
 }

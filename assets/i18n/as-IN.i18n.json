@@ -309,5 +309,15 @@
   "colorPaletteSand": "বালি",
   "lastBackgroundRefresh": "শেষৰ পটভূমি সতেজকৰণ",
   "lastBackgroundRefreshNever": "এতিয়ালৈকে কোনো পটভূমি সতেজকৰণ নাই",
-  "backgroundRefreshError": "শেষৰ পটভূমি ত্ৰুটি"
+  "backgroundRefreshError": "শেষৰ পটভূমি ত্ৰুটি",
+  "desktop": "ডেস্কটপ",
+  "syncToDesktop": "কম্পিউটাৰৰ সৈতে সমন্বয় কৰক",
+  "desktopSyncSubtitle": "চহৰ আৰু ছেটিংছ ব্ৰাউজাৰলৈ কপি কৰক",
+  "desktopSyncInstructions": "কম্পিউটাৰত weather.kalenwallin.com খোলক, ফোনৰ পৰা সমন্বয় বাছক আৰু ইয়াত ক’ড দিয়ক।",
+  "desktopPairingCode": "যোৰা লগোৱা ক’ড",
+  "desktopSyncSend": "ছেটিংছ পঠিয়াওক",
+  "desktopSyncSuccess": "আপোনাৰ চহৰ আৰু ছেটিংছ কম্পিউটাৰত সাজু।",
+  "desktopSyncPrivacy": "ব্ৰাউজাৰে কেৱল এটা প্ৰতিলিপি পায়। এই ফোনৰ ছেটিংছ সলনি নহয়।",
+  "desktopSyncInvalidCode": "কম্পিউটাৰত দেখুওৱা আঠটা আখৰৰ ক’ড দিয়ক।",
+  "desktopSyncAnother": "আন এটা ব্ৰাউজাৰ সমন্বয় কৰক"
 }

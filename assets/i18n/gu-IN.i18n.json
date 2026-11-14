@@ -309,5 +309,15 @@
   "colorPaletteSand": "રેત",
   "lastBackgroundRefresh": "છેલ્લું પૃષ્ઠભૂમિ રિફ્રેશ",
   "lastBackgroundRefreshNever": "હજી સુધી કોઈ પૃષ્ઠભૂમિ રિફ્રેશ નથી",
-  "backgroundRefreshError": "છેલ્લી પૃષ્ઠભૂમિ ભૂલ"
+  "backgroundRefreshError": "છેલ્લી પૃષ્ઠભૂમિ ભૂલ",
+  "desktop": "ડેસ્કટોપ",
+  "syncToDesktop": "કમ્પ્યુટર સાથે સમન્વય કરો",
+  "desktopSyncSubtitle": "શહેરો અને સેટિંગ્સ બ્રાઉઝરમાં કૉપિ કરો",
+  "desktopSyncInstructions": "કમ્પ્યુટર પર weather.kalenwallin.com ખોલો, ફોનમાંથી સમન્વય પસંદ કરો અને અહીં કોડ દાખલ કરો.",
+  "desktopPairingCode": "જોડાણ કોડ",
+  "desktopSyncSend": "સેટિંગ્સ મોકલો",
+  "desktopSyncSuccess": "તમારાં શહેરો અને સેટિંગ્સ કમ્પ્યુટર પર તૈયાર છે.",
+  "desktopSyncPrivacy": "બ્રાઉઝરને ફક્ત નકલ મળે છે. આ ફોનનાં સેટિંગ્સ બદલાતાં નથી.",
+  "desktopSyncInvalidCode": "કમ્પ્યુટર પર દેખાતો આઠ અક્ષરનો કોડ દાખલ કરો.",
+  "desktopSyncAnother": "બીજું બ્રાઉઝર સમન્વય કરો"
 }

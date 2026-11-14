@@ -309,5 +309,15 @@
   "colorPaletteSand": "Nisip",
   "lastBackgroundRefresh": "Ultima reîmprospătare în fundal",
   "lastBackgroundRefreshNever": "Nicio reîmprospătare în fundal",
-  "backgroundRefreshError": "Ultima eroare în fundal"
+  "backgroundRefreshError": "Ultima eroare în fundal",
+  "desktop": "Calculator",
+  "syncToDesktop": "Sincronizare cu calculatorul",
+  "desktopSyncSubtitle": "Copiază orașele și setările în browser",
+  "desktopSyncInstructions": "Deschide weather.kalenwallin.com pe calculator, alege sincronizarea de pe telefon și introdu codul aici.",
+  "desktopPairingCode": "Cod de asociere",
+  "desktopSyncSend": "Trimite configurația",
+  "desktopSyncSuccess": "Orașele și setările tale sunt pregătite pe calculator.",
+  "desktopSyncPrivacy": "Browserul primește doar o copie. Setările acestui telefon nu se schimbă.",
+  "desktopSyncInvalidCode": "Introdu codul de opt caractere afișat pe calculator.",
+  "desktopSyncAnother": "Sincronizează alt browser"
 }

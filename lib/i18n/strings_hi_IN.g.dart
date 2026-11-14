@@ -350,6 +350,16 @@ class TranslationsHiIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'अंतिम पृष्ठभूमि रीफ़्रेश';
 	@override String get last_background_refresh_never => 'अभी तक कोई पृष्ठभूमि रीफ़्रेश नहीं';
 	@override String get background_refresh_error => 'अंतिम पृष्ठभूमि त्रुटि';
+	@override String get desktop => 'डेस्कटॉप';
+	@override String get sync_to_desktop => 'कंप्यूटर से सिंक करें';
+	@override String get desktop_sync_subtitle => 'शहर और सेटिंग्स ब्राउज़र में कॉपी करें';
+	@override String get desktop_sync_instructions => 'कंप्यूटर पर weather.kalenwallin.com खोलें, फ़ोन से सिंक चुनें और यहाँ कोड दर्ज करें।';
+	@override String get desktop_pairing_code => 'पेयरिंग कोड';
+	@override String get desktop_sync_send => 'सेटिंग्स भेजें';
+	@override String get desktop_sync_success => 'आपके शहर और सेटिंग्स कंप्यूटर पर तैयार हैं।';
+	@override String get desktop_sync_privacy => 'ब्राउज़र को केवल एक कॉपी मिलती है। इस फ़ोन की सेटिंग्स नहीं बदलतीं।';
+	@override String get desktop_sync_invalid_code => 'कंप्यूटर पर दिखने वाला आठ अक्षरों का कोड दर्ज करें।';
+	@override String get desktop_sync_another => 'दूसरा ब्राउज़र सिंक करें';
 }
 
 /// The flat map containing all translations for locale <hi-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsHiIn {
 			'last_background_refresh' => 'अंतिम पृष्ठभूमि रीफ़्रेश',
 			'last_background_refresh_never' => 'अभी तक कोई पृष्ठभूमि रीफ़्रेश नहीं',
 			'background_refresh_error' => 'अंतिम पृष्ठभूमि त्रुटि',
+			'desktop' => 'डेस्कटॉप',
+			'sync_to_desktop' => 'कंप्यूटर से सिंक करें',
+			'desktop_sync_subtitle' => 'शहर और सेटिंग्स ब्राउज़र में कॉपी करें',
+			'desktop_sync_instructions' => 'कंप्यूटर पर weather.kalenwallin.com खोलें, फ़ोन से सिंक चुनें और यहाँ कोड दर्ज करें।',
+			'desktop_pairing_code' => 'पेयरिंग कोड',
+			'desktop_sync_send' => 'सेटिंग्स भेजें',
+			'desktop_sync_success' => 'आपके शहर और सेटिंग्स कंप्यूटर पर तैयार हैं।',
+			'desktop_sync_privacy' => 'ब्राउज़र को केवल एक कॉपी मिलती है। इस फ़ोन की सेटिंग्स नहीं बदलतीं।',
+			'desktop_sync_invalid_code' => 'कंप्यूटर पर दिखने वाला आठ अक्षरों का कोड दर्ज करें।',
+			'desktop_sync_another' => 'दूसरा ब्राउज़र सिंक करें',
 			_ => null,
 		};
 	}

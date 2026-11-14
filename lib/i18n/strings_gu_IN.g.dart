@@ -350,6 +350,16 @@ class TranslationsGuIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'છેલ્લું પૃષ્ઠભૂમિ રિફ્રેશ';
 	@override String get last_background_refresh_never => 'હજી સુધી કોઈ પૃષ્ઠભૂમિ રિફ્રેશ નથી';
 	@override String get background_refresh_error => 'છેલ્લી પૃષ્ઠભૂમિ ભૂલ';
+	@override String get desktop => 'ડેસ્કટોપ';
+	@override String get sync_to_desktop => 'કમ્પ્યુટર સાથે સમન્વય કરો';
+	@override String get desktop_sync_subtitle => 'શહેરો અને સેટિંગ્સ બ્રાઉઝરમાં કૉપિ કરો';
+	@override String get desktop_sync_instructions => 'કમ્પ્યુટર પર weather.kalenwallin.com ખોલો, ફોનમાંથી સમન્વય પસંદ કરો અને અહીં કોડ દાખલ કરો.';
+	@override String get desktop_pairing_code => 'જોડાણ કોડ';
+	@override String get desktop_sync_send => 'સેટિંગ્સ મોકલો';
+	@override String get desktop_sync_success => 'તમારાં શહેરો અને સેટિંગ્સ કમ્પ્યુટર પર તૈયાર છે.';
+	@override String get desktop_sync_privacy => 'બ્રાઉઝરને ફક્ત નકલ મળે છે. આ ફોનનાં સેટિંગ્સ બદલાતાં નથી.';
+	@override String get desktop_sync_invalid_code => 'કમ્પ્યુટર પર દેખાતો આઠ અક્ષરનો કોડ દાખલ કરો.';
+	@override String get desktop_sync_another => 'બીજું બ્રાઉઝર સમન્વય કરો';
 }
 
 /// The flat map containing all translations for locale <gu-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsGuIn {
 			'last_background_refresh' => 'છેલ્લું પૃષ્ઠભૂમિ રિફ્રેશ',
 			'last_background_refresh_never' => 'હજી સુધી કોઈ પૃષ્ઠભૂમિ રિફ્રેશ નથી',
 			'background_refresh_error' => 'છેલ્લી પૃષ્ઠભૂમિ ભૂલ',
+			'desktop' => 'ડેસ્કટોપ',
+			'sync_to_desktop' => 'કમ્પ્યુટર સાથે સમન્વય કરો',
+			'desktop_sync_subtitle' => 'શહેરો અને સેટિંગ્સ બ્રાઉઝરમાં કૉપિ કરો',
+			'desktop_sync_instructions' => 'કમ્પ્યુટર પર weather.kalenwallin.com ખોલો, ફોનમાંથી સમન્વય પસંદ કરો અને અહીં કોડ દાખલ કરો.',
+			'desktop_pairing_code' => 'જોડાણ કોડ',
+			'desktop_sync_send' => 'સેટિંગ્સ મોકલો',
+			'desktop_sync_success' => 'તમારાં શહેરો અને સેટિંગ્સ કમ્પ્યુટર પર તૈયાર છે.',
+			'desktop_sync_privacy' => 'બ્રાઉઝરને ફક્ત નકલ મળે છે. આ ફોનનાં સેટિંગ્સ બદલાતાં નથી.',
+			'desktop_sync_invalid_code' => 'કમ્પ્યુટર પર દેખાતો આઠ અક્ષરનો કોડ દાખલ કરો.',
+			'desktop_sync_another' => 'બીજું બ્રાઉઝર સમન્વય કરો',
 			_ => null,
 		};
 	}

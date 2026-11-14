@@ -350,6 +350,16 @@ class TranslationsHeIl extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'רענון רקע אחרון';
 	@override String get last_background_refresh_never => 'עדיין אין רענון רקע';
 	@override String get background_refresh_error => 'שגיאת רקע אחרונה';
+	@override String get desktop => 'מחשב';
+	@override String get sync_to_desktop => 'סנכרון עם המחשב';
+	@override String get desktop_sync_subtitle => 'העתקת ערים והגדרות לדפדפן';
+	@override String get desktop_sync_instructions => 'פתחו במחשב את weather.kalenwallin.com, בחרו סנכרון מהטלפון והזינו כאן את הקוד.';
+	@override String get desktop_pairing_code => 'קוד התאמה';
+	@override String get desktop_sync_send => 'שליחת הגדרות';
+	@override String get desktop_sync_success => 'הערים וההגדרות שלכם מוכנות במחשב.';
+	@override String get desktop_sync_privacy => 'הדפדפן מקבל עותק בלבד. הגדרות הטלפון אינן משתנות.';
+	@override String get desktop_sync_invalid_code => 'הזינו את הקוד בן שמונה התווים שמוצג במחשב.';
+	@override String get desktop_sync_another => 'סנכרון דפדפן נוסף';
 }
 
 /// The flat map containing all translations for locale <he-IL>.
@@ -671,6 +681,16 @@ extension on TranslationsHeIl {
 			'last_background_refresh' => 'רענון רקע אחרון',
 			'last_background_refresh_never' => 'עדיין אין רענון רקע',
 			'background_refresh_error' => 'שגיאת רקע אחרונה',
+			'desktop' => 'מחשב',
+			'sync_to_desktop' => 'סנכרון עם המחשב',
+			'desktop_sync_subtitle' => 'העתקת ערים והגדרות לדפדפן',
+			'desktop_sync_instructions' => 'פתחו במחשב את weather.kalenwallin.com, בחרו סנכרון מהטלפון והזינו כאן את הקוד.',
+			'desktop_pairing_code' => 'קוד התאמה',
+			'desktop_sync_send' => 'שליחת הגדרות',
+			'desktop_sync_success' => 'הערים וההגדרות שלכם מוכנות במחשב.',
+			'desktop_sync_privacy' => 'הדפדפן מקבל עותק בלבד. הגדרות הטלפון אינן משתנות.',
+			'desktop_sync_invalid_code' => 'הזינו את הקוד בן שמונה התווים שמוצג במחשב.',
+			'desktop_sync_another' => 'סנכרון דפדפן נוסף',
 			_ => null,
 		};
 	}

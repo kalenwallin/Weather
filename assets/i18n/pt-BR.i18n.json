@@ -309,5 +309,15 @@
   "colorPaletteSand": "Areia",
   "lastBackgroundRefresh": "Última atualização em segundo plano",
   "lastBackgroundRefreshNever": "Nenhuma atualização em segundo plano",
-  "backgroundRefreshError": "Último erro em segundo plano"
+  "backgroundRefreshError": "Último erro em segundo plano",
+  "desktop": "Computador",
+  "syncToDesktop": "Sincronizar com o computador",
+  "desktopSyncSubtitle": "Copie cidades e configurações para o navegador",
+  "desktopSyncInstructions": "Abra weather.kalenwallin.com no computador, escolha sincronizar do celular e digite o código aqui.",
+  "desktopPairingCode": "Código de pareamento",
+  "desktopSyncSend": "Enviar configurações",
+  "desktopSyncSuccess": "Suas cidades e configurações estão prontas no computador.",
+  "desktopSyncPrivacy": "O navegador recebe apenas uma cópia. As configurações deste celular não mudam.",
+  "desktopSyncInvalidCode": "Digite o código de oito caracteres exibido no computador.",
+  "desktopSyncAnother": "Sincronizar outro navegador"
 }

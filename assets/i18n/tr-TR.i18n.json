@@ -309,5 +309,15 @@
   "colorPaletteSand": "Kum",
   "lastBackgroundRefresh": "Son arka plan yenilemesi",
   "lastBackgroundRefreshNever": "Henüz arka plan yenilemesi yok",
-  "backgroundRefreshError": "Son arka plan hatası"
+  "backgroundRefreshError": "Son arka plan hatası",
+  "desktop": "Bilgisayar",
+  "syncToDesktop": "Bilgisayarla eşitle",
+  "desktopSyncSubtitle": "Şehirleri ve ayarları tarayıcıya kopyalayın",
+  "desktopSyncInstructions": "Bilgisayarda weather.kalenwallin.com adresini açın, telefondan eşitlemeyi seçin ve kodu buraya girin.",
+  "desktopPairingCode": "Eşleştirme kodu",
+  "desktopSyncSend": "Yapılandırmayı gönder",
+  "desktopSyncSuccess": "Şehirleriniz ve ayarlarınız bilgisayarda hazır.",
+  "desktopSyncPrivacy": "Tarayıcı yalnızca bir kopya alır. Bu telefonun ayarları değişmez.",
+  "desktopSyncInvalidCode": "Bilgisayarda gösterilen sekiz karakterli kodu girin.",
+  "desktopSyncAnother": "Başka bir tarayıcıyı eşitle"
 }

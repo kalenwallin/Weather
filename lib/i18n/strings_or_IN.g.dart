@@ -350,6 +350,16 @@ class TranslationsOrIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'ଶେଷ ପୃଷ୍ଠପଟି ରିଫ୍ରେଶ';
 	@override String get last_background_refresh_never => 'ଏପର୍ଯ୍ୟନ୍ତ କono ପୃଷ୍ଠପଟି ରିଫ୍ରେଶ ନାହିଁ';
 	@override String get background_refresh_error => 'ଶେଷ ପୃଷ୍ଠପଟି ତ୍ରୁଟି';
+	@override String get desktop => 'ଡେସ୍କଟପ୍';
+	@override String get sync_to_desktop => 'କମ୍ପ୍ୟୁଟର ସହ ସିଙ୍କ୍ କରନ୍ତୁ';
+	@override String get desktop_sync_subtitle => 'ସହର ଓ ସେଟିଂସ୍ ବ୍ରାଉଜରକୁ କପି କରନ୍ତୁ';
+	@override String get desktop_sync_instructions => 'କମ୍ପ୍ୟୁଟରରେ weather.kalenwallin.com ଖୋଲନ୍ତୁ, ଫୋନ୍‌ରୁ ସିଙ୍କ୍ ବାଛନ୍ତୁ ଏବଂ ଏଠାରେ କୋଡ୍ ଦିଅନ୍ତୁ।';
+	@override String get desktop_pairing_code => 'ଯୋଡ଼ିବା କୋଡ୍';
+	@override String get desktop_sync_send => 'ସେଟିଂସ୍ ପଠାନ୍ତୁ';
+	@override String get desktop_sync_success => 'ଆପଣଙ୍କ ସହର ଓ ସେଟିଂସ୍ କମ୍ପ୍ୟୁଟରରେ ପ୍ରସ୍ତୁତ।';
+	@override String get desktop_sync_privacy => 'ବ୍ରାଉଜର କେବଳ ଏକ ନକଲ ପାଏ। ଏହି ଫୋନ୍‌ର ସେଟିଂସ୍ ବଦଳେ ନାହିଁ।';
+	@override String get desktop_sync_invalid_code => 'କମ୍ପ୍ୟୁଟରରେ ଦେଖାଯାଉଥିବା ଆଠ ଅକ୍ଷରର କୋଡ୍ ଦିଅନ୍ତୁ।';
+	@override String get desktop_sync_another => 'ଅନ୍ୟ ବ୍ରାଉଜର ସିଙ୍କ୍ କରନ୍ତୁ';
 }
 
 /// The flat map containing all translations for locale <or-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsOrIn {
 			'last_background_refresh' => 'ଶେଷ ପୃଷ୍ଠପଟି ରିଫ୍ରେଶ',
 			'last_background_refresh_never' => 'ଏପର୍ଯ୍ୟନ୍ତ କono ପୃଷ୍ଠପଟି ରିଫ୍ରେଶ ନାହିଁ',
 			'background_refresh_error' => 'ଶେଷ ପୃଷ୍ଠପଟି ତ୍ରୁଟି',
+			'desktop' => 'ଡେସ୍କଟପ୍',
+			'sync_to_desktop' => 'କମ୍ପ୍ୟୁଟର ସହ ସିଙ୍କ୍ କରନ୍ତୁ',
+			'desktop_sync_subtitle' => 'ସହର ଓ ସେଟିଂସ୍ ବ୍ରାଉଜରକୁ କପି କରନ୍ତୁ',
+			'desktop_sync_instructions' => 'କମ୍ପ୍ୟୁଟରରେ weather.kalenwallin.com ଖୋଲନ୍ତୁ, ଫୋନ୍‌ରୁ ସିଙ୍କ୍ ବାଛନ୍ତୁ ଏବଂ ଏଠାରେ କୋଡ୍ ଦିଅନ୍ତୁ।',
+			'desktop_pairing_code' => 'ଯୋଡ଼ିବା କୋଡ୍',
+			'desktop_sync_send' => 'ସେଟିଂସ୍ ପଠାନ୍ତୁ',
+			'desktop_sync_success' => 'ଆପଣଙ୍କ ସହର ଓ ସେଟିଂସ୍ କମ୍ପ୍ୟୁଟରରେ ପ୍ରସ୍ତୁତ।',
+			'desktop_sync_privacy' => 'ବ୍ରାଉଜର କେବଳ ଏକ ନକଲ ପାଏ। ଏହି ଫୋନ୍‌ର ସେଟିଂସ୍ ବଦଳେ ନାହିଁ।',
+			'desktop_sync_invalid_code' => 'କମ୍ପ୍ୟୁଟରରେ ଦେଖାଯାଉଥିବା ଆଠ ଅକ୍ଷରର କୋଡ୍ ଦିଅନ୍ତୁ।',
+			'desktop_sync_another' => 'ଅନ୍ୟ ବ୍ରାଉଜର ସିଙ୍କ୍ କରନ୍ତୁ',
 			_ => null,
 		};
 	}

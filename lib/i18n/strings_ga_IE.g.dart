@@ -350,6 +350,16 @@ class TranslationsGaIe extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'An nuashonrú cúlra is déanaí';
 	@override String get last_background_refresh_never => 'Níl aon nuashonrú cúlra fós';
 	@override String get background_refresh_error => 'An earráid chúlra is déanaí';
+	@override String get desktop => 'Ríomhaire';
+	@override String get sync_to_desktop => 'Sioncronaigh leis an ríomhaire';
+	@override String get desktop_sync_subtitle => 'Cóipeáil cathracha agus socruithe chuig an mbrabhsálaí';
+	@override String get desktop_sync_instructions => 'Oscail weather.kalenwallin.com ar an ríomhaire, roghnaigh sioncronú ón bhfón agus cuir an cód isteach anseo.';
+	@override String get desktop_pairing_code => 'Cód péireála';
+	@override String get desktop_sync_send => 'Seol na socruithe';
+	@override String get desktop_sync_success => 'Tá do chathracha agus do shocruithe réidh ar an ríomhaire.';
+	@override String get desktop_sync_privacy => 'Ní fhaigheann an brabhsálaí ach cóip. Ní athraítear socruithe an fhóin seo.';
+	@override String get desktop_sync_invalid_code => 'Cuir isteach an cód ocht gcarachtar atá ar an ríomhaire.';
+	@override String get desktop_sync_another => 'Sioncronaigh brabhsálaí eile';
 }
 
 /// The flat map containing all translations for locale <ga-IE>.
@@ -671,6 +681,16 @@ extension on TranslationsGaIe {
 			'last_background_refresh' => 'An nuashonrú cúlra is déanaí',
 			'last_background_refresh_never' => 'Níl aon nuashonrú cúlra fós',
 			'background_refresh_error' => 'An earráid chúlra is déanaí',
+			'desktop' => 'Ríomhaire',
+			'sync_to_desktop' => 'Sioncronaigh leis an ríomhaire',
+			'desktop_sync_subtitle' => 'Cóipeáil cathracha agus socruithe chuig an mbrabhsálaí',
+			'desktop_sync_instructions' => 'Oscail weather.kalenwallin.com ar an ríomhaire, roghnaigh sioncronú ón bhfón agus cuir an cód isteach anseo.',
+			'desktop_pairing_code' => 'Cód péireála',
+			'desktop_sync_send' => 'Seol na socruithe',
+			'desktop_sync_success' => 'Tá do chathracha agus do shocruithe réidh ar an ríomhaire.',
+			'desktop_sync_privacy' => 'Ní fhaigheann an brabhsálaí ach cóip. Ní athraítear socruithe an fhóin seo.',
+			'desktop_sync_invalid_code' => 'Cuir isteach an cód ocht gcarachtar atá ar an ríomhaire.',
+			'desktop_sync_another' => 'Sioncronaigh brabhsálaí eile',
 			_ => null,
 		};
 	}

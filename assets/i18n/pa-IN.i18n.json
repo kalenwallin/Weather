@@ -309,5 +309,15 @@
   "colorPaletteSand": "ਰੇਤ",
   "lastBackgroundRefresh": "ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਰਿਫ੍ਰੈਸ਼",
   "lastBackgroundRefreshNever": "ਹਾਲੇ ਕੋਈ ਬੈਕਗ੍ਰਾਊਂਡ ਰਿਫ੍ਰੈਸ਼ ਨਹੀਂ",
-  "backgroundRefreshError": "ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਗਲਤੀ"
+  "backgroundRefreshError": "ਆਖਰੀ ਬੈਕਗ੍ਰਾਊਂਡ ਗਲਤੀ",
+  "desktop": "ਡੈਸਕਟਾਪ",
+  "syncToDesktop": "ਕੰਪਿਊਟਰ ਨਾਲ ਸਿੰਕ ਕਰੋ",
+  "desktopSyncSubtitle": "ਸ਼ਹਿਰ ਅਤੇ ਸੈਟਿੰਗਾਂ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਕਾਪੀ ਕਰੋ",
+  "desktopSyncInstructions": "ਕੰਪਿਊਟਰ ਉੱਤੇ weather.kalenwallin.com ਖੋਲ੍ਹੋ, ਫ਼ੋਨ ਤੋਂ ਸਿੰਕ ਚੁਣੋ ਅਤੇ ਇੱਥੇ ਕੋਡ ਭਰੋ।",
+  "desktopPairingCode": "ਜੋੜਨ ਦਾ ਕੋਡ",
+  "desktopSyncSend": "ਸੈਟਿੰਗਾਂ ਭੇਜੋ",
+  "desktopSyncSuccess": "ਤੁਹਾਡੇ ਸ਼ਹਿਰ ਅਤੇ ਸੈਟਿੰਗਾਂ ਕੰਪਿਊਟਰ ਉੱਤੇ ਤਿਆਰ ਹਨ।",
+  "desktopSyncPrivacy": "ਬ੍ਰਾਊਜ਼ਰ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਕਾਪੀ ਮਿਲਦੀ ਹੈ। ਇਸ ਫ਼ੋਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨਹੀਂ ਬਦਲਦੀਆਂ।",
+  "desktopSyncInvalidCode": "ਕੰਪਿਊਟਰ ਉੱਤੇ ਦਿਖਦਾ ਅੱਠ ਅੱਖਰਾਂ ਦਾ ਕੋਡ ਭਰੋ।",
+  "desktopSyncAnother": "ਹੋਰ ਬ੍ਰਾਊਜ਼ਰ ਸਿੰਕ ਕਰੋ"
 }

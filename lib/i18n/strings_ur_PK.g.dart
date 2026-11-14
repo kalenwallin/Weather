@@ -350,6 +350,16 @@ class TranslationsUrPk extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'آخری پس منظر ریفریش';
 	@override String get last_background_refresh_never => 'ابھی تک کوئی پس منظر ریفریش نہیں';
 	@override String get background_refresh_error => 'آخری پس منظر خرابی';
+	@override String get desktop => 'ڈیسک ٹاپ';
+	@override String get sync_to_desktop => 'کمپیوٹر کے ساتھ ہم آہنگ کریں';
+	@override String get desktop_sync_subtitle => 'شہر اور ترتیبات براؤزر میں نقل کریں';
+	@override String get desktop_sync_instructions => 'کمپیوٹر پر weather.kalenwallin.com کھولیں، فون سے ہم آہنگی منتخب کریں اور یہاں کوڈ درج کریں۔';
+	@override String get desktop_pairing_code => 'جوڑنے کا کوڈ';
+	@override String get desktop_sync_send => 'ترتیبات بھیجیں';
+	@override String get desktop_sync_success => 'آپ کے شہر اور ترتیبات کمپیوٹر پر تیار ہیں۔';
+	@override String get desktop_sync_privacy => 'براؤزر کو صرف ایک نقل ملتی ہے۔ اس فون کی ترتیبات تبدیل نہیں ہوتیں۔';
+	@override String get desktop_sync_invalid_code => 'کمپیوٹر پر دکھایا گیا آٹھ حروف کا کوڈ درج کریں۔';
+	@override String get desktop_sync_another => 'دوسرا براؤزر ہم آہنگ کریں';
 }
 
 /// The flat map containing all translations for locale <ur-PK>.
@@ -671,6 +681,16 @@ extension on TranslationsUrPk {
 			'last_background_refresh' => 'آخری پس منظر ریفریش',
 			'last_background_refresh_never' => 'ابھی تک کوئی پس منظر ریفریش نہیں',
 			'background_refresh_error' => 'آخری پس منظر خرابی',
+			'desktop' => 'ڈیسک ٹاپ',
+			'sync_to_desktop' => 'کمپیوٹر کے ساتھ ہم آہنگ کریں',
+			'desktop_sync_subtitle' => 'شہر اور ترتیبات براؤزر میں نقل کریں',
+			'desktop_sync_instructions' => 'کمپیوٹر پر weather.kalenwallin.com کھولیں، فون سے ہم آہنگی منتخب کریں اور یہاں کوڈ درج کریں۔',
+			'desktop_pairing_code' => 'جوڑنے کا کوڈ',
+			'desktop_sync_send' => 'ترتیبات بھیجیں',
+			'desktop_sync_success' => 'آپ کے شہر اور ترتیبات کمپیوٹر پر تیار ہیں۔',
+			'desktop_sync_privacy' => 'براؤزر کو صرف ایک نقل ملتی ہے۔ اس فون کی ترتیبات تبدیل نہیں ہوتیں۔',
+			'desktop_sync_invalid_code' => 'کمپیوٹر پر دکھایا گیا آٹھ حروف کا کوڈ درج کریں۔',
+			'desktop_sync_another' => 'دوسرا براؤزر ہم آہنگ کریں',
 			_ => null,
 		};
 	}

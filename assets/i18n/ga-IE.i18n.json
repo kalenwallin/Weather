@@ -309,5 +309,15 @@
   "colorPaletteSand": "Gainimh",
   "lastBackgroundRefresh": "An nuashonrú cúlra is déanaí",
   "lastBackgroundRefreshNever": "Níl aon nuashonrú cúlra fós",
-  "backgroundRefreshError": "An earráid chúlra is déanaí"
+  "backgroundRefreshError": "An earráid chúlra is déanaí",
+  "desktop": "Ríomhaire",
+  "syncToDesktop": "Sioncronaigh leis an ríomhaire",
+  "desktopSyncSubtitle": "Cóipeáil cathracha agus socruithe chuig an mbrabhsálaí",
+  "desktopSyncInstructions": "Oscail weather.kalenwallin.com ar an ríomhaire, roghnaigh sioncronú ón bhfón agus cuir an cód isteach anseo.",
+  "desktopPairingCode": "Cód péireála",
+  "desktopSyncSend": "Seol na socruithe",
+  "desktopSyncSuccess": "Tá do chathracha agus do shocruithe réidh ar an ríomhaire.",
+  "desktopSyncPrivacy": "Ní fhaigheann an brabhsálaí ach cóip. Ní athraítear socruithe an fhóin seo.",
+  "desktopSyncInvalidCode": "Cuir isteach an cód ocht gcarachtar atá ar an ríomhaire.",
+  "desktopSyncAnother": "Sioncronaigh brabhsálaí eile"
 }

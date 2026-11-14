@@ -309,5 +309,15 @@
   "colorPaletteSand": "Sabbia",
   "lastBackgroundRefresh": "Ultimo aggiornamento in background",
   "lastBackgroundRefreshNever": "Nessun aggiornamento in background",
-  "backgroundRefreshError": "Ultimo errore in background"
+  "backgroundRefreshError": "Ultimo errore in background",
+  "desktop": "Computer",
+  "syncToDesktop": "Sincronizza con il computer",
+  "desktopSyncSubtitle": "Copia città e impostazioni nel browser",
+  "desktopSyncInstructions": "Apri weather.kalenwallin.com sul computer, scegli la sincronizzazione dal telefono e inserisci qui il codice.",
+  "desktopPairingCode": "Codice di abbinamento",
+  "desktopSyncSend": "Invia configurazione",
+  "desktopSyncSuccess": "Le tue città e impostazioni sono pronte sul computer.",
+  "desktopSyncPrivacy": "Il browser riceve solo una copia. Le impostazioni del telefono non cambiano.",
+  "desktopSyncInvalidCode": "Inserisci il codice di otto caratteri mostrato sul computer.",
+  "desktopSyncAnother": "Sincronizza un altro browser"
 }

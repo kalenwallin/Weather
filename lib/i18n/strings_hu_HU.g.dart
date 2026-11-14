@@ -350,6 +350,16 @@ class TranslationsHuHu extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Utolsó háttérfrissítés';
 	@override String get last_background_refresh_never => 'Még nincs háttérfrissítés';
 	@override String get background_refresh_error => 'Utolsó háttérhiba';
+	@override String get desktop => 'Számítógép';
+	@override String get sync_to_desktop => 'Szinkronizálás számítógéppel';
+	@override String get desktop_sync_subtitle => 'Városok és beállítások másolása a böngészőbe';
+	@override String get desktop_sync_instructions => 'Nyisd meg a weather.kalenwallin.com oldalt a számítógépen, válaszd a telefonos szinkronizálást, és írd be ide a kódot.';
+	@override String get desktop_pairing_code => 'Párosítási kód';
+	@override String get desktop_sync_send => 'Beállítások küldése';
+	@override String get desktop_sync_success => 'Városaid és beállításaid készen állnak a számítógépen.';
+	@override String get desktop_sync_privacy => 'A böngésző csak másolatot kap. A telefon beállításai nem változnak.';
+	@override String get desktop_sync_invalid_code => 'Írd be a számítógépen látható nyolckarakteres kódot.';
+	@override String get desktop_sync_another => 'Másik böngésző szinkronizálása';
 }
 
 /// The flat map containing all translations for locale <hu-HU>.
@@ -671,6 +681,16 @@ extension on TranslationsHuHu {
 			'last_background_refresh' => 'Utolsó háttérfrissítés',
 			'last_background_refresh_never' => 'Még nincs háttérfrissítés',
 			'background_refresh_error' => 'Utolsó háttérhiba',
+			'desktop' => 'Számítógép',
+			'sync_to_desktop' => 'Szinkronizálás számítógéppel',
+			'desktop_sync_subtitle' => 'Városok és beállítások másolása a böngészőbe',
+			'desktop_sync_instructions' => 'Nyisd meg a weather.kalenwallin.com oldalt a számítógépen, válaszd a telefonos szinkronizálást, és írd be ide a kódot.',
+			'desktop_pairing_code' => 'Párosítási kód',
+			'desktop_sync_send' => 'Beállítások küldése',
+			'desktop_sync_success' => 'Városaid és beállításaid készen állnak a számítógépen.',
+			'desktop_sync_privacy' => 'A böngésző csak másolatot kap. A telefon beállításai nem változnak.',
+			'desktop_sync_invalid_code' => 'Írd be a számítógépen látható nyolckarakteres kódot.',
+			'desktop_sync_another' => 'Másik böngésző szinkronizálása',
 			_ => null,
 		};
 	}

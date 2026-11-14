@@ -309,5 +309,15 @@
   "colorPaletteSand": "ქვიშისფერი",
   "lastBackgroundRefresh": "ბოლო ფონური განახლება",
   "lastBackgroundRefreshNever": "ფონური განახლება ჯერ არ მომხდარა",
-  "backgroundRefreshError": "ბოლო ფონური შეცდომა"
+  "backgroundRefreshError": "ბოლო ფონური შეცდომა",
+  "desktop": "კომპიუტერი",
+  "syncToDesktop": "კომპიუტერთან სინქრონიზაცია",
+  "desktopSyncSubtitle": "ქალაქებისა და პარამეტრების ბრაუზერში კოპირება",
+  "desktopSyncInstructions": "კომპიუტერში გახსენით weather.kalenwallin.com, აირჩიეთ ტელეფონიდან სინქრონიზაცია და აქ შეიყვანეთ კოდი.",
+  "desktopPairingCode": "დაწყვილების კოდი",
+  "desktopSyncSend": "პარამეტრების გაგზავნა",
+  "desktopSyncSuccess": "თქვენი ქალაქები და პარამეტრები კომპიუტერში მზადაა.",
+  "desktopSyncPrivacy": "ბრაუზერი მხოლოდ ასლს იღებს. ტელეფონის პარამეტრები არ იცვლება.",
+  "desktopSyncInvalidCode": "შეიყვანეთ კომპიუტერში ნაჩვენები რვასიმბოლოიანი კოდი.",
+  "desktopSyncAnother": "სხვა ბრაუზერთან სინქრონიზაცია"
 }

@@ -110,3 +110,7 @@ flutter run --flavor floss     # FOSS без Play Services
 <p align='center'>
     Создано с ❤️ с использованием Flutter
 </p>
+
+## Веб-приложение для компьютера
+
+Версия для компьютера на TanStack Start находится в [`web-app/`](web-app/README.md) и работает на Cloudflare Workers: [weather.kalenwallin.com](https://weather.kalenwallin.com). Нажмите **Sync from phone** на сайте, затем откройте **Настройки → Синхронизация с компьютером** в Android-приложении, чтобы скопировать основной город, сохранённые города и настройки в локальное хранилище браузера.

@@ -350,6 +350,16 @@ class TranslationsArSa extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'آخر تحديث في الخلفية';
 	@override String get last_background_refresh_never => 'لا يوجد تحديث في الخلفية بعد';
 	@override String get background_refresh_error => 'آخر خطأ في الخلفية';
+	@override String get desktop => 'سطح المكتب';
+	@override String get sync_to_desktop => 'المزامنة مع الكمبيوتر';
+	@override String get desktop_sync_subtitle => 'انسخ المدن والإعدادات إلى المتصفح';
+	@override String get desktop_sync_instructions => 'افتح weather.kalenwallin.com على الكمبيوتر، واختر المزامنة من الهاتف، ثم أدخل الرمز هنا.';
+	@override String get desktop_pairing_code => 'رمز الاقتران';
+	@override String get desktop_sync_send => 'إرسال الإعدادات';
+	@override String get desktop_sync_success => 'أصبحت مدنك وإعداداتك جاهزة على الكمبيوتر.';
+	@override String get desktop_sync_privacy => 'يتلقى المتصفح نسخة فقط. لا تتغير إعدادات هذا الهاتف.';
+	@override String get desktop_sync_invalid_code => 'أدخل الرمز المكوّن من ثمانية أحرف الظاهر على الكمبيوتر.';
+	@override String get desktop_sync_another => 'مزامنة متصفح آخر';
 }
 
 /// The flat map containing all translations for locale <ar-SA>.
@@ -671,6 +681,16 @@ extension on TranslationsArSa {
 			'last_background_refresh' => 'آخر تحديث في الخلفية',
 			'last_background_refresh_never' => 'لا يوجد تحديث في الخلفية بعد',
 			'background_refresh_error' => 'آخر خطأ في الخلفية',
+			'desktop' => 'سطح المكتب',
+			'sync_to_desktop' => 'المزامنة مع الكمبيوتر',
+			'desktop_sync_subtitle' => 'انسخ المدن والإعدادات إلى المتصفح',
+			'desktop_sync_instructions' => 'افتح weather.kalenwallin.com على الكمبيوتر، واختر المزامنة من الهاتف، ثم أدخل الرمز هنا.',
+			'desktop_pairing_code' => 'رمز الاقتران',
+			'desktop_sync_send' => 'إرسال الإعدادات',
+			'desktop_sync_success' => 'أصبحت مدنك وإعداداتك جاهزة على الكمبيوتر.',
+			'desktop_sync_privacy' => 'يتلقى المتصفح نسخة فقط. لا تتغير إعدادات هذا الهاتف.',
+			'desktop_sync_invalid_code' => 'أدخل الرمز المكوّن من ثمانية أحرف الظاهر على الكمبيوتر.',
+			'desktop_sync_another' => 'مزامنة متصفح آخر',
 			_ => null,
 		};
 	}

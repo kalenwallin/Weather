@@ -309,5 +309,15 @@
   "colorPaletteSand": "ಮರಳು",
   "lastBackgroundRefresh": "ಕೊನೆಯ ಹಿನ್ನೆಲೆ ರಿಫ್ರೆಶ್",
   "lastBackgroundRefreshNever": "ಇನ್ನೂ ಹಿನ್ನೆಲೆ ರಿಫ್ರೆಶ್ ಇಲ್ಲ",
-  "backgroundRefreshError": "ಕೊನೆಯ ಹಿನ್ನೆಲೆ ದೋಷ"
+  "backgroundRefreshError": "ಕೊನೆಯ ಹಿನ್ನೆಲೆ ದೋಷ",
+  "desktop": "ಡೆಸ್ಕ್‌ಟಾಪ್",
+  "syncToDesktop": "ಕಂಪ್ಯೂಟರ್‌ಗೆ ಸಿಂಕ್ ಮಾಡಿ",
+  "desktopSyncSubtitle": "ನಗರಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬ್ರೌಸರ್‌ಗೆ ನಕಲಿಸಿ",
+  "desktopSyncInstructions": "ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ weather.kalenwallin.com ತೆರೆಯಿರಿ, ಫೋನ್‌ನಿಂದ ಸಿಂಕ್ ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ಇಲ್ಲಿ ಕೋಡ್ ನಮೂದಿಸಿ.",
+  "desktopPairingCode": "ಜೋಡಣೆ ಕೋಡ್",
+  "desktopSyncSend": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಳುಹಿಸಿ",
+  "desktopSyncSuccess": "ನಿಮ್ಮ ನಗರಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಸಿದ್ಧವಾಗಿವೆ.",
+  "desktopSyncPrivacy": "ಬ್ರೌಸರ್‌ಗೆ ನಕಲು ಮಾತ್ರ ಸಿಗುತ್ತದೆ. ಈ ಫೋನ್‌ನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಬದಲಾಗುವುದಿಲ್ಲ.",
+  "desktopSyncInvalidCode": "ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ತೋರಿಸಿದ ಎಂಟು ಅಕ್ಷರಗಳ ಕೋಡ್ ನಮೂದಿಸಿ.",
+  "desktopSyncAnother": "ಇನ್ನೊಂದು ಬ್ರೌಸರ್‌ಗೆ ಸಿಂಕ್ ಮಾಡಿ"
 }

@@ -350,6 +350,16 @@ class TranslationsRoRo extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Ultima reîmprospătare în fundal';
 	@override String get last_background_refresh_never => 'Nicio reîmprospătare în fundal';
 	@override String get background_refresh_error => 'Ultima eroare în fundal';
+	@override String get desktop => 'Calculator';
+	@override String get sync_to_desktop => 'Sincronizare cu calculatorul';
+	@override String get desktop_sync_subtitle => 'Copiază orașele și setările în browser';
+	@override String get desktop_sync_instructions => 'Deschide weather.kalenwallin.com pe calculator, alege sincronizarea de pe telefon și introdu codul aici.';
+	@override String get desktop_pairing_code => 'Cod de asociere';
+	@override String get desktop_sync_send => 'Trimite configurația';
+	@override String get desktop_sync_success => 'Orașele și setările tale sunt pregătite pe calculator.';
+	@override String get desktop_sync_privacy => 'Browserul primește doar o copie. Setările acestui telefon nu se schimbă.';
+	@override String get desktop_sync_invalid_code => 'Introdu codul de opt caractere afișat pe calculator.';
+	@override String get desktop_sync_another => 'Sincronizează alt browser';
 }
 
 /// The flat map containing all translations for locale <ro-RO>.
@@ -671,6 +681,16 @@ extension on TranslationsRoRo {
 			'last_background_refresh' => 'Ultima reîmprospătare în fundal',
 			'last_background_refresh_never' => 'Nicio reîmprospătare în fundal',
 			'background_refresh_error' => 'Ultima eroare în fundal',
+			'desktop' => 'Calculator',
+			'sync_to_desktop' => 'Sincronizare cu calculatorul',
+			'desktop_sync_subtitle' => 'Copiază orașele și setările în browser',
+			'desktop_sync_instructions' => 'Deschide weather.kalenwallin.com pe calculator, alege sincronizarea de pe telefon și introdu codul aici.',
+			'desktop_pairing_code' => 'Cod de asociere',
+			'desktop_sync_send' => 'Trimite configurația',
+			'desktop_sync_success' => 'Orașele și setările tale sunt pregătite pe calculator.',
+			'desktop_sync_privacy' => 'Browserul primește doar o copie. Setările acestui telefon nu se schimbă.',
+			'desktop_sync_invalid_code' => 'Introdu codul de opt caractere afișat pe calculator.',
+			'desktop_sync_another' => 'Sincronizează alt browser',
 			_ => null,
 		};
 	}

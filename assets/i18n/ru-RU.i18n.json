@@ -309,5 +309,15 @@
   "licensePackages": "пакетов",
   "lastBackgroundRefresh": "Последнее фоновое обновление",
   "lastBackgroundRefreshNever": "Фоновых обновлений ещё не было",
-  "backgroundRefreshError": "Последняя фоновая ошибка"
+  "backgroundRefreshError": "Последняя фоновая ошибка",
+  "desktop": "Компьютер",
+  "syncToDesktop": "Синхронизация с компьютером",
+  "desktopSyncSubtitle": "Скопируйте города и настройки в браузер",
+  "desktopSyncInstructions": "Откройте weather.kalenwallin.com на компьютере, выберите синхронизацию с телефона и введите код здесь.",
+  "desktopPairingCode": "Код сопряжения",
+  "desktopSyncSend": "Отправить настройки",
+  "desktopSyncSuccess": "Ваши города и настройки готовы на компьютере.",
+  "desktopSyncPrivacy": "Браузер получает только копию. Настройки этого телефона не изменяются.",
+  "desktopSyncInvalidCode": "Введите код из восьми символов, показанный на компьютере.",
+  "desktopSyncAnother": "Синхронизировать другой браузер"
 }

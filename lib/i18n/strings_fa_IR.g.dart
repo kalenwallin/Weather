@@ -350,6 +350,16 @@ class TranslationsFaIr extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'آخرین به‌روزرسانی پس‌زمینه';
 	@override String get last_background_refresh_never => 'هنوز به‌روزرسانی پس‌زمینه‌ای انجام نشده';
 	@override String get background_refresh_error => 'آخرین خطای پس‌زمینه';
+	@override String get desktop => 'رایانه';
+	@override String get sync_to_desktop => 'همگام‌سازی با رایانه';
+	@override String get desktop_sync_subtitle => 'شهرها و تنظیمات را به مرورگر کپی کنید';
+	@override String get desktop_sync_instructions => 'در رایانه weather.kalenwallin.com را باز کنید، همگام‌سازی از تلفن را انتخاب کنید و کد را اینجا وارد کنید.';
+	@override String get desktop_pairing_code => 'کد جفت‌سازی';
+	@override String get desktop_sync_send => 'ارسال تنظیمات';
+	@override String get desktop_sync_success => 'شهرها و تنظیمات شما در رایانه آماده‌اند.';
+	@override String get desktop_sync_privacy => 'مرورگر فقط یک نسخه دریافت می‌کند. تنظیمات این تلفن تغییر نمی‌کند.';
+	@override String get desktop_sync_invalid_code => 'کد هشت‌نویسه‌ای نمایش‌داده‌شده در رایانه را وارد کنید.';
+	@override String get desktop_sync_another => 'همگام‌سازی مرورگری دیگر';
 }
 
 /// The flat map containing all translations for locale <fa-IR>.
@@ -671,6 +681,16 @@ extension on TranslationsFaIr {
 			'last_background_refresh' => 'آخرین به‌روزرسانی پس‌زمینه',
 			'last_background_refresh_never' => 'هنوز به‌روزرسانی پس‌زمینه‌ای انجام نشده',
 			'background_refresh_error' => 'آخرین خطای پس‌زمینه',
+			'desktop' => 'رایانه',
+			'sync_to_desktop' => 'همگام‌سازی با رایانه',
+			'desktop_sync_subtitle' => 'شهرها و تنظیمات را به مرورگر کپی کنید',
+			'desktop_sync_instructions' => 'در رایانه weather.kalenwallin.com را باز کنید، همگام‌سازی از تلفن را انتخاب کنید و کد را اینجا وارد کنید.',
+			'desktop_pairing_code' => 'کد جفت‌سازی',
+			'desktop_sync_send' => 'ارسال تنظیمات',
+			'desktop_sync_success' => 'شهرها و تنظیمات شما در رایانه آماده‌اند.',
+			'desktop_sync_privacy' => 'مرورگر فقط یک نسخه دریافت می‌کند. تنظیمات این تلفن تغییر نمی‌کند.',
+			'desktop_sync_invalid_code' => 'کد هشت‌نویسه‌ای نمایش‌داده‌شده در رایانه را وارد کنید.',
+			'desktop_sync_another' => 'همگام‌سازی مرورگری دیگر',
 			_ => null,
 		};
 	}

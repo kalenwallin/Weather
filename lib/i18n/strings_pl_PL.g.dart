@@ -350,6 +350,16 @@ class TranslationsPlPl extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Ostatnie odświeżenie w tle';
 	@override String get last_background_refresh_never => 'Brak odświeżenia w tle';
 	@override String get background_refresh_error => 'Ostatni błąd w tle';
+	@override String get desktop => 'Komputer';
+	@override String get sync_to_desktop => 'Synchronizuj z komputerem';
+	@override String get desktop_sync_subtitle => 'Skopiuj miasta i ustawienia do przeglądarki';
+	@override String get desktop_sync_instructions => 'Otwórz weather.kalenwallin.com na komputerze, wybierz synchronizację z telefonu i wpisz tutaj kod.';
+	@override String get desktop_pairing_code => 'Kod parowania';
+	@override String get desktop_sync_send => 'Wyślij konfigurację';
+	@override String get desktop_sync_success => 'Twoje miasta i ustawienia są gotowe na komputerze.';
+	@override String get desktop_sync_privacy => 'Przeglądarka otrzymuje tylko kopię. Ustawienia telefonu nie ulegają zmianie.';
+	@override String get desktop_sync_invalid_code => 'Wpisz ośmioznakowy kod wyświetlany na komputerze.';
+	@override String get desktop_sync_another => 'Synchronizuj kolejną przeglądarkę';
 }
 
 /// The flat map containing all translations for locale <pl-PL>.
@@ -671,6 +681,16 @@ extension on TranslationsPlPl {
 			'last_background_refresh' => 'Ostatnie odświeżenie w tle',
 			'last_background_refresh_never' => 'Brak odświeżenia w tle',
 			'background_refresh_error' => 'Ostatni błąd w tle',
+			'desktop' => 'Komputer',
+			'sync_to_desktop' => 'Synchronizuj z komputerem',
+			'desktop_sync_subtitle' => 'Skopiuj miasta i ustawienia do przeglądarki',
+			'desktop_sync_instructions' => 'Otwórz weather.kalenwallin.com na komputerze, wybierz synchronizację z telefonu i wpisz tutaj kod.',
+			'desktop_pairing_code' => 'Kod parowania',
+			'desktop_sync_send' => 'Wyślij konfigurację',
+			'desktop_sync_success' => 'Twoje miasta i ustawienia są gotowe na komputerze.',
+			'desktop_sync_privacy' => 'Przeglądarka otrzymuje tylko kopię. Ustawienia telefonu nie ulegają zmianie.',
+			'desktop_sync_invalid_code' => 'Wpisz ośmioznakowy kod wyświetlany na komputerze.',
+			'desktop_sync_another' => 'Synchronizuj kolejną przeglądarkę',
 			_ => null,
 		};
 	}

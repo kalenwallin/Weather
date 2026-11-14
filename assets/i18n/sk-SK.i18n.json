@@ -309,5 +309,15 @@
   "colorPaletteSand": "Piesková",
   "lastBackgroundRefresh": "Posledná aktualizácia na pozadí",
   "lastBackgroundRefreshNever": "Zatiaľ žiadna aktualizácia na pozadí",
-  "backgroundRefreshError": "Posledná chyba na pozadí"
+  "backgroundRefreshError": "Posledná chyba na pozadí",
+  "desktop": "Počítač",
+  "syncToDesktop": "Synchronizovať s počítačom",
+  "desktopSyncSubtitle": "Skopírujte mestá a nastavenia do prehliadača",
+  "desktopSyncInstructions": "Na počítači otvorte weather.kalenwallin.com, vyberte synchronizáciu z telefónu a sem zadajte kód.",
+  "desktopPairingCode": "Párovací kód",
+  "desktopSyncSend": "Odoslať nastavenia",
+  "desktopSyncSuccess": "Vaše mestá a nastavenia sú pripravené na počítači.",
+  "desktopSyncPrivacy": "Prehliadač dostane iba kópiu. Nastavenia telefónu sa nezmenia.",
+  "desktopSyncInvalidCode": "Zadajte osemznakový kód zobrazený na počítači.",
+  "desktopSyncAnother": "Synchronizovať ďalší prehliadač"
 }

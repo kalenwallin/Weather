@@ -350,6 +350,16 @@ class TranslationsPtBr extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Última atualização em segundo plano';
 	@override String get last_background_refresh_never => 'Nenhuma atualização em segundo plano';
 	@override String get background_refresh_error => 'Último erro em segundo plano';
+	@override String get desktop => 'Computador';
+	@override String get sync_to_desktop => 'Sincronizar com o computador';
+	@override String get desktop_sync_subtitle => 'Copie cidades e configurações para o navegador';
+	@override String get desktop_sync_instructions => 'Abra weather.kalenwallin.com no computador, escolha sincronizar do celular e digite o código aqui.';
+	@override String get desktop_pairing_code => 'Código de pareamento';
+	@override String get desktop_sync_send => 'Enviar configurações';
+	@override String get desktop_sync_success => 'Suas cidades e configurações estão prontas no computador.';
+	@override String get desktop_sync_privacy => 'O navegador recebe apenas uma cópia. As configurações deste celular não mudam.';
+	@override String get desktop_sync_invalid_code => 'Digite o código de oito caracteres exibido no computador.';
+	@override String get desktop_sync_another => 'Sincronizar outro navegador';
 }
 
 /// The flat map containing all translations for locale <pt-BR>.
@@ -671,6 +681,16 @@ extension on TranslationsPtBr {
 			'last_background_refresh' => 'Última atualização em segundo plano',
 			'last_background_refresh_never' => 'Nenhuma atualização em segundo plano',
 			'background_refresh_error' => 'Último erro em segundo plano',
+			'desktop' => 'Computador',
+			'sync_to_desktop' => 'Sincronizar com o computador',
+			'desktop_sync_subtitle' => 'Copie cidades e configurações para o navegador',
+			'desktop_sync_instructions' => 'Abra weather.kalenwallin.com no computador, escolha sincronizar do celular e digite o código aqui.',
+			'desktop_pairing_code' => 'Código de pareamento',
+			'desktop_sync_send' => 'Enviar configurações',
+			'desktop_sync_success' => 'Suas cidades e configurações estão prontas no computador.',
+			'desktop_sync_privacy' => 'O navegador recebe apenas uma cópia. As configurações deste celular não mudam.',
+			'desktop_sync_invalid_code' => 'Digite o código de oito caracteres exibido no computador.',
+			'desktop_sync_another' => 'Sincronizar outro navegador',
 			_ => null,
 		};
 	}

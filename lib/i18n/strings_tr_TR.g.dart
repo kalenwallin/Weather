@@ -350,6 +350,16 @@ class TranslationsTrTr extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Son arka plan yenilemesi';
 	@override String get last_background_refresh_never => 'Henüz arka plan yenilemesi yok';
 	@override String get background_refresh_error => 'Son arka plan hatası';
+	@override String get desktop => 'Bilgisayar';
+	@override String get sync_to_desktop => 'Bilgisayarla eşitle';
+	@override String get desktop_sync_subtitle => 'Şehirleri ve ayarları tarayıcıya kopyalayın';
+	@override String get desktop_sync_instructions => 'Bilgisayarda weather.kalenwallin.com adresini açın, telefondan eşitlemeyi seçin ve kodu buraya girin.';
+	@override String get desktop_pairing_code => 'Eşleştirme kodu';
+	@override String get desktop_sync_send => 'Yapılandırmayı gönder';
+	@override String get desktop_sync_success => 'Şehirleriniz ve ayarlarınız bilgisayarda hazır.';
+	@override String get desktop_sync_privacy => 'Tarayıcı yalnızca bir kopya alır. Bu telefonun ayarları değişmez.';
+	@override String get desktop_sync_invalid_code => 'Bilgisayarda gösterilen sekiz karakterli kodu girin.';
+	@override String get desktop_sync_another => 'Başka bir tarayıcıyı eşitle';
 }
 
 /// The flat map containing all translations for locale <tr-TR>.
@@ -671,6 +681,16 @@ extension on TranslationsTrTr {
 			'last_background_refresh' => 'Son arka plan yenilemesi',
 			'last_background_refresh_never' => 'Henüz arka plan yenilemesi yok',
 			'background_refresh_error' => 'Son arka plan hatası',
+			'desktop' => 'Bilgisayar',
+			'sync_to_desktop' => 'Bilgisayarla eşitle',
+			'desktop_sync_subtitle' => 'Şehirleri ve ayarları tarayıcıya kopyalayın',
+			'desktop_sync_instructions' => 'Bilgisayarda weather.kalenwallin.com adresini açın, telefondan eşitlemeyi seçin ve kodu buraya girin.',
+			'desktop_pairing_code' => 'Eşleştirme kodu',
+			'desktop_sync_send' => 'Yapılandırmayı gönder',
+			'desktop_sync_success' => 'Şehirleriniz ve ayarlarınız bilgisayarda hazır.',
+			'desktop_sync_privacy' => 'Tarayıcı yalnızca bir kopya alır. Bu telefonun ayarları değişmez.',
+			'desktop_sync_invalid_code' => 'Bilgisayarda gösterilen sekiz karakterli kodu girin.',
+			'desktop_sync_another' => 'Başka bir tarayıcıyı eşitle',
 			_ => null,
 		};
 	}

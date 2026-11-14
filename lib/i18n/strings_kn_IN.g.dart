@@ -350,6 +350,16 @@ class TranslationsKnIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'ಕೊನೆಯ ಹಿನ್ನೆಲೆ ರಿಫ್ರೆಶ್';
 	@override String get last_background_refresh_never => 'ಇನ್ನೂ ಹಿನ್ನೆಲೆ ರಿಫ್ರೆಶ್ ಇಲ್ಲ';
 	@override String get background_refresh_error => 'ಕೊನೆಯ ಹಿನ್ನೆಲೆ ದೋಷ';
+	@override String get desktop => 'ಡೆಸ್ಕ್‌ಟಾಪ್';
+	@override String get sync_to_desktop => 'ಕಂಪ್ಯೂಟರ್‌ಗೆ ಸಿಂಕ್ ಮಾಡಿ';
+	@override String get desktop_sync_subtitle => 'ನಗರಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬ್ರೌಸರ್‌ಗೆ ನಕಲಿಸಿ';
+	@override String get desktop_sync_instructions => 'ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ weather.kalenwallin.com ತೆರೆಯಿರಿ, ಫೋನ್‌ನಿಂದ ಸಿಂಕ್ ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ಇಲ್ಲಿ ಕೋಡ್ ನಮೂದಿಸಿ.';
+	@override String get desktop_pairing_code => 'ಜೋಡಣೆ ಕೋಡ್';
+	@override String get desktop_sync_send => 'ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಳುಹಿಸಿ';
+	@override String get desktop_sync_success => 'ನಿಮ್ಮ ನಗರಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಸಿದ್ಧವಾಗಿವೆ.';
+	@override String get desktop_sync_privacy => 'ಬ್ರೌಸರ್‌ಗೆ ನಕಲು ಮಾತ್ರ ಸಿಗುತ್ತದೆ. ಈ ಫೋನ್‌ನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಬದಲಾಗುವುದಿಲ್ಲ.';
+	@override String get desktop_sync_invalid_code => 'ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ತೋರಿಸಿದ ಎಂಟು ಅಕ್ಷರಗಳ ಕೋಡ್ ನಮೂದಿಸಿ.';
+	@override String get desktop_sync_another => 'ಇನ್ನೊಂದು ಬ್ರೌಸರ್‌ಗೆ ಸಿಂಕ್ ಮಾಡಿ';
 }
 
 /// The flat map containing all translations for locale <kn-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsKnIn {
 			'last_background_refresh' => 'ಕೊನೆಯ ಹಿನ್ನೆಲೆ ರಿಫ್ರೆಶ್',
 			'last_background_refresh_never' => 'ಇನ್ನೂ ಹಿನ್ನೆಲೆ ರಿಫ್ರೆಶ್ ಇಲ್ಲ',
 			'background_refresh_error' => 'ಕೊನೆಯ ಹಿನ್ನೆಲೆ ದೋಷ',
+			'desktop' => 'ಡೆಸ್ಕ್‌ಟಾಪ್',
+			'sync_to_desktop' => 'ಕಂಪ್ಯೂಟರ್‌ಗೆ ಸಿಂಕ್ ಮಾಡಿ',
+			'desktop_sync_subtitle' => 'ನಗರಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬ್ರೌಸರ್‌ಗೆ ನಕಲಿಸಿ',
+			'desktop_sync_instructions' => 'ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ weather.kalenwallin.com ತೆರೆಯಿರಿ, ಫೋನ್‌ನಿಂದ ಸಿಂಕ್ ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ಇಲ್ಲಿ ಕೋಡ್ ನಮೂದಿಸಿ.',
+			'desktop_pairing_code' => 'ಜೋಡಣೆ ಕೋಡ್',
+			'desktop_sync_send' => 'ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಳುಹಿಸಿ',
+			'desktop_sync_success' => 'ನಿಮ್ಮ ನಗರಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಸಿದ್ಧವಾಗಿವೆ.',
+			'desktop_sync_privacy' => 'ಬ್ರೌಸರ್‌ಗೆ ನಕಲು ಮಾತ್ರ ಸಿಗುತ್ತದೆ. ಈ ಫೋನ್‌ನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಬದಲಾಗುವುದಿಲ್ಲ.',
+			'desktop_sync_invalid_code' => 'ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ತೋರಿಸಿದ ಎಂಟು ಅಕ್ಷರಗಳ ಕೋಡ್ ನಮೂದಿಸಿ.',
+			'desktop_sync_another' => 'ಇನ್ನೊಂದು ಬ್ರೌಸರ್‌ಗೆ ಸಿಂಕ್ ಮಾಡಿ',
 			_ => null,
 		};
 	}

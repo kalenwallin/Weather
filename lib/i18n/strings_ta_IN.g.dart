@@ -350,6 +350,16 @@ class TranslationsTaIn extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'கடைசி பின்னணி புதுப்பிப்பு';
 	@override String get last_background_refresh_never => 'இன்னும் பின்னணி புதுப்பிப்பு இல்லை';
 	@override String get background_refresh_error => 'கடைசி பின்னணி பிழை';
+	@override String get desktop => 'டெஸ்க்டாப்';
+	@override String get sync_to_desktop => 'கணினியுடன் ஒத்திசைக்கவும்';
+	@override String get desktop_sync_subtitle => 'நகரங்களையும் அமைப்புகளையும் உலாவியில் நகலெடுக்கவும்';
+	@override String get desktop_sync_instructions => 'கணினியில் weather.kalenwallin.com திறந்து, தொலைபேசியிலிருந்து ஒத்திசைப்பதைத் தேர்ந்தெடுத்து, குறியீட்டை இங்கே உள்ளிடவும்.';
+	@override String get desktop_pairing_code => 'இணைத்தல் குறியீடு';
+	@override String get desktop_sync_send => 'அமைப்புகளை அனுப்பவும்';
+	@override String get desktop_sync_success => 'உங்கள் நகரங்களும் அமைப்புகளும் கணினியில் தயாராக உள்ளன.';
+	@override String get desktop_sync_privacy => 'உலாவி நகலை மட்டுமே பெறும். இந்தத் தொலைபேசியின் அமைப்புகள் மாறாது.';
+	@override String get desktop_sync_invalid_code => 'கணினியில் காட்டப்படும் எட்டு எழுத்துக் குறியீட்டை உள்ளிடவும்.';
+	@override String get desktop_sync_another => 'மற்றொரு உலாவியை ஒத்திசைக்கவும்';
 }
 
 /// The flat map containing all translations for locale <ta-IN>.
@@ -671,6 +681,16 @@ extension on TranslationsTaIn {
 			'last_background_refresh' => 'கடைசி பின்னணி புதுப்பிப்பு',
 			'last_background_refresh_never' => 'இன்னும் பின்னணி புதுப்பிப்பு இல்லை',
 			'background_refresh_error' => 'கடைசி பின்னணி பிழை',
+			'desktop' => 'டெஸ்க்டாப்',
+			'sync_to_desktop' => 'கணினியுடன் ஒத்திசைக்கவும்',
+			'desktop_sync_subtitle' => 'நகரங்களையும் அமைப்புகளையும் உலாவியில் நகலெடுக்கவும்',
+			'desktop_sync_instructions' => 'கணினியில் weather.kalenwallin.com திறந்து, தொலைபேசியிலிருந்து ஒத்திசைப்பதைத் தேர்ந்தெடுத்து, குறியீட்டை இங்கே உள்ளிடவும்.',
+			'desktop_pairing_code' => 'இணைத்தல் குறியீடு',
+			'desktop_sync_send' => 'அமைப்புகளை அனுப்பவும்',
+			'desktop_sync_success' => 'உங்கள் நகரங்களும் அமைப்புகளும் கணினியில் தயாராக உள்ளன.',
+			'desktop_sync_privacy' => 'உலாவி நகலை மட்டுமே பெறும். இந்தத் தொலைபேசியின் அமைப்புகள் மாறாது.',
+			'desktop_sync_invalid_code' => 'கணினியில் காட்டப்படும் எட்டு எழுத்துக் குறியீட்டை உள்ளிடவும்.',
+			'desktop_sync_another' => 'மற்றொரு உலாவியை ஒத்திசைக்கவும்',
 			_ => null,
 		};
 	}

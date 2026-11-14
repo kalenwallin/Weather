@@ -350,6 +350,16 @@ class TranslationsDaDk extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => 'Seneste baggrundsopdatering';
 	@override String get last_background_refresh_never => 'Ingen baggrundsopdatering endnu';
 	@override String get background_refresh_error => 'Seneste baggrundsfejl';
+	@override String get desktop => 'Computer';
+	@override String get sync_to_desktop => 'Synkroniser med computer';
+	@override String get desktop_sync_subtitle => 'Kopiér byer og indstillinger til browseren';
+	@override String get desktop_sync_instructions => 'Åbn weather.kalenwallin.com på computeren, vælg synkronisering fra telefonen, og indtast koden her.';
+	@override String get desktop_pairing_code => 'Parringskode';
+	@override String get desktop_sync_send => 'Send indstillinger';
+	@override String get desktop_sync_success => 'Dine byer og indstillinger er klar på computeren.';
+	@override String get desktop_sync_privacy => 'Browseren modtager kun en kopi. Telefonens indstillinger ændres ikke.';
+	@override String get desktop_sync_invalid_code => 'Indtast koden på otte tegn, der vises på computeren.';
+	@override String get desktop_sync_another => 'Synkroniser en anden browser';
 }
 
 /// The flat map containing all translations for locale <da-DK>.
@@ -671,6 +681,16 @@ extension on TranslationsDaDk {
 			'last_background_refresh' => 'Seneste baggrundsopdatering',
 			'last_background_refresh_never' => 'Ingen baggrundsopdatering endnu',
 			'background_refresh_error' => 'Seneste baggrundsfejl',
+			'desktop' => 'Computer',
+			'sync_to_desktop' => 'Synkroniser med computer',
+			'desktop_sync_subtitle' => 'Kopiér byer og indstillinger til browseren',
+			'desktop_sync_instructions' => 'Åbn weather.kalenwallin.com på computeren, vælg synkronisering fra telefonen, og indtast koden her.',
+			'desktop_pairing_code' => 'Parringskode',
+			'desktop_sync_send' => 'Send indstillinger',
+			'desktop_sync_success' => 'Dine byer og indstillinger er klar på computeren.',
+			'desktop_sync_privacy' => 'Browseren modtager kun en kopi. Telefonens indstillinger ændres ikke.',
+			'desktop_sync_invalid_code' => 'Indtast koden på otte tegn, der vises på computeren.',
+			'desktop_sync_another' => 'Synkroniser en anden browser',
 			_ => null,
 		};
 	}

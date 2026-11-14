@@ -350,6 +350,16 @@ class TranslationsKoKr extends Translations with BaseTranslations<AppLocale, Tra
 	@override String get last_background_refresh => '마지막 백그라운드 새로고침';
 	@override String get last_background_refresh_never => '백그라운드 새로고침 없음';
 	@override String get background_refresh_error => '마지막 백그라운드 오류';
+	@override String get desktop => '컴퓨터';
+	@override String get sync_to_desktop => '컴퓨터와 동기화';
+	@override String get desktop_sync_subtitle => '도시와 설정을 브라우저로 복사';
+	@override String get desktop_sync_instructions => '컴퓨터에서 weather.kalenwallin.com을 열고 휴대전화에서 동기화를 선택한 다음 여기에 코드를 입력하세요.';
+	@override String get desktop_pairing_code => '페어링 코드';
+	@override String get desktop_sync_send => '설정 보내기';
+	@override String get desktop_sync_success => '컴퓨터에서 도시와 설정을 사용할 수 있습니다.';
+	@override String get desktop_sync_privacy => '브라우저에는 복사본만 전송됩니다. 이 휴대전화의 설정은 바뀌지 않습니다.';
+	@override String get desktop_sync_invalid_code => '컴퓨터에 표시된 8자리 코드를 입력하세요.';
+	@override String get desktop_sync_another => '다른 브라우저 동기화';
 }
 
 /// The flat map containing all translations for locale <ko-KR>.
@@ -671,6 +681,16 @@ extension on TranslationsKoKr {
 			'last_background_refresh' => '마지막 백그라운드 새로고침',
 			'last_background_refresh_never' => '백그라운드 새로고침 없음',
 			'background_refresh_error' => '마지막 백그라운드 오류',
+			'desktop' => '컴퓨터',
+			'sync_to_desktop' => '컴퓨터와 동기화',
+			'desktop_sync_subtitle' => '도시와 설정을 브라우저로 복사',
+			'desktop_sync_instructions' => '컴퓨터에서 weather.kalenwallin.com을 열고 휴대전화에서 동기화를 선택한 다음 여기에 코드를 입력하세요.',
+			'desktop_pairing_code' => '페어링 코드',
+			'desktop_sync_send' => '설정 보내기',
+			'desktop_sync_success' => '컴퓨터에서 도시와 설정을 사용할 수 있습니다.',
+			'desktop_sync_privacy' => '브라우저에는 복사본만 전송됩니다. 이 휴대전화의 설정은 바뀌지 않습니다.',
+			'desktop_sync_invalid_code' => '컴퓨터에 표시된 8자리 코드를 입력하세요.',
+			'desktop_sync_another' => '다른 브라우저 동기화',
 			_ => null,
 		};
 	}

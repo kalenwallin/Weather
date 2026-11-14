@@ -141,3 +141,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Bug reports and feature requests: use 
 <p align='center'>
     Made with ❤️ using Flutter
 </p>
+
+## Desktop web app
+
+The TanStack Start desktop companion lives in [`web-app/`](web-app/README.md) and runs on Cloudflare Workers at [weather.kalenwallin.com](https://weather.kalenwallin.com). Use **Sync from phone** on the website, then **Settings → Sync to desktop** in the Android app to copy your main city, saved cities, and settings into browser-local storage.
