@@ -49,6 +49,24 @@ void main() {
       expect(cache.europeanAqi, isNull);
     });
 
+    test('a stalled air quality request does not block the forecast', () async {
+      final dio = createFakeWeatherDio();
+      final stalledDio = Dio()
+        ..interceptors.add(InterceptorsWrapper(onRequest: (_, _) {}));
+      addTearDown(() => stalledDio.close(force: true));
+      final resilientDatasource = WeatherRemoteDatasource(
+        dio: dio,
+        airQuality: AirQualityRemoteDatasource(dio: stalledDio),
+      );
+
+      final cache = await resilientDatasource
+          .fetchWeather(55.75, 37.62)
+          .timeout(const Duration(seconds: 7));
+
+      expect(cache.temperature2M, [20.0, 21.0]);
+      expect(cache.europeanAqi, isNull);
+    });
+
     test('fetchWeatherCard includes location metadata', () async {
       final card = await datasource.fetchWeatherCard(
         55.75,

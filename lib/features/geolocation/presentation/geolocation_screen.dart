@@ -177,16 +177,18 @@ class _SelectGeolocationState extends ConsumerState<SelectGeolocation> {
 
   /// Resolves device location or refreshes the main weather location.
   Future<void> _handleLocationButtonPress() async {
-    final serviceEnabled = await ref
-        .read(locationServiceProvider)
-        .isServiceEnabled();
-    if (!serviceEnabled) {
-      if (!context.mounted) return;
-      await _showLocationDialog();
-      return;
-    }
+    if (isLoading) return;
     setState(() => isLoading = true);
     try {
+      final serviceEnabled = await ref
+          .read(locationServiceProvider)
+          .isServiceEnabled()
+          .timeout(const Duration(seconds: 5));
+      if (!mounted) return;
+      if (!serviceEnabled) {
+        await _showLocationDialog();
+        return;
+      }
       if (ref.read(settingsProvider).location && !widget.isStart) {
         await ref
             .read(mainWeatherNotifierProvider.notifier)

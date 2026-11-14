@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import '../helpers/fake_services.dart';
 
 import '../helpers/fixtures.dart';
@@ -9,6 +11,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:rain/core/di/provider_refs.dart';
 import 'package:rain/core/navigation/app_router.dart';
 import 'package:rain/core/navigation/app_routes.dart';
@@ -154,6 +157,37 @@ void main() {
       );
     });
 
+    testWidgets(
+      'GPS timeout clears the spinner and keeps manual entry usable',
+      (tester) async {
+        await pumpRainWidget(
+          tester,
+          const SelectGeolocation(isStart: true),
+          bootstrap: ctx.bootstrap,
+          overrides: [
+            locationServiceProvider.overrideWithValue(
+              _TimedOutLocationService(),
+            ),
+            weatherRemoteDatasourceProvider.overrideWithValue(
+              createFakeWeatherRemoteDatasource(),
+            ),
+          ],
+        );
+
+        await tester.tap(
+          find.widgetWithIcon(IconButton, IconsaxPlusLinear.location),
+        );
+        await tester.pump();
+        expect(find.byType(CircularProgressIndicator), findsOneWidget);
+
+        await tester.pump(const Duration(seconds: 20));
+        expect(find.byType(CircularProgressIndicator), findsNothing);
+        await _enterGeolocationField(tester, 'City', 'Berlin');
+        expect(find.text('Berlin'), findsOneWidget);
+        expect(tester.takeException(), isNull);
+      },
+    );
+
     testWidgets('filled location form has no validation errors', (
       tester,
     ) async {
@@ -273,6 +307,18 @@ void main() {
       expect(find.text('Edit location'), findsOneWidget);
     });
   });
+}
+
+class _TimedOutLocationService extends FakeLocationService {
+  @override
+  Future<({double lat, double lon, String city, String district})?>
+  getCurrentPlace({
+    Future<({String city, String district})?> Function(double lat, double lon)?
+    resolveLabels,
+  }) async {
+    await Future<void>.delayed(const Duration(seconds: 20));
+    throw TimeoutException('GPS fix unavailable');
+  }
 }
 
 class _GeolocationSubmitMainWeatherNotifier extends MainWeatherNotifier {

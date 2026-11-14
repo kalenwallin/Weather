@@ -1,3 +1,32 @@
+# Rain Personal
+
+Personal fork of [darkmoonight/Rain](https://github.com/darkmoonight/Rain).
+Changes are maintained here without submitting them upstream. The original MIT
+license and copyright notice are preserved in [LICENSE](LICENSE).
+
+City setup now recovers from stalled requests: network calls have a 15-second
+deadline, optional air quality has a 5-second deadline, and GPS acquisition has a
+20-second limit. City-label lookup falls back to coordinates, and an unavailable
+connectivity probe no longer blocks a real weather request.
+
+The Android app is named **Rain Personal**, with application ID
+`com.yoshi.rain.personal`, so it installs alongside the Play Store version.
+
+Build with Flutter 3.50.0 (Dart 3.14), JDK 17+, and the Android SDK versions listed
+in `android/app/build.gradle`:
+
+```sh
+flutter pub get
+dart run slang
+dart run build_runner build --delete-conflicting-outputs
+flutter test
+flutter build apk --debug --flavor gms --target-platform android-arm64
+```
+
+The APK is written to `build/app/outputs/flutter-apk/app-gms-debug.apk`.
+
+---
+
 <div align='center'>
     <img src='/readme/icon.png' width='150'/>
     <h1>🌦️ Rain</h1>

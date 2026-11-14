@@ -19,6 +19,23 @@ void main() {
       expect(await ConnectivityService.hasInternet(), isTrue);
     });
 
+    testWidgets(
+      'a stalled probe allows the weather request after three seconds',
+      (tester) async {
+        ConnectivityService.isOnline.value = Completer<bool>().future;
+        final result = ConnectivityService.hasInternet();
+        await tester.pump(const Duration(seconds: 3));
+        expect(await result, isTrue);
+      },
+    );
+
+    test('a failed probe allows the weather request', () async {
+      ConnectivityService.isOnline.value = Future<bool>.error(
+        StateError('Probe unavailable'),
+      );
+      expect(await ConnectivityService.hasInternet(), isTrue);
+    });
+
     test('setup updates isOnline when connectivity stream changes', () async {
       final controller = StreamController<List<ConnectivityResult>>();
       ConnectivityService.setTestDependencies(

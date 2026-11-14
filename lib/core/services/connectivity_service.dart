@@ -43,5 +43,13 @@ class ConnectivityService {
   }
 
   /// Returns whether the device currently has internet access.
-  static Future<bool> hasInternet() => isOnline.value;
+  static Future<bool> hasInternet() async {
+    try {
+      return await isOnline.value.timeout(const Duration(seconds: 3));
+    } catch (_) {
+      // A blocked connectivity probe does not mean the weather API is blocked.
+      // Let the actual request (which has its own deadline) decide.
+      return true;
+    }
+  }
 }

@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:rain/core/constants/app_constants.dart';
 import 'package:rain/core/utils/debug_log.dart';
 import 'package:rain/core/utils/http_date_parser.dart';
+import 'package:rain/core/utils/http_request.dart';
 import 'package:rain/core/utils/location_label.dart';
 import 'package:rain/data/datasources/air_quality_remote_datasource.dart';
 import 'package:rain/data/datasources/json_isolate_parsers.dart';
@@ -50,7 +51,7 @@ class WeatherRemoteDatasource {
   /// Air quality failures are ignored so the main forecast still loads.
   Future<(WeatherDataApi, AirQualityDataApi?, int clockSkewSeconds)>
   _fetchWeatherAndAq(double lat, double lon) async {
-    final weatherFuture = _dio.get(_buildWeatherUrl(lat, lon));
+    final weatherFuture = getWithDeadline(_dio, _buildWeatherUrl(lat, lon));
     final aqFuture = _airQuality.fetchAirQuality(lat, lon);
     final weatherResponse = await weatherFuture;
     final aqData = await aqFuture;
@@ -131,7 +132,7 @@ class WeatherRemoteDatasource {
       'format': 'json',
     });
     try {
-      final response = await _dioLocation.getUri(uri);
+      final response = await getWithDeadline(_dioLocation, uri.toString());
       if (response.statusCode == 200) {
         final cityData = CityApi.fromJson(response.data);
         return cityData.results.map(
@@ -168,15 +169,16 @@ class WeatherRemoteDatasource {
       },
     );
     try {
-      final response = await _dioLocation.getUri(
-        uri,
+      final response = await getWithDeadline(
+        _dioLocation,
+        uri.toString(),
         options: Options(
           headers: {'User-Agent': AppConstants.nominatimUserAgent},
         ),
       );
       if (response.statusCode != 200) return null;
       return _parseNominatimLabels(response.data);
-    } on DioException catch (e, stackTrace) {
+    } catch (e, stackTrace) {
       debugLogError('WeatherRemoteDatasource.reverseGeocode', e, stackTrace);
       return null;
     }

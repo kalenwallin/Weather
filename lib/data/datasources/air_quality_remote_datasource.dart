@@ -2,6 +2,7 @@ import 'dart:isolate';
 
 import 'package:dio/dio.dart';
 import 'package:rain/core/utils/debug_log.dart';
+import 'package:rain/core/utils/http_request.dart';
 import 'package:rain/data/datasources/json_isolate_parsers.dart';
 import 'package:rain/data/models/air_quality_api.dart';
 
@@ -21,7 +22,11 @@ class AirQualityRemoteDatasource {
   /// Air quality is optional: connection errors must never fail the weather fetch.
   Future<AirQualityDataApi?> fetchAirQuality(double lat, double lon) async {
     try {
-      final response = await _dio.get('$_baseUrl&latitude=$lat&longitude=$lon');
+      final response = await getWithDeadline(
+        _dio,
+        '$_baseUrl&latitude=$lat&longitude=$lon',
+        timeout: const Duration(seconds: 5),
+      );
       final json = asJsonMap(response.data);
       return await Isolate.run(() => parseAirQualityDataApiJson(json));
     } catch (e, stackTrace) {

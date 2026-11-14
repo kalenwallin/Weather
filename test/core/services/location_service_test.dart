@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:flutter/widgets.dart' show Locale;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rain/core/utils/location_label.dart';
 import 'package:geocoding/geocoding.dart';
@@ -20,6 +23,44 @@ Position _testPosition({double lat = 55.75, double lon = 37.62}) {
 }
 
 void main() {
+  group('LocationService.getCurrentPlace', () {
+    testWidgets('a stalled platform geocoder uses network labels', (
+      tester,
+    ) async {
+      final service = _TestLocationService(
+        _TestGeocoding(Completer<List<Placemark>>().future),
+      );
+      final result = service.getCurrentPlace(
+        resolveLabels: (lat, lon) async => (city: 'Berlin', district: 'Berlin'),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 5));
+
+      final place = await result;
+      expect(place!.city, 'Berlin');
+      expect(place.lat, 55.75);
+    });
+
+    testWidgets('stalled geocoders fall back to usable coordinates', (
+      tester,
+    ) async {
+      final service = _TestLocationService(
+        _TestGeocoding(Completer<List<Placemark>>().future),
+      );
+      final result = service.getCurrentPlace(
+        resolveLabels: (lat, lon) =>
+            Completer<({String city, String district})?>().future,
+      );
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 5));
+      await tester.pump(const Duration(seconds: 5));
+
+      final place = await result;
+      expect(place!.city, '55.750, 37.620');
+      expect(place.lon, 37.62);
+    });
+  });
+
   group('firstNonEmptyLocationLabel', () {
     test('returns first trimmed non-empty value', () {
       expect(
@@ -65,4 +106,27 @@ void main() {
       );
     });
   });
+}
+
+class _TestLocationService extends LocationService {
+  _TestLocationService(Geocoding geocoding) : super(geocoding: geocoding);
+
+  @override
+  Future<Position> determinePosition() async => _testPosition();
+}
+
+class _TestGeocoding implements Geocoding {
+  _TestGeocoding(this.result);
+
+  final Future<List<Placemark>> result;
+
+  @override
+  Future<List<Placemark>> placemarkFromCoordinates(
+    double latitude,
+    double longitude, {
+    Locale? locale,
+  }) => result;
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

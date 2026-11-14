@@ -30,7 +30,11 @@ class LocationService {
     if (permission == LocationPermission.deniedForever) {
       throw Exception('Location permissions are permanently denied');
     }
-    return Geolocator.getCurrentPosition();
+    return Geolocator.getCurrentPosition(
+      locationSettings: const LocationSettings(
+        timeLimit: Duration(seconds: 20),
+      ),
+    );
   }
 
   /// Resolves coordinates and a human-readable city/district label.
@@ -46,10 +50,9 @@ class LocationService {
     final position = await determinePosition();
 
     try {
-      final placemarks = await _geocoding.placemarkFromCoordinates(
-        position.latitude,
-        position.longitude,
-      );
+      final placemarks = await _geocoding
+          .placemarkFromCoordinates(position.latitude, position.longitude)
+          .timeout(const Duration(seconds: 5));
       final place = parsePlaceFromPlacemarks(position, placemarks);
       if (place != null) return place;
     } catch (_) {
@@ -61,7 +64,7 @@ class LocationService {
         final labels = await resolveLabels(
           position.latitude,
           position.longitude,
-        );
+        ).timeout(const Duration(seconds: 5));
         if (labels != null &&
             (hasNonEmptyLocationText(labels.city) ||
                 hasNonEmptyLocationText(labels.district))) {
