@@ -11,7 +11,7 @@ import {
   Plus,
   RefreshCw,
   Search,
-  Settings2,
+  Settings,
   Star,
   Trash2,
   X,
@@ -214,9 +214,7 @@ export function WeatherApp() {
       <aside className="sidebar">
         <a className="brand" href="/" aria-label="Weather home">
           <img src="/icon.png" alt="" />
-          <span>
-            Weather<small>ROOM FOR YOUR DAY</small>
-          </span>
+          <span>Weather</span>
         </a>
         <nav className="main-navigation" aria-label="Main navigation">
           <button
@@ -225,7 +223,7 @@ export function WeatherApp() {
             className={page === "weather" ? "is-active" : ""}
             onClick={() => setPage("weather")}
           >
-            <CloudSun size={21} />
+            <MainCityIcon city={configuration.mainCity} now={now} />
             <span>Weather</span>
           </button>
           <button
@@ -244,13 +242,13 @@ export function WeatherApp() {
             className={page === "settings" ? "is-active" : ""}
             onClick={() => setPage("settings")}
           >
-            <Settings2 size={20} />
+            <Settings size={20} />
             <span>Settings</span>
           </button>
         </nav>
         <div className="sidebar-divider" />
         <div className="sidebar-cities-heading">
-          <span>YOUR PLACES</span>
+          <span>YOUR CITIES</span>
           <button
             className="icon-button"
             aria-label="Add a city"
@@ -262,33 +260,22 @@ export function WeatherApp() {
         <div className="sidebar-city-list">
           {cities.length ? (
             cities.map((place) => (
-              <button
+              <SidebarCity
                 key={cityKey(place)}
-                className={`sidebar-city ${city && cityKey(city) === cityKey(place) && page === "weather" ? "is-selected" : ""}`}
-                onClick={() => select(place)}
-              >
-                {configuration.mainCity &&
-                cityKey(place) === cityKey(configuration.mainCity) ? (
-                  <Home size={17} />
-                ) : (
-                  <MapPin size={17} />
-                )}
-                <span>
-                  <strong>{place.city}</strong>
-                  <small>{place.district || "Saved location"}</small>
-                </span>
-                {city && cityKey(city) === cityKey(place) && weather.data ? (
-                  <span className="sidebar-temperature">
-                    {temperature(
-                      weather.data.forecast.hourly.temperature_2m?.[
-                        currentHour(weather.data.forecast, now)
-                      ],
-                      settings,
-                      false,
-                    )}
-                  </span>
-                ) : null}
-              </button>
+                place={place}
+                isMain={
+                  !!configuration.mainCity &&
+                  cityKey(place) === cityKey(configuration.mainCity)
+                }
+                selected={
+                  !!city &&
+                  cityKey(city) === cityKey(place) &&
+                  page === "weather"
+                }
+                settings={settings}
+                now={now}
+                onSelect={() => select(place)}
+              />
             ))
           ) : (
             <p className="sidebar-empty">
@@ -297,17 +284,6 @@ export function WeatherApp() {
           )}
         </div>
         <div className="sidebar-bottom">
-          <div className="sync-sidebar-card">
-            <span className="sync-symbol">
-              <MonitorSmartphone size={23} />
-            </span>
-            <strong>Same Weather. More room.</strong>
-            <p>Bring your cities and preferences over from your phone.</p>
-            <button onClick={sync}>
-              Sync from phone
-              <ArrowRight size={16} />
-            </button>
-          </div>
           <div className="local-storage-note">
             <span className="status-dot" />
             Saved in this browser
@@ -326,7 +302,7 @@ export function WeatherApp() {
               {page === "weather"
                 ? (city?.city ?? "Welcome to Weather")
                 : page === "cities"
-                  ? "Your places"
+                  ? "Your Cities"
                   : "Settings"}
               {page === "weather" && city?.district ? (
                 <span>{city.district}</span>
@@ -356,14 +332,6 @@ export function WeatherApp() {
                 />
               </button>
             ) : null}
-            <button
-              className="button sync-topbar"
-              aria-label="Sync from phone"
-              onClick={sync}
-            >
-              <MonitorSmartphone size={17} />
-              <span>Sync from phone</span>
-            </button>
           </div>
         </header>
         <main id="main-content" tabIndex={-1}>
@@ -396,7 +364,7 @@ export function WeatherApp() {
               <p>
                 All the little details that make up your day.
                 <br />
-                Bring your places from your phone, or find your first city.
+                Bring your cities from your phone, or find your first city.
               </p>
               <div className="welcome-actions">
                 <button className="button primary" onClick={sync}>
@@ -437,7 +405,6 @@ export function WeatherApp() {
               </div>
               <WeatherDashboard
                 key={cityKey(city)}
-                city={city}
                 data={weather.data}
                 settings={settings}
                 now={now}
@@ -676,5 +643,62 @@ function CityCard({
         </button>
       </footer>
     </article>
+  );
+}
+
+/** Sidebar nav icon showing the main city's current weather. */
+function MainCityIcon({ city, now }: { city: City | null; now: number }) {
+  const { data } = useWeather(city);
+  if (!data) return <CloudSun size={21} />;
+  const f = data.forecast,
+    hour = currentHour(f, now);
+  return (
+    <WeatherImage
+      className="nav-weather-image"
+      name={weatherIcon(f.hourly.weather_code?.[hour], isDay(f, hour))}
+      alt=""
+    />
+  );
+}
+
+/** One saved city in the sidebar, with its current temperature. */
+function SidebarCity({
+  place,
+  isMain,
+  selected,
+  settings,
+  now,
+  onSelect,
+}: {
+  place: City;
+  isMain: boolean;
+  selected: boolean;
+  settings: WeatherSettings;
+  now: number;
+  onSelect: () => void;
+}) {
+  const { data } = useWeather(place);
+  return (
+    <button
+      className={`sidebar-city ${selected ? "is-selected" : ""}`}
+      onClick={onSelect}
+    >
+      {isMain ? <Home size={17} /> : <MapPin size={17} />}
+      <span>
+        <strong>{place.city}</strong>
+        <small>{place.district || "Saved location"}</small>
+      </span>
+      {data ? (
+        <span className="sidebar-temperature">
+          {temperature(
+            data.forecast.hourly.temperature_2m?.[
+              currentHour(data.forecast, now)
+            ],
+            settings,
+            false,
+          )}
+        </span>
+      ) : null}
+    </button>
   );
 }

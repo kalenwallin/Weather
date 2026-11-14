@@ -206,6 +206,12 @@ select {
     background 0.15s,
     color 0.15s;
 }
+.main-navigation .nav-weather-image {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  object-fit: contain;
+}
 .main-navigation button:hover {
   background: var(--surface-high);
   color: var(--text);
@@ -2182,7 +2188,8 @@ kbd {
     height: 36px;
     border-radius: 11px;
   }
-  .main-navigation button > svg {
+  .main-navigation button > svg,
+  .main-navigation .nav-weather-image {
     width: 18px;
     height: 18px;
   }

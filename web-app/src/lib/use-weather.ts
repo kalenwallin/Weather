@@ -29,11 +29,41 @@ function writeCached(key: string, data: WeatherResponse) {
     const entries = Object.keys(sessionStorage).filter((k) =>
       k.startsWith(prefix),
     );
-    while (entries.length >= 6) sessionStorage.removeItem(entries.shift()!);
+    while (entries.length >= 12) sessionStorage.removeItem(entries.shift()!);
     sessionStorage.setItem(prefix + key, JSON.stringify(data));
   } catch {
     /* Configuration storage is separate from this disposable cache. */
   }
+}
+const inflight = new Map<string, Promise<WeatherResponse>>();
+async function requestForecast(lat: number, lon: number) {
+  const response = await fetch(`/api/weather?lat=${lat}&lon=${lon}`);
+  const body = (await response.json()) as WeatherResponse & {
+    error?: string;
+  };
+  if (!response.ok)
+    throw new Error(body.error ?? "Could not load the forecast.");
+  if (
+    !body.forecast?.hourly?.time?.length ||
+    !body.forecast.daily?.time?.length
+  )
+    throw new Error("The forecast response is incomplete. Please try again.");
+  return body;
+}
+/** Shares one network request between components asking for the same city. */
+function fetchForecast(key: string, lat: number, lon: number, fresh: boolean) {
+  const pending = fresh ? undefined : inflight.get(key);
+  if (pending) return pending;
+  const request = requestForecast(lat, lon).then((body) => {
+    writeCached(key, body);
+    return body;
+  });
+  inflight.set(key, request);
+  void request.then(
+    () => inflight.get(key) === request && inflight.delete(key),
+    () => inflight.get(key) === request && inflight.delete(key),
+  );
+  return request;
 }
 export function useWeather(city: City | null, refresh = 0) {
   const key = city ? cityKey(city) : "";
@@ -51,23 +81,8 @@ export function useWeather(city: City | null, refresh = 0) {
     setState({ key, data: cached, loading: true });
     void (async () => {
       try {
-        const response = await fetch(`/api/weather?lat=${lat}&lon=${lon}`, {
-          signal: controller.signal,
-        });
-        const body = (await response.json()) as WeatherResponse & {
-          error?: string;
-        };
-        if (!response.ok)
-          throw new Error(body.error ?? "Could not load the forecast.");
-        if (
-          !body.forecast?.hourly?.time?.length ||
-          !body.forecast.daily?.time?.length
-        )
-          throw new Error(
-            "The forecast response is incomplete. Please try again.",
-          );
+        const body = await fetchForecast(key, lat, lon, refresh > 0);
         if (controller.signal.aborted) return;
-        writeCached(key, body);
         setState({ key, data: body, loading: false });
       } catch (error) {
         if (!controller.signal.aborted)

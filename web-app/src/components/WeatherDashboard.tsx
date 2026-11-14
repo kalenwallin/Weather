@@ -13,8 +13,7 @@ import {
   Sunrise,
   Wind,
 } from "lucide-react";
-import type { City, WeatherSettings } from "../lib/config";
-import { cityLabel } from "../lib/config";
+import type { WeatherSettings } from "../lib/config";
 import type { WeatherResponse, Metric } from "../lib/weather";
 import {
   aqiInfo,
@@ -32,13 +31,11 @@ import { Panel, WeatherImage } from "./ui";
 
 export function WeatherDashboard({
   data,
-  city,
   settings,
   now,
   error,
 }: {
   data: WeatherResponse;
-  city: City;
   settings: WeatherSettings;
   now: number;
   error?: string;
@@ -56,13 +53,7 @@ export function WeatherDashboard({
   const preview = values.slice(0, 6),
     rest = values.slice(6);
   useEffect(() => {
-    strip.current
-      ?.querySelector('[aria-pressed="true"]')
-      ?.scrollIntoView({
-        block: "nearest",
-        inline: "center",
-        behavior: "instant",
-      });
+    strip.current?.scrollTo({ left: 0, behavior: "instant" });
   }, [liveHour]);
   const days = f.daily.time;
   const rangeMin = Math.min(
@@ -84,7 +75,10 @@ export function WeatherDashboard({
   });
   const chooseDay = (i: number) => {
     const index = f.hourly.time.findIndex((t) => t! >= days[i]! + 12 * 3600);
-    setChosenHour(index < 0 ? f.hourly.time.length - 1 : index);
+    // Past hours are not shown, so today's choice never goes before now.
+    setChosenHour(
+      Math.max(liveHour, index < 0 ? f.hourly.time.length - 1 : index),
+    );
   };
   return (
     <div
@@ -134,7 +128,6 @@ export function WeatherDashboard({
             <span>
               Updated {formatTime(data.updatedAt / 1000, f.timezone, settings)}
             </span>
-            <span>{cityLabel(city)}</span>
           </footer>
         </Panel>
         <Panel
@@ -148,13 +141,7 @@ export function WeatherDashboard({
                   className="text-button"
                   onClick={() => {
                     setChosenHour(null);
-                    strip.current
-                      ?.querySelector(`[data-hour="${liveHour}"]`)
-                      ?.scrollIntoView({
-                        block: "nearest",
-                        inline: "center",
-                        behavior: "smooth",
-                      });
+                    strip.current?.scrollTo({ left: 0, behavior: "smooth" });
                   }}
                 >
                   Back to now
@@ -182,51 +169,53 @@ export function WeatherDashboard({
           }
         >
           <div className="hourly-strip" ref={strip}>
-            {f.hourly.time.map((t, index) => (
-              <button
-                key={t}
-                data-hour={index}
-                className={`hour-tile ${index === hour ? "is-selected" : ""}`}
-                aria-pressed={index === hour}
-                onClick={() => setChosenHour(index)}
-              >
-                <span className="hour-time">
-                  {index === liveHour
-                    ? "Now"
-                    : formatTime(t!, f.timezone, settings, {
-                        minute: undefined,
-                      })}
-                </span>
-                <span className="hour-day">
-                  {formatDate(t!, f.timezone, {
-                    weekday: "short",
-                    month: undefined,
-                    day: undefined,
-                  })}
-                </span>
-                <WeatherImage
-                  name={weatherIcon(
-                    f.hourly.weather_code?.[index],
-                    isDay(f, index),
+            {f.hourly.time.map((t, index) =>
+              index < liveHour ? null : (
+                <button
+                  key={t}
+                  data-hour={index}
+                  className={`hour-tile ${index === hour ? "is-selected" : ""}`}
+                  aria-pressed={index === hour}
+                  onClick={() => setChosenHour(index)}
+                >
+                  <span className="hour-time">
+                    {index === liveHour
+                      ? "Now"
+                      : formatTime(t!, f.timezone, settings, {
+                          minute: undefined,
+                        })}
+                  </span>
+                  <span className="hour-day">
+                    {formatDate(t!, f.timezone, {
+                      weekday: "short",
+                      month: undefined,
+                      day: undefined,
+                    })}
+                  </span>
+                  <WeatherImage
+                    name={weatherIcon(
+                      f.hourly.weather_code?.[index],
+                      isDay(f, index),
+                    )}
+                  />
+                  <strong>
+                    {temperature(
+                      f.hourly.temperature_2m?.[index],
+                      settings,
+                      false,
+                    )}
+                  </strong>
+                  {(f.hourly.precipitation_probability?.[index] ?? 0) > 0 ? (
+                    <small className="rain-chance">
+                      <Droplets size={11} />
+                      {f.hourly.precipitation_probability?.[index]}%
+                    </small>
+                  ) : (
+                    <small className="rain-chance">&nbsp;</small>
                   )}
-                />
-                <strong>
-                  {temperature(
-                    f.hourly.temperature_2m?.[index],
-                    settings,
-                    false,
-                  )}
-                </strong>
-                {(f.hourly.precipitation_probability?.[index] ?? 0) > 0 ? (
-                  <small className="rain-chance">
-                    <Droplets size={11} />
-                    {f.hourly.precipitation_probability?.[index]}%
-                  </small>
-                ) : (
-                  <small className="rain-chance">&nbsp;</small>
-                )}
-              </button>
-            ))}
+                </button>
+              ),
+            )}
           </div>
         </Panel>
         <Panel className="variables-card">

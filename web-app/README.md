@@ -17,6 +17,8 @@ npm run deploy
 
 Run commands from `web-app/`. Wrangler uses the authenticated Cloudflare account and the custom domain in `wrangler.jsonc`. The Vite build emits the production Worker and its assets into `dist/`.
 
+Production builds post start and result messages to Discord; see [deployment-notifications/README.md](deployment-notifications/README.md).
+
 ## Phone → browser configuration transfer
 
 1. On the desktop site, choose **Sync from phone**.
