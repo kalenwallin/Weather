@@ -22,6 +22,7 @@ export function buildNotification(event: BuildEvent, env: Env) {
   const buildUrl = `https://dash.cloudflare.com/${env.ACCOUNT_ID}/workers/services/view/${encodeURIComponent(env.WORKER_NAME)}/production/builds/${encodeURIComponent(event.payload.buildUuid)}`;
   return {
     username: "Weather Deployments",
+    avatar_url: "https://weather.kalenwallin.com/icon.png",
     allowed_mentions: { parse: [] },
     embeds: [{
       title: started

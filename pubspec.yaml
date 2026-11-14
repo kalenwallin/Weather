@@ -104,7 +104,8 @@ flutter_launcher_icons:
   android: true
   image_path: "assets/icons/icon.png"
   adaptive_icon_background: "#181818"
-  adaptive_icon_foreground: "assets/icons/icon.png"
+  adaptive_icon_foreground: "assets/launcher/icon_foreground.png"
+  adaptive_icon_monochrome: "assets/launcher/icon_monochrome.png"
 
 flutter_native_splash:
   color: "#181818"

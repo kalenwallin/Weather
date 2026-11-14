@@ -16,6 +16,7 @@ describe("Weather deployment notifications", () => {
     for (const [status, title] of [["started", "🔨 Weather build started"], ["succeeded", "✅ Weather deployment succeeded"], ["failed", "❌ Weather build or deployment failed"]]) {
       const body = buildNotification(event(status), env)!;
       expect(body.username).toBe("Weather Deployments");
+      expect(body.avatar_url).toBe("https://weather.kalenwallin.com/icon.png");
       expect(body.allowed_mentions).toEqual({ parse: [] });
       expect(body.embeds[0].title).toBe(title);
       expect(body.embeds[0].fields[1].value).toBe("abcdef1");
