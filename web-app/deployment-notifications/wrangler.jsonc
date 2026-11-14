@@ -1,0 +1,25 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "weather-deployment-notifications",
+  "main": "index.ts",
+  "account_id": "237d967ddf37a3b1587e673236320925",
+  "compatibility_date": "2026-11-14",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "vars": {
+    "ACCOUNT_ID": "237d967ddf37a3b1587e673236320925",
+    "WORKER_NAME": "weather-desktop",
+    "BRANCH": "main"
+  },
+  "queues": {
+    "consumers": [{
+      "queue": "weather-deployments",
+      "max_batch_size": 1,
+      "max_batch_timeout": 1,
+      "max_retries": 5,
+      "dead_letter_queue": "weather-deployments-failed"
+    }]
+  }
+}
