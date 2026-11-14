@@ -879,8 +879,8 @@ kbd {
   border-radius: 10px;
   background: linear-gradient(
     90deg,
-    color-mix(in srgb, var(--accent) 80%, #9bc1e0),
-    #e9bf94
+    #e9bf94,
+    color-mix(in srgb, var(--accent) 80%, #9bc1e0)
   );
 }
 .sun-times {

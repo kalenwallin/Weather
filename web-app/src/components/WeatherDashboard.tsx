@@ -302,20 +302,20 @@ export function WeatherDashboard({
                     <small>{formatDate(t, f.timezone)}</small>
                   </span>
                   <WeatherImage name={weatherIcon(f.daily.weather_code?.[i])} />
-                  <span className="daily-low">
-                    {temperature(min, settings, false)}
-                  </span>
+                  <strong className="daily-high">
+                    {temperature(max, settings, false)}
+                  </strong>
                   <span className="temperature-track">
                     <span
                       style={{
-                        left: `${(((min ?? rangeMin) - rangeMin) / denominator) * 100}%`,
+                        left: `${((rangeMax - (max ?? rangeMax)) / denominator) * 100}%`,
                         width: `${Math.max(8, (((max ?? rangeMax) - (min ?? rangeMin)) / denominator) * 100)}%`,
                       }}
                     />
                   </span>
-                  <strong className="daily-high">
-                    {temperature(max, settings, false)}
-                  </strong>
+                  <span className="daily-low">
+                    {temperature(min, settings, false)}
+                  </span>
                 </button>
               );
             })}

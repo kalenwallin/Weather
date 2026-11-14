@@ -68,7 +68,7 @@ class _DailyCardState extends ConsumerState<DailyCard> {
       spacing: 5,
       children: [
         Text(
-          '${statusData.getDegree(widget.temperature2MMin)} / ${statusData.getDegree(widget.temperature2MMax)}',
+          '${statusData.getDegree(widget.temperature2MMax)} / ${statusData.getDegree(widget.temperature2MMin)}',
           style: Theme.of(context).textTheme.titleLarge
               ?.copyWith(fontSize: 22, fontWeight: FontWeight.w600),
         ),
