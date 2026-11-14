@@ -32,7 +32,7 @@ Future<void> _enterGeolocationField(
   await tester.pump();
 }
 
-List geolocationTestOverrides() => [
+List geolocationTestOverrides({bool selectionSucceeds = true}) => [
   locationServiceProvider.overrideWithValue(FakeLocationService()),
   weatherRemoteDatasourceProvider.overrideWithValue(
     createFakeWeatherRemoteDatasource(),
@@ -40,7 +40,7 @@ List geolocationTestOverrides() => [
   notificationServiceProvider.overrideWithValue(FakeNotificationService()),
   homeWidgetServiceProvider.overrideWithValue(FakeHomeWidgetService()),
   mainWeatherNotifierProvider.overrideWith(
-    _GeolocationSubmitMainWeatherNotifier.new,
+    () => _GeolocationSubmitMainWeatherNotifier(selectionSucceeds),
   ),
 ];
 
@@ -207,9 +207,9 @@ void main() {
       await _enterGeolocationField(tester, 'Latitude', '55.75');
       await _enterGeolocationField(tester, 'Longitude', '37.62');
       await _enterGeolocationField(tester, 'City', 'Moscow');
-      await _enterGeolocationField(tester, 'District', 'Moscow Oblast');
+      await _enterGeolocationField(tester, 'State', 'Moscow Oblast');
 
-      await tester.tap(find.text('Done'));
+      expect(tester.state<FormState>(find.byType(Form)).validate(), isTrue);
       await tester.pump();
 
       expect(tester.takeException(), isNull);
@@ -247,7 +247,7 @@ void main() {
       await _enterGeolocationField(tester, 'Latitude', '55.75');
       await _enterGeolocationField(tester, 'Longitude', '37.62');
       await _enterGeolocationField(tester, 'City', 'Moscow');
-      await _enterGeolocationField(tester, 'District', 'Moscow Oblast');
+      await _enterGeolocationField(tester, 'State', 'Moscow Oblast');
 
       await tester.tap(find.text('Done'));
       await tester.pump();
@@ -258,6 +258,56 @@ void main() {
 
       expect(find.text('home-landing'), findsOneWidget);
       expect(router.state.uri.path, AppRoutes.home);
+    });
+
+    testWidgets('failed start submission keeps the entered city for retry', (
+      tester,
+    ) async {
+      final router = GoRouter(
+        initialLocation: AppRoutes.geolocationStart,
+        routes: [
+          GoRoute(
+            path: AppRoutes.home,
+            builder: (context, state) =>
+                const Scaffold(body: Text('home-landing')),
+          ),
+          GoRoute(
+            path: AppRoutes.geolocation,
+            builder: (context, state) {
+              final isStart = state.uri.queryParameters['start'] == 'true';
+              return SelectGeolocation(isStart: isStart);
+            },
+          ),
+        ],
+      );
+
+      await pumpWeatherRouter(
+        tester,
+        bootstrap: ctx.bootstrap,
+        router: router,
+        overrides: geolocationTestOverrides(selectionSucceeds: false),
+      );
+      await tester.pump();
+
+      await _enterGeolocationField(tester, 'Latitude', '55.75');
+      await _enterGeolocationField(tester, 'Longitude', '37.62');
+      await _enterGeolocationField(tester, 'City', 'Moscow');
+      await _enterGeolocationField(tester, 'State', 'Moscow Oblast');
+
+      await tester.tap(find.text('Done'));
+      await tester.pump();
+      for (var i = 0; i < 30; i++) {
+        await tester.pump(const Duration(milliseconds: 50));
+        if (find.text('home-landing').evaluate().isNotEmpty) break;
+      }
+
+      expect(find.text('home-landing'), findsNothing);
+      expect(find.byType(SelectGeolocation), findsOneWidget);
+      expect(find.text('Moscow'), findsOneWidget);
+      expect(find.text('Moscow Oblast'), findsOneWidget);
+      expect(find.byType(CircularProgressIndicator), findsNothing);
+      expect(router.state.uri.path, AppRoutes.geolocation);
+      expect(tester.takeException(), isNull);
     });
 
     testWidgets('edit flow submit returns to previous page', (tester) async {
@@ -295,7 +345,7 @@ void main() {
       await _enterGeolocationField(tester, 'Latitude', '52.52');
       await _enterGeolocationField(tester, 'Longitude', '13.41');
       await _enterGeolocationField(tester, 'City', 'Berlin');
-      await _enterGeolocationField(tester, 'District', 'Berlin');
+      await _enterGeolocationField(tester, 'State', 'Berlin');
 
       await tester.tap(find.text('Done'));
       await tester.pump();
@@ -322,19 +372,20 @@ class _TimedOutLocationService extends FakeLocationService {
 }
 
 class _GeolocationSubmitMainWeatherNotifier extends MainWeatherNotifier {
+  _GeolocationSubmitMainWeatherNotifier(this.selectionSucceeds);
+
+  final bool selectionSucceeds;
+
   @override
   MainWeatherState build() =>
       MainWeatherState(isLoading: false, location: sampleGeoPlace());
 
   @override
-  Future<void> deleteAll(bool changeCity) async {}
-
-  @override
-  Future<void> getLocation(
+  Future<bool> getLocation(
     double latitude,
     double longitude,
     String district,
     String locality, {
     bool showLoading = true,
-  }) async {}
+  }) async => selectionSucceeds;
 }

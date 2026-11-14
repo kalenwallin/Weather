@@ -9,7 +9,6 @@ import 'package:weather/features/weather/presentation/widgets/weather_hourly_sec
 import 'package:weather/features/weather/presentation/widgets/hourly.dart';
 import 'package:weather/features/weather/presentation/widgets/hourly_strip.dart';
 import 'package:weather/features/weather/presentation/widgets/now.dart';
-import 'package:weather/features/weather/presentation/widgets/sunset_sunrise.dart';
 import 'package:weather/i18n/tr.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:weather/domain/entities/entities.dart';
@@ -90,7 +89,7 @@ class _DailyCardInfoState extends ConsumerState<DailyCardInfo> {
     ),
   );
 
-  /// One day: now header, hourly strip, sun times, AQI, variable grids.
+  /// One day: now header, hourly strip, hourly variables, sun times, AQI, daily variables.
   Widget _buildPageContent(SavedPlace weatherData, int dayIndex) {
     final weatherCodeDaily = weatherData.weathercodeDaily?[dayIndex];
     final sunrise = weatherData.sunrise?[dayIndex];
@@ -118,11 +117,12 @@ class _DailyCardInfoState extends ConsumerState<DailyCardInfo> {
             sunset,
           ),
           _buildHourlyList(weatherData, startIndex, sunrise, sunset),
-          SunsetSunrise(timeSunrise: sunrise, timeSunset: sunset),
           WeatherHourlySections(
             weatherCard: weatherData,
             hourIndex: hourlyIndex,
             aqiStandard: aqiStandard,
+            sunrise: sunrise,
+            sunset: sunset,
             hourlyVariablesExpanded: true,
           ),
           DescContainer.fromDailySlot(

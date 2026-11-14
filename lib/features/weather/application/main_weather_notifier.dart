@@ -91,7 +91,7 @@ abstract class _MainWeatherNotifierCore extends Notifier<MainWeatherState> {
     required bool showLoading,
     required bool forceLoading,
   });
-  Future<void> _getLocationImpl(
+  Future<bool> _getLocationImpl(
     double lat,
     double lon,
     String district,

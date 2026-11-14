@@ -6,6 +6,7 @@ import 'package:weather/i18n/tr.dart';
 /// One row in the hourly/daily weather-variables grid.
 class DescMetric {
   const DescMetric({
+    required this.labelKey,
     required this.displayValue,
     required this.imageAsset,
     required this.label,
@@ -13,6 +14,7 @@ class DescMetric {
   });
 
   final String displayValue;
+  final String labelKey;
   final String imageAsset;
   final String label;
   final String helpText;
@@ -97,6 +99,7 @@ class DescMetricsCatalog {
       required String labelKey,
       required String helpText,
     }) => DescMetric(
+      labelKey: labelKey,
       displayValue: value ?? '',
       imageAsset: imageAsset,
       label: labelKey.tr,

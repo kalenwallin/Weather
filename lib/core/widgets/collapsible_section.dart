@@ -7,12 +7,16 @@ class CollapsibleSection extends StatefulWidget {
     super.key,
     required this.title,
     required this.child,
+    this.preview,
     this.initiallyExpanded = false,
     this.headerPadding = cardHeaderPadding,
   });
 
   final Widget title;
   final Widget child;
+
+  /// Content that stays visible while the rest of the section is collapsed.
+  final Widget? preview;
   final bool initiallyExpanded;
   final EdgeInsetsGeometry headerPadding;
 
@@ -113,6 +117,7 @@ class _CollapsibleSectionState extends State<CollapsibleSection>
             ),
           ),
         ),
+        if (widget.preview != null) widget.preview!,
         AnimatedBuilder(
           animation: _controller,
           builder: (context, child) {

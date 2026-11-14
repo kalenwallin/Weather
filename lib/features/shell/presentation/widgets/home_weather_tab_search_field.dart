@@ -26,7 +26,6 @@ class HomeWeatherTabSearchField extends ConsumerWidget {
       optionsWidth: 250,
       onSelected: (selection) async {
         if (!selection.hasCoordinates) return;
-        await ref.read(mainWeatherNotifierProvider.notifier).deleteAll(true);
         await ref
             .read(mainWeatherNotifierProvider.notifier)
             .getLocation(

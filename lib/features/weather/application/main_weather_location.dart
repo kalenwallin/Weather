@@ -91,43 +91,44 @@ mixin _MainWeatherLocationOps on _MainWeatherNotifierCore {
     }
   }
 
-  /// Fetches weather for coordinates when online; otherwise shows a snackbar and loads cache.
-  Future<void> getLocation(
-    double latitude,
-    double longitude,
-    String district,
-    String locality, {
-    bool showLoading = true,
-  }) => _enqueue(
-    () => _getLocationImpl(
-      latitude,
-      longitude,
-      district,
-      locality,
-      showLoading: showLoading,
-    ),
-  );
-
-  @override
-  Future<void> _getLocationImpl(
+  /// Attempts a selected city's forecast and reports whether it was saved.
+  Future<bool> getLocation(
     double latitude,
     double longitude,
     String district,
     String locality, {
     bool showLoading = true,
   }) async {
-    if (!ref.mounted || _queue.isCancelled) return;
-    if (!await ConnectivityService.hasInternet()) {
-      if (ref.mounted) _emitUserMessage('no_inter');
-      await _readCacheImpl();
-      return;
-    }
-    if (!ref.mounted || _queue.isCancelled) return;
+    var saved = false;
+    await _enqueue(() async {
+      saved = await _getLocationImpl(
+        latitude,
+        longitude,
+        district,
+        locality,
+        showLoading: showLoading,
+      );
+    });
+    return saved;
+  }
+
+  @override
+  Future<bool> _getLocationImpl(
+    double latitude,
+    double longitude,
+    String district,
+    String locality, {
+    bool showLoading = true,
+  }) async {
+    if (!ref.mounted || _queue.isCancelled) return false;
     if (showLoading && !_hasDisplayableForecast) {
       _setState(state.copyWith(isLoading: true));
     }
     try {
-      await NetworkCacheHandler.fetchOrKeepCache(
+      return await NetworkCacheHandler.fetchOrKeepCache(
+        // Connectivity probes can be blocked while Open-Meteo is reachable.
+        // The actual request has its own deadline and determines success.
+        hasInternet: () async => true,
         onNetworkFetch: () =>
             _fetchAndSave(latitude, longitude, district, locality),
         onUseCache: _readCacheImpl,

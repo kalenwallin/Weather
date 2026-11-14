@@ -39,6 +39,7 @@ class DescContainer extends ConsumerWidget {
     this.precipitationSum,
     required this.initiallyExpanded,
     required this.title,
+    this.previewMetricKeys = const [],
   });
 
   final int? humidity;
@@ -67,6 +68,16 @@ class DescContainer extends ConsumerWidget {
   final double? precipitationSum;
   final bool initiallyExpanded;
   final String title;
+  final List<String> previewMetricKeys;
+
+  static const _hourlyPreviewMetricKeys = [
+    'wind',
+    'windgusts',
+    'precipitationProbability',
+    'humidity',
+    'uvIndex',
+    'cloudcover',
+  ];
 
   /// Hourly variable grid for one slot in [card].time.
   factory DescContainer.fromHourlySlot({
@@ -92,6 +103,7 @@ class DescContainer extends ConsumerWidget {
     dewpoint2M: card.dewpoint2M?[hourIndex],
     precipitationProbability: card.precipitationProbability?[hourIndex],
     shortwaveRadiation: card.shortwaveRadiation?[hourIndex],
+    previewMetricKeys: _hourlyPreviewMetricKeys,
     initiallyExpanded: initiallyExpanded,
     title: title,
   );
@@ -155,46 +167,68 @@ class DescContainer extends ConsumerWidget {
       themeId: settings.weatherIconTheme,
     ).where((m) => m.hasValue).toList();
 
+    final previewMetrics = [
+      for (final key in previewMetricKeys)
+        ...metrics.where((metric) => metric.labelKey == key),
+    ];
+    final expandedMetrics = metrics
+        .where((metric) => !previewMetricKeys.contains(metric.labelKey))
+        .toList();
+
     return Card(
       margin: const EdgeInsets.only(bottom: AppConstants.cardBottomMargin),
       child: CollapsibleSection(
         initiallyExpanded: initiallyExpanded,
         title: Text(title, style: Theme.of(context).textTheme.labelLarge),
-        child: Padding(
-          padding: CollapsibleSection.cardBodyPadding,
-          child: LayoutBuilder(
-            builder: (context, constraints) {
-              final spacing = AppConstants.descGridSpacing;
-              final crossAxisCount =
-                  ((constraints.maxWidth + spacing) /
-                          (AppConstants.descGridItemWidth + spacing))
-                      .floor()
-                      .clamp(1, 8);
-
-              return GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: metrics.length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: crossAxisCount,
-                  mainAxisExtent: AppConstants.descGridRowHeight,
-                  crossAxisSpacing: spacing,
-                  mainAxisSpacing: spacing,
-                ),
-                itemBuilder: (context, index) {
-                  final metric = metrics.elementAt(index);
-                  return DescWeather(
-                    imageName: metric.imageAsset,
-                    value: metric.displayValue,
-                    desc: metric.label,
-                    message: metric.helpText,
-                  );
-                },
-              );
-            },
-          ),
+        preview: previewMetrics.isEmpty
+            ? null
+            : _buildMetricGrid(previewMetrics, columns: 3, topPadding: 0),
+        child: _buildMetricGrid(
+          expandedMetrics,
+          topPadding: previewMetrics.isEmpty ? AppConstants.spacingXL : 0,
         ),
       ),
     );
   }
+
+  Widget _buildMetricGrid(
+    List<DescMetric> metrics, {
+    int? columns,
+    required double topPadding,
+  }) => Padding(
+    padding: CollapsibleSection.cardBodyPadding.copyWith(top: topPadding),
+    child: LayoutBuilder(
+      builder: (context, constraints) {
+        final spacing = AppConstants.descGridSpacing;
+        final crossAxisCount =
+            columns ??
+            ((constraints.maxWidth + spacing) /
+                    (AppConstants.descGridItemWidth + spacing))
+                .floor()
+                .clamp(1, 8);
+
+        return GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: metrics.length,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            mainAxisExtent: AppConstants.descGridRowHeight,
+            crossAxisSpacing: spacing,
+            mainAxisSpacing: spacing,
+          ),
+          itemBuilder: (context, index) {
+            final metric = metrics[index];
+            return DescWeather(
+              key: ValueKey(metric.labelKey),
+              imageName: metric.imageAsset,
+              value: metric.displayValue,
+              desc: metric.label,
+              message: metric.helpText,
+            );
+          },
+        );
+      },
+    ),
+  );
 }

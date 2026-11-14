@@ -15,6 +15,8 @@ import 'package:weather/features/weather/presentation/widgets/daily/daily_card_l
 import 'package:weather/features/weather/presentation/widgets/daily/daily_container.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:weather/features/weather/presentation/widgets/weather_detail_view.dart';
+import 'package:weather/features/weather/presentation/widgets/weather_hourly_sections.dart';
+import 'package:weather/features/weather/presentation/widgets/air_quality/air_quality_card.dart';
 
 void main() {
   late TestBootstrapContext ctx;
@@ -148,6 +150,86 @@ void main() {
     );
 
     expect(find.text('Hourly variables'), findsOneWidget);
+  });
+
+  testWidgets('hourly variables keep two preview rows when toggled', (
+    tester,
+  ) async {
+    await pumpWeatherWidget(
+      tester,
+      SingleChildScrollView(
+        child: DescContainer.fromHourlySlot(
+          card: card,
+          hourIndex: 0,
+          initiallyExpanded: false,
+          title: 'Hourly variables',
+        ),
+      ),
+      bootstrap: ctx.bootstrap,
+    );
+
+    const previewKeys = [
+      'wind',
+      'windgusts',
+      'precipitationProbability',
+      'humidity',
+      'uvIndex',
+      'cloudcover',
+    ];
+    expect(find.byType(DescWeather), findsNWidgets(6));
+    final positions = [
+      for (final key in previewKeys)
+        tester.getTopLeft(find.byKey(ValueKey(key))),
+    ];
+    expect(positions.take(3).map((p) => p.dy).toSet(), hasLength(1));
+    expect(positions.skip(3).map((p) => p.dy).toSet(), hasLength(1));
+    expect(positions[3].dy, greaterThan(positions[0].dy));
+    expect(positions[0].dx, lessThan(positions[1].dx));
+    expect(positions[1].dx, lessThan(positions[2].dx));
+    expect(find.byKey(const ValueKey('pressure')), findsNothing);
+
+    await tester.tap(find.text('Hourly variables'));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(DescWeather), findsNWidgets(15));
+    expect(find.byKey(const ValueKey('pressure')), findsOneWidget);
+    for (final key in previewKeys) {
+      expect(find.byKey(ValueKey(key)), findsOneWidget);
+    }
+
+    await tester.tap(find.text('Hourly variables'));
+    await tester.pumpAndSettle();
+    expect(find.byType(DescWeather), findsNWidgets(6));
+    expect(find.byKey(const ValueKey('pressure')), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('hourly variables appear above sun times and air quality', (
+    tester,
+  ) async {
+    await pumpWeatherWidget(
+      tester,
+      SingleChildScrollView(
+        child: WeatherHourlySections(
+          weatherCard: card,
+          hourIndex: 0,
+          aqiStandard: 'european',
+          sunrise: card.sunrise!.first,
+          sunset: card.sunset!.first,
+        ),
+      ),
+      bootstrap: ctx.bootstrap,
+    );
+
+    expect(
+      tester.getTopLeft(find.byType(DescContainer)).dy,
+      lessThan(tester.getTopLeft(find.byType(SunsetSunrise)).dy),
+    );
+    expect(
+      tester.getTopLeft(find.byType(SunsetSunrise)).dy,
+      lessThan(tester.getTopLeft(find.byType(AirQualityCard)).dy),
+    );
+    expect(tester.takeException(), isNull);
   });
 
   testWidgets('DailyCardList renders forecast rows', (tester) async {

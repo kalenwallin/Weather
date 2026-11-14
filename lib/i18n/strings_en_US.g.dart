@@ -162,8 +162,8 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 	/// en-US: 'Feels'
 	String get feels => 'Feels';
 
-	/// en-US: 'Precipitation probability'
-	String get precipitation_probability => 'Precipitation probability';
+	/// en-US: 'Chance for Rain'
+	String get precipitation_probability => 'Chance for Rain';
 
 	/// en-US: 'Licenses'
 	String get license => 'Licenses';
@@ -315,8 +315,8 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 	/// en-US: 'km'
 	String get km => 'km';
 
-	/// en-US: 'District'
-	String get district => 'District';
+	/// en-US: 'State'
+	String get district => 'State';
 
 	/// en-US: 'Southwest'
 	String get southwest => 'Southwest';
@@ -1024,7 +1024,7 @@ extension on Translations {
 			'validate90' => 'Value must be between -90 and 90',
 			'name2' => 'Convenient Design',
 			'feels' => 'Feels',
-			'precipitation_probability' => 'Precipitation probability',
+			'precipitation_probability' => 'Chance for Rain',
 			'license' => 'Licenses',
 			'reload_widget' => 'Reload widgets',
 			'reload_widget_success' => 'Widgets reloaded',
@@ -1075,7 +1075,7 @@ extension on Translations {
 			'validate_name' => 'Please enter the name',
 			'sunrise' => 'Sunrise',
 			'km' => 'km',
-			'district' => 'District',
+			'district' => 'State',
 			'southwest' => 'Southwest',
 			'degrees' => 'Degrees',
 			'clear_cache_store' => 'Clear cache',

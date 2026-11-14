@@ -56,6 +56,8 @@ class _DescWeatherState extends State<DescWeather> {
         child: Text(
           widget.desc,
           style: textTheme.bodySmall,
+          maxLines: _compactLabel ? 2 : null,
+          softWrap: true,
           overflow: _compactLabel
               ? TextOverflow.ellipsis
               : TextOverflow.visible,

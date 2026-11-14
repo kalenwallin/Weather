@@ -26,7 +26,7 @@ void main() {
       await ctx.dispose();
     });
 
-    ProviderContainer createContainer() {
+    ProviderContainer createContainer({bool failFetch = false}) {
       final container = createTestContainer(
         bootstrap: ctx.bootstrap,
         overrides: [
@@ -34,7 +34,9 @@ void main() {
             _TestMainWeatherNotifier.new,
           ),
           weatherRemoteDatasourceProvider.overrideWithValue(
-            createFakeWeatherRemoteDatasource(),
+            createFakeWeatherRemoteDatasource(
+              weatherJson: failFetch ? {} : null,
+            ),
           ),
           notificationServiceProvider.overrideWithValue(
             FakeNotificationService(),
@@ -109,17 +111,55 @@ void main() {
       },
     );
 
-    test('getLocation uses cache when offline', () async {
-      setTestConnectivity(false);
-      final container = createContainer();
-      final notifier = container.read(mainWeatherNotifierProvider.notifier);
+    test(
+      'failed city selection keeps the previous forecast and location',
+      () async {
+        final container = createContainer(failFetch: true);
+        final notifier = container.read(mainWeatherNotifierProvider.notifier);
 
-      await notifier.getLocation(55.75, 37.62, 'Moscow Oblast', 'Moscow');
+        final saved = await notifier.getLocation(
+          52.52,
+          13.41,
+          'Berlin',
+          'Berlin',
+        );
 
-      final state = container.read(mainWeatherNotifierProvider);
-      expect(state.isLoading, isFalse);
-      expect(state.mainWeather.timezone, 'Europe/Moscow');
-    });
+        final state = container.read(mainWeatherNotifierProvider);
+        expect(saved, isFalse);
+        expect(state.isLoading, isFalse);
+        expect(state.mainWeather.timezone, 'Europe/Moscow');
+        expect(state.city, 'Moscow');
+        final cached = await container
+            .read(weatherRepositoryProvider)
+            .readCache();
+        expect(cached.location?.city, 'Moscow');
+      },
+    );
+
+    test(
+      'manual city selection still fetches when the connectivity probe fails',
+      () async {
+        setTestConnectivity(false);
+        final container = createContainer();
+        final notifier = container.read(mainWeatherNotifierProvider.notifier);
+
+        await container.read(weatherRepositoryProvider).clearMainAndLocation();
+        final saved = await notifier.getLocation(
+          40.8,
+          -96.66696,
+          'Nebraska',
+          'Lincoln',
+        );
+
+        final cached = await container
+            .read(weatherRepositoryProvider)
+            .readCache();
+        expect(saved, isTrue);
+        expect(cached.location?.city, 'Lincoln');
+        expect(cached.location?.district, 'Nebraska');
+        expect(container.read(mainWeatherNotifierProvider).isLoading, isFalse);
+      },
+    );
 
     test(
       'getLocation keeps visible forecast when showLoading is false',

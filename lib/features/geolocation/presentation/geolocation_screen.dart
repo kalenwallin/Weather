@@ -262,8 +262,7 @@ class _SelectGeolocationState extends ConsumerState<SelectGeolocation> {
     trimPlaceController(_controllerDistrict);
     setState(() => _isSubmitting = true);
     try {
-      await ref.read(mainWeatherNotifierProvider.notifier).deleteAll(true);
-      await ref
+      final saved = await ref
           .read(mainWeatherNotifierProvider.notifier)
           .getLocation(
             double.parse(_controllerLat.text),
@@ -272,6 +271,11 @@ class _SelectGeolocationState extends ConsumerState<SelectGeolocation> {
             _controllerCity.text,
           );
       if (!mounted) return;
+      if (!saved) {
+        ref.read(mainWeatherNotifierProvider.notifier).clearUserMessage();
+        showSnackBar('error_occurred'.tr, isError: true);
+        return;
+      }
       if (widget.isStart) {
         context.go(AppRoutes.home);
       } else {

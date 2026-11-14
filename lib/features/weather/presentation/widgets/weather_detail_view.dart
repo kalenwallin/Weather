@@ -4,7 +4,6 @@ import 'package:weather/features/weather/presentation/widgets/weather_hourly_sec
 import 'package:weather/features/weather/presentation/widgets/hourly.dart';
 import 'package:weather/features/weather/presentation/widgets/hourly_strip.dart';
 import 'package:weather/features/weather/presentation/widgets/now.dart';
-import 'package:weather/features/weather/presentation/widgets/sunset_sunrise.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:weather/domain/entities/entities.dart';
 
@@ -73,11 +72,12 @@ class WeatherDetailView extends StatelessWidget {
             },
           ),
         ),
-        SunsetSunrise(timeSunrise: sunrise, timeSunset: sunset),
         WeatherHourlySections(
           weatherCard: weatherCard,
           hourIndex: hourIndex,
           aqiStandard: aqiStandard,
+          sunrise: sunrise,
+          sunset: sunset,
         ),
         DailyContainer(
           weatherData: weatherCard,

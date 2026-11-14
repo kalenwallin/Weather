@@ -69,7 +69,7 @@ void main() {
       await tester.pump();
 
       await _enterPlaceActionField(tester, 'City', 'Moscow');
-      await _enterPlaceActionField(tester, 'District', 'Moscow Oblast');
+      await _enterPlaceActionField(tester, 'State', 'Moscow Oblast');
 
       final doneButton = find.ancestor(
         of: find.text('Done'),
@@ -150,7 +150,7 @@ void main() {
       await tester.pump();
 
       await _enterPlaceActionField(tester, 'City', 'Moscow');
-      await _enterPlaceActionField(tester, 'District', 'Moscow Oblast');
+      await _enterPlaceActionField(tester, 'State', 'Moscow Oblast');
 
       final doneButton = find.ancestor(
         of: find.text('Done'),

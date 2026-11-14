@@ -1,4 +1,5 @@
 import 'package:weather/core/services/connectivity_service.dart';
+import 'package:weather/core/utils/debug_log.dart';
 
 /// Chooses between a network fetch and falling back to cached data.
 class NetworkCacheHandler {
@@ -21,7 +22,8 @@ class NetworkCacheHandler {
     try {
       await onNetworkFetch();
       return true;
-    } catch (_) {
+    } catch (error, stackTrace) {
+      debugLogError('NetworkCacheHandler.fetchOrKeepCache', error, stackTrace);
       onError?.call();
       await onUseCache();
       return false;
