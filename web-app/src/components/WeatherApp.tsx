@@ -213,7 +213,7 @@ export function WeatherApp() {
       </a>
       <aside className="sidebar">
         <a className="brand" href="/" aria-label="Weather home">
-          <img src="/icon.png" alt="" />
+          <BrandIcon city={configuration.mainCity} now={now} />
           <span>Weather</span>
         </a>
         <nav className="main-navigation" aria-label="Main navigation">
@@ -223,7 +223,7 @@ export function WeatherApp() {
             className={page === "weather" ? "is-active" : ""}
             onClick={() => setPage("weather")}
           >
-            <MainCityIcon city={configuration.mainCity} now={now} />
+            <CloudSun size={21} />
             <span>Weather</span>
           </button>
           <button
@@ -646,15 +646,15 @@ function CityCard({
   );
 }
 
-/** Sidebar nav icon showing the main city's current weather. */
-function MainCityIcon({ city, now }: { city: City | null; now: number }) {
+/** Sidebar logo showing the main city's current weather graphic. */
+function BrandIcon({ city, now }: { city: City | null; now: number }) {
   const { data } = useWeather(city);
-  if (!data) return <CloudSun size={21} />;
+  if (!data) return <img src="/icon.png" alt="" />;
   const f = data.forecast,
     hour = currentHour(f, now);
   return (
     <WeatherImage
-      className="nav-weather-image"
+      className="brand-weather-image"
       name={weatherIcon(f.hourly.weather_code?.[hour], isDay(f, hour))}
       alt=""
     />
